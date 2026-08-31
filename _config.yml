@@ -1,0 +1,26 @@
+title: Studio Lab Research
+description: Public research notes, methods, findings, and evidence from Studio Lab.
+url: https://josh-temple.github.io
+baseurl: /studio-lab-research
+lang: en
+markdown: kramdown
+
+collections:
+  research:
+    output: true
+    permalink: /research/:name/
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+  - scope:
+      path: ""
+      type: research
+    values:
+      layout: research
+
+exclude:
+  - README.md
+  - templates
