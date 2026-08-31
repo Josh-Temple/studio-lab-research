@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="{{ site.lang | default: 'en' }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
+  <meta name="description" content="{{ page.description | default: site.description | escape }}">
+  <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="{{ '/' | relative_url }}">Studio Lab <span>Research</span></a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="{{ '/research/' | relative_url }}">Research</a>
+        <a href="{{ '/about/' | relative_url }}">About</a>
+        <a href="https://github.com/Josh-Temple/studio-lab-research">GitHub</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="shell page-shell">
+    {{ content }}
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-inner">
+      <p>Studio Lab Research</p>
+      <p>Methods, findings, limits, and evidence.</p>
+    </div>
+  </footer>
+</body>
+</html>
