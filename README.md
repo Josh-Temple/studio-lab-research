@@ -1,31 +1,39 @@
-# Studio Lab Research
+# Studio Lab
 
-Public research site for selected Studio Lab studies, methods, findings, limitations, and shareable evidence.
+Public Studio Lab hub for selected research, projects, writing, and methods.
+
+The repository name remains `studio-lab-research`, but the GitHub Pages site now serves as the outward-facing Studio Lab dashboard. Internal operational state belongs in the private dashboard; this repository contains reviewed public outputs and links.
 
 ## Structure
 
 - `_research/` — published research pages. Each Markdown file becomes a page under `/research/`.
 - `research/index.md` — research catalog.
-- `templates/research-page.md` — copyable front matter and section structure for new research pages.
+- `projects.md` — selected public projects and links to the curated Baukasten portfolio.
+- `writing.md` — curated links to published writing.
+- `methods.md` — public research and publication principles.
+- `about.md` — boundary between the internal dashboard and public site.
+- `templates/research-page.md` — copyable structure for new research pages.
 - `_layouts/` and `assets/css/` — lightweight Jekyll presentation layer.
 - `.github/workflows/pages.yml` — GitHub Pages build and deployment workflow.
 
 ## Publishing model
 
-Internal research state and evidence remain in their canonical systems. This repository is a public presentation layer. Public research content should be reviewed before merge rather than copied automatically from internal working material.
+Internal research state, live work queues, private data, credentials, operational logs, drafts, and unpublished claims remain in their canonical systems. This repository is a public presentation layer.
 
-A normal update is:
+A normal substantive update is:
 
 1. create a branch;
-2. add or update a Markdown file in `_research/`;
+2. add or update the relevant public page;
 3. open and review a pull request;
 4. merge to `main`;
 5. GitHub Actions builds and deploys the site.
 
-## One-time GitHub Pages setup
+## Public site
 
-In the repository, open **Settings → Pages → Build and deployment → Source** and choose **GitHub Actions**. The included workflow then deploys pushes to `main`.
+https://josh-temple.github.io/studio-lab-research/
 
-Expected project-site URL after Pages is enabled and the first deployment succeeds:
+## Related public portfolio
 
-`https://josh-temple.github.io/studio-lab-research/`
+Baukasten is the curated source of truth for project selection and verified project links:
+
+https://josh-temple.github.io/Baukasten/
