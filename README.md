@@ -2,18 +2,19 @@
 
 Public Studio Lab hub for selected research, projects, writing, and methods.
 
-The repository name remains `studio-lab-research`, but the GitHub Pages site now serves as the outward-facing Studio Lab dashboard. Internal operational state belongs in the private dashboard; this repository contains reviewed public outputs and links.
+The repository name remains `studio-lab-research`, but the GitHub Pages site serves as the outward-facing Studio Lab dashboard. Internal operational state belongs in the private dashboard; this repository contains reviewed public outputs and links.
 
 ## Structure
 
 - `_research/` — published research pages. Each Markdown file becomes a page under `/research/`.
-- `research/index.md` — research catalog.
+- `research/index.md` — research catalog and research-area entry points.
+- `trading.md` — public landing page for reviewed systematic-trading research.
 - `projects.md` — selected public projects and links to the curated Baukasten portfolio.
 - `writing.md` — curated links to published writing.
 - `methods.md` — public research and publication principles.
 - `about.md` — boundary between the internal dashboard and public site.
-- `templates/research-page.md` — copyable structure for new research pages.
-- `_layouts/` and `assets/css/` — lightweight Jekyll presentation layer.
+- `templates/research-page.md` — copyable structure for new research pages, including optional visualization guidance.
+- `_layouts/` and `assets/css/` — lightweight Jekyll presentation layer, including reusable no-JavaScript metric-chart styles.
 - `.github/workflows/pages.yml` — GitHub Pages build and deployment workflow.
 
 ## Publishing model
@@ -27,6 +28,8 @@ A normal substantive update is:
 3. open and review a pull request;
 4. merge to `main`;
 5. GitHub Actions builds and deploys the site.
+
+Trading research follows the same boundary: reviewed historical or simulated findings may be published, while live positions, account information, current trade decisions, and unresolved experiments remain private.
 
 ## Public site
 
