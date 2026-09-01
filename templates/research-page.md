@@ -19,6 +19,10 @@ Describe the data, procedure, comparison, and evaluation conditions needed to un
 
 Report what was directly observed. Do not mix interpretation into this section where it can be separated.
 
+### Optional visualization
+
+Use a chart only when it makes the comparison easier to understand. Keep the exact numeric value visible in text, give the chart an accessible label, and state when separate charts use different scales. The shared `metric-chart`, `metric-row`, `bar-track`, `bar-fill`, and `metric-value` classes support lightweight horizontal comparison charts without JavaScript.
+
 ## Interpretation
 
 Explain what the observations support and how strongly they support it.
