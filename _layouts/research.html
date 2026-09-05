@@ -1,18 +1,19 @@
 ---
 layout: default
 ---
+{% assign current_lang = page.lang | default: site.lang | default: 'en' %}
 <article class="research-page">
   <header class="research-header">
-    <p class="eyebrow">Research</p>
+    <p class="eyebrow">{% if current_lang == 'ja' %}研究{% else %}Research{% endif %}</p>
     <div class="research-heading-row">
       <h1>{{ page.title }}</h1>
       {% if page.status %}<span class="status">{{ page.status }}</span>{% endif %}
     </div>
     {% if page.summary %}<p class="lede">{{ page.summary }}</p>{% endif %}
     <dl class="research-meta">
-      {% if page.research_id %}<div><dt>ID</dt><dd>{{ page.research_id }}</dd></div>{% endif %}
-      {% if page.updated %}<div><dt>Updated</dt><dd>{{ page.updated }}</dd></div>{% endif %}
-      {% if page.topic %}<div><dt>Topic</dt><dd>{{ page.topic }}</dd></div>{% endif %}
+      {% if page.research_id %}<div><dt>{% if current_lang == 'ja' %}研究ID{% else %}ID{% endif %}</dt><dd>{{ page.research_id }}</dd></div>{% endif %}
+      {% if page.updated %}<div><dt>{% if current_lang == 'ja' %}更新日{% else %}Updated{% endif %}</dt><dd>{{ page.updated }}</dd></div>{% endif %}
+      {% if page.topic %}<div><dt>{% if current_lang == 'ja' %}テーマ{% else %}Topic{% endif %}</dt><dd>{{ page.topic }}</dd></div>{% endif %}
     </dl>
   </header>
 
