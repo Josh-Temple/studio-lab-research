@@ -1,31 +1,54 @@
 ---
 title: Trading
 permalink: /trading/
-description: Reviewed Studio Lab trading research, including holdout tests, risk controls, and negative results.
+description: Reviewed Studio Lab trading research, including holdout tests, independent validations, risk controls, and negative results.
 ---
 
 <p class="eyebrow">Trading research</p>
 <h1>Test the edge before trusting the story.</h1>
-<p class="lede">Selected systematic-trading research from Studio Lab. This section publishes reviewed experiments, including negative and mixed results. It is not a live trading dashboard, signal service, or record of current positions.</p>
+<p class="lede">Selected systematic-trading research from Studio Lab. This section publishes reviewed experiments, including negative and mixed results, while keeping unfinished hypotheses clearly separate. It is not a live trading dashboard, signal service, or record of current positions.</p>
 
 <section class="section">
   <div class="section-heading">
     <div>
-      <p class="eyebrow">Published result</p>
-      <h2>Repeat trading external holdout</h2>
+      <p class="eyebrow">Published results</p>
+      <h2>What has survived review</h2>
     </div>
   </div>
   <div class="feature-grid feature-grid-wide">
     <article class="feature-card">
-      <p class="feature-meta">Completed · mixed / inconclusive</p>
+      <p class="feature-meta">Repeat trading · external holdout</p>
       <h3><a href="{{ '/research/repeat-trading-external-holdout/' | relative_url }}">Lower risk did not become a profit edge</a></h3>
       <p>Two dynamic-exit rules reduced drawdown-related burden in an untouched 2020–2022 holdout, but neither improved matched median P/L versus the benchmark.</p>
       <p class="card-links"><a href="{{ '/research/repeat-trading-external-holdout/' | relative_url }}">Read the study and charts</a></p>
     </article>
     <article class="feature-card">
-      <p class="feature-meta">Publication boundary</p>
-      <h3>Ongoing experiments are not results.</h3>
-      <p>Trend/regime tests and other unresolved work stay out of the public result set until the evaluation boundary is fixed, the test is run, and the claims are reviewed.</p>
+      <p class="feature-meta">GOLD · independent validation</p>
+      <h3><a href="{{ '/research/gold-session-range-independent-validation/' | relative_url }}">Strong development range persistence was not independently confirmed</a></h3>
+      <p>The 2024 development association was strong (ρ=0.5621), but the frozen 2021 validation estimate was ρ=0.0626 with a 95% block-bootstrap interval crossing zero.</p>
+      <p class="card-links"><a href="{{ '/research/gold-session-range-independent-validation/' | relative_url }}">Read the validation</a></p>
+    </article>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-heading">
+    <div>
+      <p class="eyebrow">Current research</p>
+      <h2>What is being tested next</h2>
+    </div>
+  </div>
+  <div class="feature-grid feature-grid-wide">
+    <article class="feature-card">
+      <p class="feature-meta">GOLD horizontal levels · preregistration in progress</p>
+      <h3>Reaction around pre-specified support/resistance zones</h3>
+      <p>The next development test will compare reactions around rolling-window extrema zones with matched pseudo/non-level controls. The current design uses a 60-minute level window, a 15-minute reaction horizon, and 2024 as development-only data.</p>
+      <p class="card-links">Market outcomes have not been opened. Remaining pseudo-control and effect-estimate details are being closed before execution.</p>
+    </article>
+    <article class="feature-card">
+      <p class="feature-meta">Range persistence · deprioritized</p>
+      <h3>Do not rescue a weak independent result after seeing it</h3>
+      <p>The 2021 validation period is now consumed for the previous-session range mechanism. The current plan does not retune the same mechanism on 2021 or automatically add another holdout to rescue it.</p>
     </article>
   </div>
 </section>
