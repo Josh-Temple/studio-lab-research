@@ -1,25 +1,47 @@
+{% assign current_lang = page.lang | default: site.lang | default: 'en' %}
+{% if current_lang == 'ja' %}
+  {% assign alternate_lang = 'en' %}
+  {% assign alternate_path = page.url | remove_first: '/ja' %}
+{% else %}
+  {% assign alternate_lang = 'ja' %}
+  {% capture alternate_path %}/ja{{ page.url }}{% endcapture %}
+{% endif %}
 <!doctype html>
-<html lang="{{ site.lang | default: 'en' }}">
+<html lang="{{ current_lang }}">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light">
   <title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
   <meta name="description" content="{{ page.description | default: site.description | escape }}">
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
+  <link rel="alternate" hreflang="{{ current_lang }}" href="{{ page.url | absolute_url }}">
+  <link rel="alternate" hreflang="{{ alternate_lang }}" href="{{ alternate_path | absolute_url }}">
   <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}">
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
+  <a class="skip-link" href="#main">{% if current_lang == 'ja' %}本文へ移動{% else %}Skip to content{% endif %}</a>
   <header class="site-header">
     <div class="shell header-inner">
-      <a class="brand" href="{{ '/' | relative_url }}">Studio Lab</a>
-      <nav class="site-nav" aria-label="Primary navigation">
+      <a class="brand" href="{% if current_lang == 'ja' %}{{ '/ja/' | relative_url }}{% else %}{{ '/' | relative_url }}{% endif %}">Studio Lab</a>
+      <nav class="site-nav" aria-label="{% if current_lang == 'ja' %}メインナビゲーション{% else %}Primary navigation{% endif %}">
+        {% if current_lang == 'ja' %}
+        <a href="{{ '/ja/research/' | relative_url }}">研究</a>
+        <a href="{{ '/ja/trading/' | relative_url }}">トレード</a>
+        <a href="{{ '/ja/projects/' | relative_url }}">プロジェクト</a>
+        <a href="{{ '/ja/writing/' | relative_url }}">記事</a>
+        <a href="{{ '/ja/methods/' | relative_url }}">方法</a>
+        <a href="{{ '/ja/about/' | relative_url }}">このサイトについて</a>
+        <a href="{{ alternate_path | relative_url }}" lang="en" hreflang="en">English</a>
+        {% else %}
         <a href="{{ '/research/' | relative_url }}">Research</a>
         <a href="{{ '/trading/' | relative_url }}">Trading</a>
         <a href="{{ '/projects/' | relative_url }}">Projects</a>
         <a href="{{ '/writing/' | relative_url }}">Writing</a>
         <a href="{{ '/methods/' | relative_url }}">Methods</a>
         <a href="{{ '/about/' | relative_url }}">About</a>
+        <a href="{{ alternate_path | relative_url }}" lang="ja" hreflang="ja">日本語</a>
+        {% endif %}
       </nav>
     </div>
   </header>
@@ -31,7 +53,7 @@
   <footer class="site-footer">
     <div class="shell footer-inner">
       <p>Studio Lab</p>
-      <p>Research, experiments, tools, and writing.</p>
+      <p>{% if current_lang == 'ja' %}研究、実験、ツール、記事。{% else %}Research, experiments, tools, and writing.{% endif %}</p>
     </div>
   </footer>
 </body>
