@@ -13,6 +13,13 @@ description: Studio Labの公開研究。方法、結果、限界、根拠を分
   <div class="research-list">
     <article class="research-item">
       <div>
+        <h2><a href="{{ '/ja/research/gold-horizontal-recent-price-control-development/' | relative_url }}">GOLD水平線反応：2024年開発データでは直近価格の対照群を上回った</a></h2>
+        <p>封印済み60セッションで、rolling extrema zoneの15分方向反応率は直近の実測価格を使った対照群を平均26.55ポイント上回りました。現在は2022年独立検証を事前登録済みです。</p>
+      </div>
+      <span class="status">開発段階 · 追加検証候補</span>
+    </article>
+    <article class="research-item">
+      <div>
         <h2><a href="{{ '/ja/research/gold-session-range-independent-validation/' | relative_url }}">GOLDのセッションレンジ持続性：2024年の強い関係は2021年の独立検証では確認できなかった</a></h2>
         <p>2024年の開発結果を独立した2021年データで検証したところ、推定値は小さく、95% block-bootstrap区間はゼロをまたぎました。</p>
       </div>
@@ -38,6 +45,6 @@ description: Studio Labの公開研究。方法、結果、限界、根拠を分
 <section class="section public-boundary">
   <p class="eyebrow">研究分野</p>
   <h2>トレード研究</h2>
-  <p>系統的な売買戦略の検証では、ホールドアウト、独立検証、リスク指標、単純なベースライン、未確定結果の扱いを重視します。</p>
+  <p>系統的な売買戦略の検証では、開発段階と独立検証を分け、ホールドアウト、リスク指標、単純なベースライン、未確定結果の扱いを重視します。</p>
   <a href="{{ '/ja/trading/' | relative_url }}">トレード研究を見る</a>
 </section>

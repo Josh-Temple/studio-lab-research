@@ -33,17 +33,17 @@ description: Studio Labの公開研究、プロジェクト、記事、方法を
 <section class="section">
   <div class="section-heading"><div><p class="eyebrow">最新の研究</p><h2>公開済み研究</h2></div><a href="{{ '/ja/research/' | relative_url }}">一覧を見る</a></div>
   <div class="research-list">
+    <article class="research-item"><div><h3><a href="{{ '/ja/research/gold-horizontal-recent-price-control-development/' | relative_url }}">GOLD水平線の開発テスト</a></h3><p>rolling extrema zoneの15分方向反応率は、直近の実測価格を使った対照群を平均26.55ポイント上回りました。ただし開発段階の結果です。</p></div><span class="status">開発段階 · 追加検証候補</span></article>
     <article class="research-item"><div><h3><a href="{{ '/ja/research/gold-session-range-independent-validation/' | relative_url }}">GOLDのセッションレンジ独立検証</a></h3><p>2024年の開発データで強く見えた関係は、2021年の独立検証では統計的に支持された形で確認できませんでした。</p></div><span class="status">完了 · 独立検証は判定保留</span></article>
     <article class="research-item"><div><h3><a href="{{ '/ja/research/repeat-trading-external-holdout/' | relative_url }}">リピート取引の外部ホールドアウト</a></h3><p>動的exitはリスク負担を軽減した一方、外部ホールドアウトでは収益改善を再現しませんでした。</p></div><span class="status">完了 · 混合 / 判定保留</span></article>
-    <article class="research-item"><div><h3><a href="{{ '/ja/research/openalex-bridge-adoption-lag/' | relative_url }}">OpenAlex bridge-work adoption lag pilot</a></h3><p>分類の妥当性基準を満たさなかったため、主要なadoption-lag比較を実行せずに終了した研究です。</p></div><span class="status">終了 · 主要比較なし</span></article>
   </div>
 </section>
 
 <section class="section">
-  <div class="section-heading"><div><p class="eyebrow">トレード研究</p><h2>結果と進行中の仮説を分けて公開する</h2></div><a href="{{ '/ja/trading/' | relative_url }}">トレード研究へ</a></div>
+  <div class="section-heading"><div><p class="eyebrow">トレード研究</p><h2>開発結果と独立検証を分けて公開する</h2></div><a href="{{ '/ja/trading/' | relative_url }}">トレード研究へ</a></div>
   <div class="feature-grid feature-grid-wide">
-    <article class="feature-card"><p class="feature-meta">最新の独立検証</p><h3><a href="{{ '/ja/research/gold-session-range-independent-validation/' | relative_url }}">強い開発結果は独立検証では確認できなかった</a></h3><p>GOLDの前セッションrangeについて、2021年の独立検証を完了し、仮説の優先度を下げました。</p></article>
-    <article class="feature-card"><p class="feature-meta">現在の研究 · 事前設計中</p><h3>GOLD水平線付近の反応</h3><p>rolling-windowのsupport / resistance zoneとmatched pseudo controlを比べる設計を閉じています。市場結果はまだ開いていません。</p></article>
+    <article class="feature-card"><p class="feature-meta">最新の開発結果</p><h3><a href="{{ '/ja/research/gold-horizontal-recent-price-control-development/' | relative_url }}">GOLD水平線は2024年開発データで対照群を上回った</a></h3><p>60セッションすべてが比較可能で、主要差は+26.55ポイント、95% bootstrap区間は+21.23〜+31.82ポイントでした。</p></article>
+    <article class="feature-card"><p class="feature-meta">現在の研究 · 2022年独立検証を事前登録済み</p><h3>同じ水平線メカニズムが別期間でも再現するかを検証する</h3><p>2022年の最初の60適格セッションを使い、ルールを変えずに再現性を確認する計画を固定しました。事前登録時点では結果未観測です。</p></article>
   </div>
 </section>
 

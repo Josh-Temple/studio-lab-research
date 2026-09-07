@@ -1,12 +1,12 @@
 ---
 title: Trading
 permalink: /trading/
-description: Reviewed Studio Lab trading research, including holdout tests, independent validations, risk controls, and negative results.
+description: Reviewed Studio Lab trading research, including development tests, holdouts, independent validations, risk controls, and negative results.
 ---
 
 <p class="eyebrow">Trading research</p>
 <h1>Test the edge before trusting the story.</h1>
-<p class="lede">Selected systematic-trading research from Studio Lab. This section publishes reviewed experiments, including negative and mixed results, while keeping unfinished hypotheses clearly separate. It is not a live trading dashboard, signal service, or record of current positions.</p>
+<p class="lede">Selected systematic-trading research from Studio Lab. This section publishes reviewed development results, holdouts, independent validations, and negative or mixed findings while keeping unresolved hypotheses separate. It is not a live trading dashboard, signal service, or record of current positions.</p>
 
 <section class="section">
   <div class="section-heading">
@@ -17,13 +17,19 @@ description: Reviewed Studio Lab trading research, including holdout tests, inde
   </div>
   <div class="feature-grid feature-grid-wide">
     <article class="feature-card">
+      <p class="feature-meta">GOLD horizontal levels · development</p>
+      <h3><a href="{{ '/research/gold-horizontal-recent-price-control-development/' | relative_url }}">Rolling-extrema zones outperformed a recent-price control in development</a></h3>
+      <p>Across all 60 sealed 2024 sessions, the equal-weight 15-minute directional-reaction rate was 79.78% for real zones versus 53.23% for the control. The primary difference was +26.55 percentage points with a 95% bootstrap interval of +21.23 to +31.82 points.</p>
+      <p class="card-links"><a href="{{ '/research/gold-horizontal-recent-price-control-development/' | relative_url }}">Read the development study</a></p>
+    </article>
+    <article class="feature-card">
       <p class="feature-meta">Repeat trading · external holdout</p>
       <h3><a href="{{ '/research/repeat-trading-external-holdout/' | relative_url }}">Lower risk did not become a profit edge</a></h3>
       <p>Two dynamic-exit rules reduced drawdown-related burden in an untouched 2020–2022 holdout, but neither improved matched median P/L versus the benchmark.</p>
       <p class="card-links"><a href="{{ '/research/repeat-trading-external-holdout/' | relative_url }}">Read the study and charts</a></p>
     </article>
     <article class="feature-card">
-      <p class="feature-meta">GOLD · independent validation</p>
+      <p class="feature-meta">GOLD range persistence · independent validation</p>
       <h3><a href="{{ '/research/gold-session-range-independent-validation/' | relative_url }}">Strong development range persistence was not independently confirmed</a></h3>
       <p>The 2024 development association was strong (ρ=0.5621), but the frozen 2021 validation estimate was ρ=0.0626 with a 95% block-bootstrap interval crossing zero.</p>
       <p class="card-links"><a href="{{ '/research/gold-session-range-independent-validation/' | relative_url }}">Read the validation</a></p>
@@ -35,20 +41,20 @@ description: Reviewed Studio Lab trading research, including holdout tests, inde
   <div class="section-heading">
     <div>
       <p class="eyebrow">Current research</p>
-      <h2>What is being tested next</h2>
+      <h2>Independent replication is now the decision gate</h2>
     </div>
   </div>
   <div class="feature-grid feature-grid-wide">
     <article class="feature-card">
-      <p class="feature-meta">GOLD horizontal levels · preregistration in progress</p>
-      <h3>Reaction around pre-specified support/resistance zones</h3>
-      <p>The next development test will compare reactions around rolling-window extrema zones with matched pseudo/non-level controls. The current design uses a 60-minute level window, a 15-minute reaction horizon, and 2024 as development-only data.</p>
-      <p class="card-links">Market outcomes have not been opened. Remaining pseudo-control and effect-estimate details are being closed before execution.</p>
+      <p class="feature-meta">GOLD horizontal levels · 2022 validation preregistered</p>
+      <h3>Repeat the same mechanism before adding more variables</h3>
+      <p>The next test uses the first 60 structurally eligible 2022 UTC sessions from 2022-01-03 onward, with the same rolling-extrema definition, recent-price control, 15-minute reaction outcome, session estimator, design gate, and classification rule.</p>
+      <p class="card-links">No 2022 horizontal-line or control reaction outcome had been inspected or computed when the validation protocol was frozen.</p>
     </article>
     <article class="feature-card">
       <p class="feature-meta">Range persistence · deprioritized</p>
       <h3>Do not rescue a weak independent result after seeing it</h3>
-      <p>The 2021 validation period is now consumed for the previous-session range mechanism. The current plan does not retune the same mechanism on 2021 or automatically add another holdout to rescue it.</p>
+      <p>The 2021 validation period is consumed for the previous-session range mechanism. The current plan does not retune the same mechanism on 2021 or automatically add another holdout to rescue it.</p>
     </article>
   </div>
 </section>
@@ -68,8 +74,8 @@ description: Reviewed Studio Lab trading research, including holdout tests, inde
     </article>
     <article class="feature-card">
       <p class="feature-meta">02</p>
-      <h3>Risk is not return</h3>
-      <p>Lower drawdown, fewer open positions, or lower exposure can be useful without implying higher expected profit. Both sides are reported separately.</p>
+      <h3>Reaction is not return</h3>
+      <p>A higher directional-reaction rate can justify further mechanism testing without implying positive expectancy, acceptable drawdown, or executable profit.</p>
     </article>
     <article class="feature-card">
       <p class="feature-meta">03</p>
