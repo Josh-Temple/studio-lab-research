@@ -74,6 +74,28 @@ description: Studio Lab is a public index of selected research, projects, writin
 <section class="section">
   <div class="section-heading">
     <div>
+      <p class="eyebrow">Trading research</p>
+      <h2>Development signal, independent test next</h2>
+    </div>
+    <a href="{{ '/trading/' | relative_url }}">Trading research</a>
+  </div>
+  <div class="feature-grid feature-grid-wide">
+    <article class="feature-card">
+      <p class="feature-meta">Latest development result</p>
+      <h3><a href="{{ '/research/gold-horizontal-recent-price-control-development/' | relative_url }}">GOLD rolling-extrema zones exceeded a recent-price control</a></h3>
+      <p>All 60 sealed 2024 sessions contributed. The primary 15-minute directional-reaction difference was +26.55 percentage points with a 95% bootstrap interval of +21.23 to +31.82 points.</p>
+    </article>
+    <article class="feature-card">
+      <p class="feature-meta">Current research · 2022 validation preregistered</p>
+      <h3>Test the same mechanism on an untouched period before adding variables</h3>
+      <p>The independent validation protocol freezes the same mechanism and control on the first 60 structurally eligible 2022 sessions. No 2022 horizontal-line outcome had been inspected when the protocol was frozen.</p>
+    </article>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-heading">
+    <div>
       <p class="eyebrow">Featured projects</p>
       <h2>Tools in use</h2>
     </div>
