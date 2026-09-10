@@ -13,10 +13,17 @@ description: Studio Labの公開研究。方法、結果、限界、根拠を分
   <div class="research-list">
     <article class="research-item">
       <div>
-        <h2><a href="{{ '/ja/research/gold-horizontal-recent-price-control-development/' | relative_url }}">GOLD水平線反応：2024年開発データでは直近価格の対照群を上回った</a></h2>
-        <p>封印済み60セッションで、rolling extrema zoneの15分方向反応率は直近の実測価格を使った対照群を平均26.55ポイント上回りました。現在は2022年独立検証を事前登録済みです。</p>
+        <h2><a href="{{ '/ja/research/gold-horizontal-replication-execution-evidence/' | relative_url }}">GOLD水平線：方向反応は3期間で再現し、2019年の実測BID/ASK検証でも正の結果</a></h2>
+        <p>同じ水平線定義で2024年・2022年・2020年に方向反応差が再現しました。2019年のexecution-aware検証でもreal平均リターンは正でしたが、live trading edgeが確認されたわけではありません。</p>
       </div>
-      <span class="status">開発段階 · 追加検証候補</span>
+      <span class="status">再現確認 / execution-aware · 追加検証候補</span>
+    </article>
+    <article class="research-item">
+      <div>
+        <h2><a href="{{ '/ja/research/gold-horizontal-recent-price-control-development/' | relative_url }}">GOLD水平線反応：2024年開発データでは直近価格の対照群を上回った</a></h2>
+        <p>封印済み60セッションで、rolling extrema zoneの15分方向反応率は直近の実測価格を使った対照群を平均26.55ポイント上回りました。その後、2022年と2020年でも同じ方向の結果が再現しています。</p>
+      </div>
+      <span class="status">開発段階 · 後続検証あり</span>
     </article>
     <article class="research-item">
       <div>
@@ -45,6 +52,6 @@ description: Studio Labの公開研究。方法、結果、限界、根拠を分
 <section class="section public-boundary">
   <p class="eyebrow">研究分野</p>
   <h2>トレード研究</h2>
-  <p>系統的な売買戦略の検証では、開発段階と独立検証を分け、ホールドアウト、リスク指標、単純なベースライン、未確定結果の扱いを重視します。</p>
+  <p>系統的な売買研究では、開発段階、独立再現、execution-aware検証を分け、ホールドアウト、単純なベースライン、negative result、未確定結果の扱いを重視します。</p>
   <a href="{{ '/ja/trading/' | relative_url }}">トレード研究を見る</a>
 </section>

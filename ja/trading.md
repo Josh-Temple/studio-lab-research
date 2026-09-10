@@ -2,22 +2,33 @@
 title: トレード
 lang: ja
 permalink: /ja/trading/
-description: Studio Labのレビュー済みトレード研究。開発テスト、ホールドアウト、独立検証、リスク管理、negative resultを含みます。
+description: Studio Labのレビュー済みトレード研究。開発テスト、ホールドアウト、独立検証、execution-aware検証、リスク管理、negative resultを含みます。
 ---
 
 <p class="eyebrow">トレード研究</p>
 <h1>ストーリーを信じる前に、優位性を検証する。</h1>
-<p class="lede">Studio Labの系統的トレード研究から、レビュー済みの開発結果、ホールドアウト、独立検証、negative resultや混合結果を公開します。未確定の仮説は結果と明確に分けます。ライブの売買ダッシュボード、シグナル配信、現在ポジションの記録ではありません。</p>
+<p class="lede">Studio Labの系統的トレード研究から、レビュー済みの開発結果、ホールドアウト、独立検証、execution-aware検証、negative resultや混合結果を公開します。未確定の仮説は結果と明確に分けます。ライブの売買ダッシュボード、シグナル配信、現在ポジションの記録ではありません。</p>
 
 <section class="section">
-  <div class="section-heading"><div><p class="eyebrow">公開済み結果</p><h2>レビューを終えた研究</h2></div></div>
+  <div class="section-heading"><div><p class="eyebrow">現在の根拠</p><h2>GOLD水平線は単一の開発結果から先へ進んだ</h2></div></div>
   <div class="feature-grid feature-grid-wide">
     <article class="feature-card">
-      <p class="feature-meta">GOLD水平線 · 開発段階</p>
-      <h3><a href="{{ '/ja/research/gold-horizontal-recent-price-control-development/' | relative_url }}">rolling extrema zoneは開発データで直近価格の対照群を上回った</a></h3>
-      <p>封印済み2024年60セッションすべてで、15分方向反応率はreal zoneが79.78%、対照群が53.23%でした。主要差は+26.55ポイント、95% bootstrap区間は+21.23〜+31.82ポイントです。</p>
-      <p class="card-links"><a href="{{ '/ja/research/gold-horizontal-recent-price-control-development/' | relative_url }}">開発結果を読む</a></p>
+      <p class="feature-meta">GOLD水平線 · 再現確認 / execution-aware</p>
+      <h3><a href="{{ '/ja/research/gold-horizontal-replication-execution-evidence/' | relative_url }}">方向反応は3期間で再現し、実測BID/ASKを使った2019年検証でも正の結果</a></h3>
+      <p>固定した15分方向反応のreal-control差は、2024年開発で+26.55ポイント、2022年独立検証で+23.79ポイント、2020年robustness検証で+25.44ポイントでした。さらに2019年の実測BID/ASKを使った検証では、real平均+1.189 bps、real-control差+3.498 bpsでした。</p>
+      <p class="card-links"><a href="{{ '/ja/research/gold-horizontal-replication-execution-evidence/' | relative_url }}">現在の根拠をまとめて読む</a></p>
     </article>
+    <article class="feature-card">
+      <p class="feature-meta">追加しても改善しなかった条件</p>
+      <h3>指標を増やせば自動的に良くなるわけではなかった</h3>
+      <p>60分trend context、New York時間帯、前セッションvolatilityを1つずつ加えた検証では、水平線単独のベースラインを超える増分情報は確認できませんでした。recent session-direction continuationも棄却または優先度低下となっています。</p>
+    </article>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-heading"><div><p class="eyebrow">その他の公開結果</p><h2>negative resultや混合結果も残す</h2></div></div>
+  <div class="feature-grid feature-grid-wide">
     <article class="feature-card">
       <p class="feature-meta">リピート取引 · 外部ホールドアウト</p>
       <h3><a href="{{ '/ja/research/repeat-trading-external-holdout/' | relative_url }}">リスク低下は収益上の優位性にはつながらなかった</a></h3>
@@ -34,18 +45,18 @@ description: Studio Labのレビュー済みトレード研究。開発テスト
 </section>
 
 <section class="section">
-  <div class="section-heading"><div><p class="eyebrow">現在の研究</p><h2>次の判断段階は2022年独立検証</h2></div></div>
+  <div class="section-heading"><div><p class="eyebrow">現在の研究</p><h2>次の判断段階は2018年のexecution-aware再現</h2></div></div>
   <div class="feature-grid feature-grid-wide">
     <article class="feature-card">
-      <p class="feature-meta">GOLD水平線 · 2022年独立検証を事前登録済み</p>
-      <h3>変数を増やす前に、同じメカニズムが再現するかを確かめる</h3>
-      <p>2022-01-03以降から最初の60適格UTCセッションを使い、rolling extrema、直近価格の対照群、15分方向反応、セッション単位の推定方法、設計基準、判定ルールを変更せずに検証する計画を固定しました。</p>
-      <p class="card-links">事前登録時点では、2022年の水平線・対照群の反応結果は確認も計算もしていません。</p>
+      <p class="feature-meta">GOLD水平線 · 2018年再現を進行中</p>
+      <h3>2019年と同じquote-crossing条件を、別の未使用期間で再検証する</h3>
+      <p>必要な最初の60適格セッションのうち50セッションまで構造確認済みで、7つの候補日を固定ルールで除外しています。公式データ取得画面が2018-03-21候補で一時的に応答しなくなったため、そこから再開する後継handoffを用意しています。</p>
+      <p class="card-links">2018年のsignal event、return、主要推定値、bootstrap区間、研究判定はまだ計算・確認していません。</p>
     </article>
     <article class="feature-card">
-      <p class="feature-meta">Range persistence · 優先度低下</p>
-      <h3>弱い独立検証結果を、結果を見た後から救済しない</h3>
-      <p>2021年は前セッションrangeのメカニズムについて使用済みの検証期間です。現在は2021年で同じ仮説を再調整せず、救済目的で自動的に別のholdoutを追加することも優先していません。</p>
+      <p class="feature-meta">2019年execution-aware検証 · 重要な限界</p>
+      <h3>履歴上のquote crossingが正でも、live edgeとは限らない</h3>
+      <p>2019年は実測BID/ASKを使いましたが、commission、追加slippage、latency、order rejection、market impact、position sizing、drawdown、broker固有の約定は検証していません。これらは別の課題です。</p>
     </article>
   </div>
 </section>
@@ -55,12 +66,12 @@ description: Studio Labのレビュー済みトレード研究。開発テスト
   <div class="feature-grid">
     <article class="feature-card"><p class="feature-meta">01</p><h3>ホールドアウトはホールドアウトのまま使う</h3><p>未使用期間を見る前にルールや閾値を固定し、一度開いた期間を同じ主張の再調整に使いません。</p></article>
     <article class="feature-card"><p class="feature-meta">02</p><h3>反応率と収益性を分ける</h3><p>方向反応率が高いことは追加検証の理由になりますが、それだけで期待値、drawdown、実行可能な利益が確認されたとは判断しません。</p></article>
-    <article class="feature-card"><p class="feature-meta">03</p><h3>単純なベースラインを重視する</h3><p>複雑なfilterや予測モデルは、高度に見えること自体を理由に採用せず、より単純な比較対象に対する増分価値を確認します。</p></article>
+    <article class="feature-card"><p class="feature-meta">03</p><h3>execution evidenceにも限界がある</h3><p>履歴上の実測BID/ASKを使う検証はbarだけの反応率より強い根拠ですが、実際のbroker約定と同じものとして扱いません。</p></article>
   </div>
 </section>
 
 <section class="section public-boundary">
   <p class="eyebrow">範囲</p>
   <h2>研究記録であり、投資助言ではありません。</h2>
-  <p>ここに示す結果には、過去データやシミュレーションに基づくものが含まれます。将来の収益性を保証するものではなく、特定の売買、数量増加、戦略採用を勧めるものでもありません。</p>
+  <p>ここに示す結果は過去データを使った実験です。将来の収益性を保証するものではなく、特定の売買、数量増加、戦略採用を勧めるものでもありません。</p>
 </section>

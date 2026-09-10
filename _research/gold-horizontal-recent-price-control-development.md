@@ -2,23 +2,23 @@
 layout: research
 title: "GOLD horizontal levels: development reaction rate exceeded a recent-price control"
 research_id: "PILOT-TRADING-001 / GOLD horizontal recent-price control"
-status: "Development — promising for further test"
+status: "Development — later replicated"
 updated: "2026-09-08"
 topic: "Trading / GOLD horizontal levels"
-summary: "In a sealed 60-session 2024 development sample, 60-minute rolling-extrema zones had a higher pre-specified 15-minute directional-reaction rate than a recent observed non-extreme price control. The result is development evidence only and does not establish profitability or out-of-sample replication."
+summary: "In a sealed 60-session 2024 development sample, 60-minute rolling-extrema zones had a higher pre-specified 15-minute directional-reaction rate than a recent observed non-extreme price control. This was development evidence; later independent and robustness replications are documented separately."
 ---
 
 ## Research question
 
 Do pre-specified GOLD support and resistance zones derived from recent price extrema contain more short-horizon directional-reaction information than a comparison price drawn mechanically from the same recent observed price distribution?
 
-The comparison was designed to test the **standalone horizontal-level mechanism** before adding trend, regime, moving averages, volume profile, positioning, or other explanatory variables.
+This page records the **2024 development-stage test**. Later replication evidence is summarized on the [current GOLD horizontal evidence page]({{ '/research/gold-horizontal-replication-execution-evidence/' | relative_url }}).
 
 ## Why this comparison was run
 
 An earlier development test used a continuous-uniform pseudo-level control. That control was not sufficiently comparable: only 1 of 60 sessions contributed to both real and pseudo sides. The failure was treated as a control-design problem rather than evidence that horizontal levels had no effect.
 
-A new recent-price control was therefore specified. Because that new control was designed after the earlier failure and after the 2024 real-side outcomes had already been inspected, the new experiment was explicitly treated as **development-stage evidence**, not independent validation.
+A new recent-price control was therefore specified. Because that control was designed after the earlier failure and after the 2024 real-side outcomes had already been inspected, this experiment was explicitly treated as **development-stage evidence**, not independent validation.
 
 ## Method
 
@@ -72,41 +72,26 @@ The design-validity gate passed: **all 60 sessions contributed to both sides**.
 
 Across all sessions, the real side had 512 evaluable events and 403 successes; the control had 796 evaluable events and 425 successes. The equal-weight session rates were **0.797817** for real zones and **0.532273** for the recent-price control. The primary effect estimate was **+0.265544**, or **+26.55 percentage points**, with a 95% bootstrap interval of **[+21.23, +31.82] percentage points**.
 
-Under the frozen classification rule, the result is **PROMISING_FOR_FURTHER_TEST**.
+Under the frozen classification rule, the development result was **PROMISING_FOR_FURTHER_TEST**.
 
-## Interpretation
+## Interpretation at the development stage
 
-This result moves the standalone horizontal-level mechanism from development-stage inconclusive to a credible candidate for independent replication. In this development sample, rolling-extrema zones produced a materially higher 15-minute directional-reaction rate than a fully evaluable control drawn from recent observed non-extreme prices.
+This result was sufficient to move the standalone horizontal-level mechanism from development-stage inconclusive to a credible candidate for independent replication. It was not sufficient to establish that “horizontal lines work” generally, nor did it establish profitability.
 
-That is a narrower claim than “horizontal lines work.” The result shows a development-sample difference under one pre-specified event definition and one comparison design.
+At this stage the control had been created after an earlier control failure and after the 2024 real-side outcomes were known, so the result remained vulnerable to development-sample overfitting and structural differences between real extrema events and the control.
 
-## Why this is not yet an edge
+## Later evidence — status updated 2026-09-10
 
-This is **not independent evidence**. The recent-price control was designed after an earlier control failed and after the 2024 real-side outcomes had been inspected. The control may also differ from real extrema events in pre-event path characteristics that the current design does not fully match.
+This page is no longer the latest evidence boundary.
 
-The result therefore does not establish:
+The same frozen reaction mechanism subsequently produced a positive result in an **unused 2022 independent validation** and again in a **2020 robustness replication**. The real-minus-control effects were +23.79 and +25.44 percentage points respectively, with both 95% bootstrap intervals wholly above zero.
 
-- profitability or positive expectancy after transaction costs;
-- spread or slippage tolerance;
-- execution feasibility;
-- drawdown characteristics;
-- robustness across periods, regimes, or instruments;
-- superiority to every credible control;
-- incremental value from trend/regime or other indicators;
-- a durable live-trading edge.
+A later **2019 execution-aware historical validation** used observed BID/ASK quote crossing after the M1 signal became observable. Its real mean return was +1.189 bps with a 95% interval of +0.528 to +1.889 bps; the real-minus-control difference was +3.498 bps with a 95% interval of +2.531 to +4.500 bps.
 
-## Current status: independent validation preregistered
-
-The next decision gate has now been frozen as a **2022 independent protocol validation**.
-
-The preregistered plan uses the same rolling-extrema definition, recent-price control, 15-minute outcome, session estimator, design-validity gate, and classification rule. Starting from 2022-01-03 UTC, it will select the first 60 structurally eligible sessions using data-structure rules that do not depend on horizontal-line outcomes.
-
-At the time of preregistration, **no 2022 horizontal-line or control reaction outcome had been inspected or computed**.
-
-Continuation is supported only if the design gate passes, the primary effect remains positive, and the 95% bootstrap lower bound remains above zero. If the 2022 result fails to replicate, the 2024 result remains development evidence and the mechanism should be downgraded rather than retuned on the same holdout.
+These later results materially strengthen the research case, but they still do not establish a durable live trading edge. See the [current replication and execution evidence summary]({{ '/research/gold-horizontal-replication-execution-evidence/' | relative_url }}) for the current interpretation and the ongoing 2018 replication.
 
 ## Evidence boundary
 
-This page reports reviewed public summary statistics and the current research decision. Detailed raw files, execution artifacts, control streams, manifests, and internal operational records remain outside the public site.
+This page reports reviewed public summary statistics. Raw files, detailed execution artifacts, control streams, manifests, internal operational records, positions, and current trading decisions remain outside the public site.
 
-*This is a research record, not investment advice. Historical development results do not establish future trading performance.*
+*This is a research record, not investment advice. Historical results do not establish future trading performance.*
