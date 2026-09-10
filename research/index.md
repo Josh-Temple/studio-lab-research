@@ -19,7 +19,7 @@ description: Public Studio Lab research, with methods, findings, limits, and evi
     <article class="feature-card">
       <p class="feature-meta">Trading</p>
       <h3><a href="{{ '/trading/' | relative_url }}">Systematic trading research</a></h3>
-      <p>Holdout tests, tail-risk controls, simple baselines, and the difference between reducing risk and improving profit.</p>
+      <p>Development tests, untouched validations, replication across periods, execution-aware checks, negative results, and the difference between a repeatable market reaction and a tradable edge.</p>
     </article>
     <article class="feature-card">
       <p class="feature-meta">Research methodology</p>
