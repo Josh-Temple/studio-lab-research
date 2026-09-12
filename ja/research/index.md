@@ -14,7 +14,7 @@ description: Studio Labの公開研究。方法、結果、限界、根拠を分
     <article class="research-item">
       <div>
         <h2><a href="{{ '/ja/research/gold-horizontal-replication-execution-evidence/' | relative_url }}">GOLD水平線：方向反応は3期間で再現し、2019年の実測BID/ASK検証でも正の結果</a></h2>
-        <p>同じ水平線定義で2024年・2022年・2020年に方向反応差が再現しました。2019年のexecution-aware検証でもreal平均リターンは正でしたが、live trading edgeが確認されたわけではありません。</p>
+        <p>同じ水平線定義で2024年・2022年・2020年に方向反応差が再現しました。2019年のexecution-aware検証でもreal平均リターンは正でした。現在は2018年の60セッションを凍結済みで、Tick取得完了前のため結果は未観測です。</p>
       </div>
       <span class="status">再現確認 / execution-aware · 追加検証候補</span>
     </article>
@@ -50,8 +50,8 @@ description: Studio Labの公開研究。方法、結果、限界、根拠を分
 </section>
 
 <section class="section public-boundary">
-  <p class="eyebrow">研究分野</p>
-  <h2>トレード研究</h2>
-  <p>系統的な売買研究では、開発段階、独立再現、execution-aware検証を分け、ホールドアウト、単純なベースライン、negative result、未確定結果の扱いを重視します。</p>
-  <a href="{{ '/ja/trading/' | relative_url }}">トレード研究を見る</a>
+  <p class="eyebrow">現在の研究</p>
+  <h2>過去データの再現検証とprospective screenを分けて進める</h2>
+  <p>GOLD水平線では2018年のexecution-aware再現を継続し、別系統では2026年9月14日から8週間・32イベントのVIX prospective screenを開始します。後者は現在値や将来結果を見ずにカレンダーと評価方法を固定しています。</p>
+  <a href="{{ '/ja/trading/' | relative_url }}">トレード研究の現在地を見る</a>
 </section>
