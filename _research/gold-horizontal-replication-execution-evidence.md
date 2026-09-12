@@ -3,9 +3,9 @@ layout: research
 title: "GOLD horizontal levels: the reaction effect replicated and survived one execution-aware validation"
 research_id: "PILOT-TRADING-001 / GOLD horizontal replication and execution"
 status: "Replicated / execution-aware — promising for further test"
-updated: "2026-09-10"
+updated: "2026-09-13"
 topic: "Trading / GOLD horizontal levels"
-summary: "The same 60-minute rolling-extrema reaction effect was positive in 2024, 2022, and 2020, and a separate 2019 validation remained positive after crossing observed historical BID/ASK quotes. The evidence is stronger, but it still does not establish a durable live trading edge."
+summary: "The same 60-minute rolling-extrema reaction effect was positive in 2024, 2022, and 2020, and a separate 2019 validation remained positive after crossing observed historical BID/ASK quotes. The 2018 execution-aware replication sample is now fully frozen, but its market outcome remains untouched while quote acquisition is incomplete."
 ---
 
 ## Current conclusion
@@ -100,13 +100,23 @@ All 57 sessions contributed. Both preregistered primary point estimates were pos
 
 The positive **real mean** matters more than the larger real-minus-control difference because it shows that the result is not solely a consequence of a weak control series. Even so, this remains one execution-aware historical period and a quote-crossing proxy rather than actual broker fills.
 
-## Current frontier: independent execution-aware replication on 2018
+## Current frontier: the 2018 sample is frozen, outcome still untouched
 
-The next decision gate is a preregistered **2018 execution-aware replication** using the same mechanism, quote-side mapping, 15-minute horizon, control construction, bootstrap, and classification rules.
+The next decision gate remains an independent **2018 execution-aware replication** using the same mechanism, quote-side mapping, 15-minute horizon, control construction, bootstrap, and classification rules.
 
-The latest durable progress has structurally verified **50 of the required first 60 eligible 2018 sessions**, with 7 candidate dates excluded under the frozen structural rules. The official Dukascopy Historical Data Export interface then became unresponsive at the 2018-03-21 candidate. No 2018 signal event, quote-crossing return, primary estimate, bootstrap interval, or research classification has been computed or inspected.
+The structural phase is now complete. The first **60 eligible 2018 sessions have been frozen** before any execution return was computed or inspected. Ten candidate dates were excluded under the frozen structural rules. The selected sample runs from 2018-01-02 through 2018-04-06.
 
-A versioned successor is ready to resume from that exact boundary rather than restart or change the data source. The 2018 line therefore remains **in progress, outcome untouched**.
+The remaining bottleneck is historical BID/ASK Tick acquisition from the official Dukascopy interface. The frozen event manifest requires **2,066 event-hour-side units** (1,033 date-hours × BID/ASK). The latest durable checkpoint contains **23/2,066 exact units**, leaving 2,043 unresolved. The run stopped because browser-driven downloads were not being persisted reliably enough for safe broad acquisition.
+
+No 2018 execution return, session mean, primary estimate, bootstrap interval, or classification has been calculated or inspected. Partial Tick coverage is explicitly prohibited from being used for an interim performance estimate. The 2018 line therefore remains **in progress, outcome untouched**.
+
+## A separate prospective screen starts next
+
+A second research line is also moving from retrospective exploration toward prospective testing. An eight-week VIX-conditioned GOLD screen has been frozen to start on **2026-09-14 at 09:00 JST**.
+
+The calendar contains **32 non-overlapping Monday–Thursday 24-hour windows**. VIX is treated as a stress-regime conditioner using the fixed bands `<12`, `12–20`, and `>20`; GOLD outcomes are scored as `UP / DOWN / FLAT` with Brier score. The predictive-quality screen and later economic-effect evaluation are deliberately separated.
+
+At the time the calendar was frozen, no current VIX value, current GOLD value, or future market outcome had been used. This is a prospective research protocol, not a published result or directional trading signal.
 
 ## What is not established
 
@@ -120,7 +130,7 @@ The current evidence does not establish:
 - transfer to another instrument;
 - a durable profitable trading rule.
 
-The correct public claim is therefore about a **replicated short-horizon reaction phenomenon under a frozen GOLD protocol**, plus one positive execution-aware historical validation. It is not a buy/sell instruction.
+The correct public claim is therefore about a **replicated short-horizon reaction phenomenon under a frozen GOLD protocol**, plus one positive execution-aware historical validation. The ongoing 2018 replication and prospective VIX screen have not produced public performance conclusions.
 
 ## Evidence boundary
 
