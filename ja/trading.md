@@ -2,12 +2,12 @@
 title: トレード
 lang: ja
 permalink: /ja/trading/
-description: Studio Labのレビュー済みトレード研究。開発テスト、ホールドアウト、独立検証、execution-aware検証、リスク管理、negative resultを含みます。
+description: Studio Labのレビュー済みトレード研究。開発テスト、ホールドアウト、独立検証、execution-aware検証、prospective screen、リスク管理、negative resultを含みます。
 ---
 
 <p class="eyebrow">トレード研究</p>
 <h1>ストーリーを信じる前に、優位性を検証する。</h1>
-<p class="lede">Studio Labの系統的トレード研究から、レビュー済みの開発結果、ホールドアウト、独立検証、execution-aware検証、negative resultや混合結果を公開します。未確定の仮説は結果と明確に分けます。ライブの売買ダッシュボード、シグナル配信、現在ポジションの記録ではありません。</p>
+<p class="lede">Studio Labの系統的トレード研究から、レビュー済みの開発結果、ホールドアウト、独立検証、execution-aware検証、prospective protocol、negative resultや混合結果を公開します。未確定の仮説は結果と明確に分けます。ライブの売買ダッシュボード、シグナル配信、現在ポジションの記録ではありません。</p>
 
 <section class="section">
   <div class="section-heading"><div><p class="eyebrow">現在の根拠</p><h2>GOLD水平線は単一の開発結果から先へ進んだ</h2></div></div>
@@ -45,18 +45,19 @@ description: Studio Labのレビュー済みトレード研究。開発テスト
 </section>
 
 <section class="section">
-  <div class="section-heading"><div><p class="eyebrow">現在の研究</p><h2>次の判断段階は2018年のexecution-aware再現</h2></div></div>
+  <div class="section-heading"><div><p class="eyebrow">現在の研究</p><h2>execution-aware再現とprospective screenを並行して進める</h2></div></div>
   <div class="feature-grid feature-grid-wide">
     <article class="feature-card">
-      <p class="feature-meta">GOLD水平線 · 2018年再現を進行中</p>
+      <p class="feature-meta">GOLD水平線 · 2018年サンプル凍結済み</p>
       <h3>2019年と同じquote-crossing条件を、別の未使用期間で再検証する</h3>
-      <p>必要な最初の60適格セッションのうち50セッションまで構造確認済みで、7つの候補日を固定ルールで除外しています。公式データ取得画面が2018-03-21候補で一時的に応答しなくなったため、そこから再開する後継handoffを用意しています。</p>
-      <p class="card-links">2018年のsignal event、return、主要推定値、bootstrap区間、研究判定はまだ計算・確認していません。</p>
+      <p>最初の60適格セッションは、returnを見る前にすべて凍結しました。残るボトルネックは公式BID/ASK Tickの取得で、必要な2,066 event-hour-side単位のうち23単位を確認済み、2,043単位が未取得です。</p>
+      <p class="card-links">2018年のreturn、主要推定値、bootstrap区間、研究判定はまだ計算していません。部分データから途中結論も出しません。</p>
     </article>
     <article class="feature-card">
-      <p class="feature-meta">2019年execution-aware検証 · 重要な限界</p>
-      <h3>履歴上のquote crossingが正でも、live edgeとは限らない</h3>
-      <p>2019年は実測BID/ASKを使いましたが、commission、追加slippage、latency、order rejection、market impact、position sizing、drawdown、broker固有の約定は検証していません。これらは別の課題です。</p>
+      <p class="feature-meta">VIX prospective screen · 2026年9月14日開始</p>
+      <h3>次の8週間を観測する前に、カレンダーと評価方法を固定する</h3>
+      <p>月曜〜木曜の重複しない24時間windowを8週間、合計32イベントで評価します。VIXは&lt;12、12〜20、&gt;20の3区分、GOLDの結果はUP / DOWN / FLATとし、Brier scoreで予測品質を評価します。</p>
+      <p class="card-links">カレンダー凍結時点では、現在のVIX値、現在のGOLD値、将来結果は使用していません。economic effectは予測品質とは別に後段で評価します。</p>
     </article>
   </div>
 </section>
