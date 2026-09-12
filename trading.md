@@ -1,12 +1,12 @@
 ---
 title: Trading
 permalink: /trading/
-description: Reviewed Studio Lab trading research, including development tests, holdouts, independent validations, execution-aware checks, risk controls, and negative results.
+description: Reviewed Studio Lab trading research, including development tests, holdouts, independent validations, execution-aware checks, prospective screens, risk controls, and negative results.
 ---
 
 <p class="eyebrow">Trading research</p>
 <h1>Test the edge before trusting the story.</h1>
-<p class="lede">Selected systematic-trading research from Studio Lab. This section publishes reviewed development results, holdouts, independent validations, execution-aware checks, and negative or mixed findings while keeping unresolved hypotheses separate. It is not a live trading dashboard, signal service, or record of current positions.</p>
+<p class="lede">Selected systematic-trading research from Studio Lab. This section publishes reviewed development results, holdouts, independent validations, execution-aware checks, prospective protocols, and negative or mixed findings while keeping unresolved hypotheses separate. It is not a live trading dashboard, signal service, or record of current positions.</p>
 
 <section class="section">
   <div class="section-heading">
@@ -57,20 +57,21 @@ description: Reviewed Studio Lab trading research, including development tests, 
   <div class="section-heading">
     <div>
       <p class="eyebrow">Current research</p>
-      <h2>2018 execution-aware replication is the next decision gate</h2>
+      <h2>Execution replication and prospective screening are now running in parallel</h2>
     </div>
   </div>
   <div class="feature-grid feature-grid-wide">
     <article class="feature-card">
-      <p class="feature-meta">GOLD horizontal levels · 2018 replication in progress</p>
+      <p class="feature-meta">GOLD horizontal levels · 2018 sample frozen</p>
       <h3>Repeat the 2019 quote-crossing specification on another unused period</h3>
-      <p>The first 50 of the required 60 structurally eligible 2018 sessions have been verified, with 7 candidate dates excluded under the frozen rules. The official data interface then became temporarily unresponsive at the 2018-03-21 candidate.</p>
-      <p class="card-links">No 2018 signal event, return, primary estimate, bootstrap interval, or classification has been computed or inspected. A versioned successor is ready to resume from the same boundary.</p>
+      <p>The first 60 eligible 2018 sessions are now frozen before any return was inspected. The remaining bottleneck is official BID/ASK Tick acquisition: 23 of 2,066 required event-hour-side units are durably verified, with 2,043 still unresolved.</p>
+      <p class="card-links">No 2018 return, primary estimate, bootstrap interval, or classification has been computed. Partial quote coverage is not used for interim conclusions.</p>
     </article>
     <article class="feature-card">
-      <p class="feature-meta">2019 execution-aware validation · important limit</p>
-      <h3>Positive historical quote crossing is not the same as a live edge</h3>
-      <p>The 2019 test used observed historical BID/ASK quotes, but it did not model commissions, extra slippage, latency, rejection, market impact, position sizing, drawdown, or broker-specific fills. Those remain separate questions.</p>
+      <p class="feature-meta">Prospective VIX screen · starts 2026-09-14</p>
+      <h3>Freeze the calendar before watching the next eight weeks</h3>
+      <p>A separate 32-event, eight-week screen uses non-overlapping Monday–Thursday 24-hour windows. VIX regimes are fixed at &lt;12, 12–20, and &gt;20; GOLD outcomes are scored UP / DOWN / FLAT with Brier score.</p>
+      <p class="card-links">The calendar was frozen without using current VIX, current GOLD, or future outcomes. Predictive quality and later economic-effect evaluation are kept separate.</p>
     </article>
   </div>
 </section>

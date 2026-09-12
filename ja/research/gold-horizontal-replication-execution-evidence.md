@@ -5,9 +5,9 @@ lang: ja
 permalink: /ja/research/gold-horizontal-replication-execution-evidence/
 research_id: "PILOT-TRADING-001 / GOLD horizontal replication and execution"
 status: "再現確認 / execution-aware検証 — 追加検証候補"
-updated: "2026-09-10"
+updated: "2026-09-13"
 topic: "トレード / GOLD水平線"
-summary: "60分rolling extremaを使う水平線の方向反応は2024年、2022年、2020年の3期間で正の差を示し、2019年の実測BID/ASKを使った履歴検証でもreal側の平均リターンが正でした。ただし、継続的なlive trading edgeが確認されたわけではありません。"
+summary: "60分rolling extremaを使う水平線の方向反応は2024年、2022年、2020年の3期間で正の差を示し、2019年の実測BID/ASKを使った履歴検証でもreal側の平均リターンが正でした。2018年のexecution-aware再現は60セッションを凍結済みですが、Tick取得が未完了のため結果はまだ未観測です。"
 ---
 
 ## 現在の結論
@@ -102,15 +102,23 @@ GOLD水平線の研究は、単一の開発結果を確認する段階から先�
 
 特に重要なのは、対照群との差だけでなく**real側の平均リターン自体が正だったこと**です。ただし、これは1つの履歴期間でのquote-crossing proxyです。実際のbroker約定を再現したものではありません。
 
-## 現在の最前線：2018年でexecution-aware再現を確認中
+## 現在の最前線：2018年は60セッションを凍結済み、結果は未観測
 
 次の判断段階は、同じメカニズム、quote side、15分horizon、control、bootstrap、判定ルールを固定したまま行う**2018年の独立execution-aware再現**です。
 
-最新の保存済み進捗では、必要な最初の60適格セッションのうち**50セッションまで構造確認済み**で、7つの候補日が固定ルールにより除外されています。その後、公式Dukascopy Historical Data Exportの応答が2018-03-21候補で止まりました。
+構造確認は完了し、**最初の60適格セッションを、returnを一切確認する前に凍結済み**です。固定ルールにより10候補日を除外し、対象期間は2018-01-02から2018-04-06までとなりました。
 
-この時点では、2018年のsignal event、quote-crossing return、主要推定値、bootstrap区間、研究判定は**一切計算・確認していません**。後継handoffは同じ境界から再開する設計になっており、データ元や研究条件を変更していません。
+現在のボトルネックは、公式Dukascopy画面からのBID/ASK Tick取得です。凍結済みevent manifestでは **2,066個のevent-hour-side単位**（1,033 date-hour × BID/ASK）が必要です。最新の保存済みcheckpointでは **23/2,066単位**まで正確なファイルを確認できており、2,043単位が未取得です。ブラウザ経由の連続downloadで、次の操作に進む前にファイルが確実に保存されないケースが出たため、安全のため停止しています。
 
-したがって、2018年の研究は現時点で**進行中・結果未観測**です。
+2018年のexecution return、セッション平均、主要推定値、bootstrap区間、研究判定は**まだ一切計算・確認していません**。部分的なTickだけから途中結果を出すことも禁止しています。したがって、2018年の研究は現時点で**進行中・結果未観測**です。
+
+## 別系統ではVIXのprospective screenを開始予定
+
+もう一つの研究線では、retrospectiveな探索からprospectiveな検証へ移ります。VIXをGOLDのstress-regime conditionerとして扱う8週間の初期screenを固定し、**2026年9月14日 09:00 JST**から開始する予定です。
+
+対象は月曜〜木曜の重複しない24時間windowを8週間、合計**32イベント**です。VIXは `<12`、`12〜20`、`>20` の3区分に固定し、GOLDの結果を `UP / DOWN / FLAT` としてBrier scoreで予測品質を評価します。予測品質とeconomic effectは同じものとして扱わず、経済的価値は後段で別に評価します。
+
+カレンダー凍結時点では、現在のVIX値、現在のGOLD値、将来のmarket outcomeは使用していません。これはprospectiveな研究protocolであり、現時点で結果や売買方向を示すものではありません。
 
 ## まだ確認できていないこと
 
@@ -125,7 +133,7 @@ GOLD水平線の研究は、単一の開発結果を確認する段階から先�
 - 他銘柄への転用
 - 継続的に利益が出る売買ルール
 
-現在公開できる主張は、**固定したGOLDのprotocolで短期方向反応の差が複数期間に再現し、2019年のexecution-aware履歴検証でも正の結果が出た**というところまでです。売買指示ではありません。
+現在公開できる主張は、**固定したGOLDのprotocolで短期方向反応の差が複数期間に再現し、2019年のexecution-aware履歴検証でも正の結果が出た**というところまでです。2018年の再現とVIX screenには、まだ公開できるperformance resultはありません。
 
 ## 公開範囲
 
