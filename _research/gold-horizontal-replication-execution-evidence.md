@@ -1,24 +1,24 @@
 ---
 layout: research
-title: "GOLD horizontal levels: the reaction effect replicated and survived one execution-aware validation"
+title: "GOLD horizontal levels: the reaction effect replicated across four periods and survived one execution-aware validation"
 research_id: "PILOT-TRADING-001 / GOLD horizontal replication and execution"
 status: "Replicated / execution-aware — promising for further test"
-updated: "2026-09-13"
+updated: "2026-09-14"
 topic: "Trading / GOLD horizontal levels"
-summary: "The same 60-minute rolling-extrema reaction effect was positive in 2024, 2022, and 2020, and a separate 2019 validation remained positive after crossing observed historical BID/ASK quotes. The 2018 execution-aware replication sample is now fully frozen, but its market outcome remains untouched while quote acquisition is incomplete."
+summary: "The same 60-minute rolling-extrema reaction effect was positive in 2024, 2022, 2020, and early 2025. A separate 2019 validation also remained positive after crossing observed historical BID/ASK quotes. The evidence is stronger, but it still does not establish a durable live trading edge."
 ---
 
 ## Current conclusion
 
 The GOLD horizontal-level line has moved beyond a single development result.
 
-Under the frozen XAU/USD BID M1 protocol, contacts with prior-60-minute rolling extrema were followed by the defined 15-minute directional reaction more often than a recent observed non-extreme price control in **three separated historical samples**. A later execution-aware validation using observed historical BID/ASK quotes also produced a positive real-side mean return under the frozen quote-crossing proxy.
+Under the frozen XAU/USD BID M1 protocol, contacts with prior-60-minute rolling extrema were followed by the defined 15-minute directional reaction more often than a recent observed non-extreme price control in **four separated historical samples**: 2024 development, independent 2022 validation, 2020 robustness replication, and a preregistered early-2025 robustness sample. A separate execution-aware 2019 validation using observed historical BID/ASK quotes also produced a positive real-side mean return under the frozen quote-crossing proxy.
 
 The research classification remains **PROMISING_FOR_FURTHER_TEST**. This is deliberately narrower than saying that the strategy is profitable or ready for live use.
 
-## Reaction evidence across three periods
+## Reaction evidence across four periods
 
-The mechanism and comparison were kept materially unchanged across the three reaction-rate studies.
+The mechanism and comparison were kept materially unchanged across the four reaction-rate studies.
 
 <div class="result-summary-grid" aria-label="GOLD horizontal-level replication summary">
   <div class="result-stat">
@@ -36,9 +36,14 @@ The mechanism and comparison were kept materially unchanged across the three rea
     <strong>+25.44 pp</strong>
     <span>95% CI +20.74 to +30.23</span>
   </div>
+  <div class="result-stat">
+    <span class="result-stat-label">Early-2025 robustness</span>
+    <strong>+23.66 pp</strong>
+    <span>95% CI +19.43 to +28.02</span>
+  </div>
 </div>
 
-<div class="metric-chart" role="img" aria-label="Real-minus-control 15-minute directional-reaction effect: 2024 development 26.55 percentage points, 2022 independent validation 23.79 points, 2020 robustness replication 25.44 points.">
+<div class="metric-chart" role="img" aria-label="Real-minus-control 15-minute directional-reaction effect: 2024 development 26.55 percentage points, 2022 independent validation 23.79 points, 2020 robustness replication 25.44 points, early-2025 robustness replication 23.66 points.">
   <div class="metric-row">
     <div class="metric-label">2024 development</div>
     <div class="bar-track"><span class="bar-fill bar-positive" style="width:100%"></span></div>
@@ -54,6 +59,11 @@ The mechanism and comparison were kept materially unchanged across the three rea
     <div class="bar-track"><span class="bar-fill bar-positive" style="width:95.8%"></span></div>
     <div class="metric-value">+25.44 pp</div>
   </div>
+  <div class="metric-row">
+    <div class="metric-label">Early-2025 robustness</div>
+    <div class="bar-track"><span class="bar-fill bar-positive" style="width:89.1%"></span></div>
+    <div class="metric-value">+23.66 pp</div>
+  </div>
 </div>
 
 <p class="chart-note">The bars compare the same session-level real-minus-control reaction-rate metric. Exact estimates and 95% bootstrap intervals are printed above. Reaction rate is not trade return.</p>
@@ -62,7 +72,9 @@ The 2022 validation passed its design-validity gate with 60/60 contributing sess
 
 The 2020 robustness replication also passed with 60/60 contributing sessions. Its primary effect was **+25.439 percentage points**, with a 95% bootstrap interval of **[+20.741, +30.230] points**.
 
-The closeness of the three point estimates does not prove invariance across regimes, but it materially reduces the chance that the original 2024 reaction-rate difference was unique to one sampled period under this exact protocol.
+The early-2025 robustness study froze the first 60 structurally eligible sessions before outcome computation. All 60 contributed. The primary effect was **+23.663 percentage points**, with a 95% bootstrap interval of **[+19.435, +28.017] points**. The selected sample runs from 2025-01-02 through 2025-04-11, so this is evidence about early 2025 rather than the full calendar year. It also uses the same implementation and first-party data source as the earlier studies, making it a temporal replication rather than an independent implementation replication.
+
+The similarity of the four point estimates does not prove invariance across regimes. It does, however, make a one-period explanation for the signal-level reaction difference less plausible under this exact protocol. Further repetitions of the same reaction-rate test now have lower expected information gain than execution-aware validation.
 
 ## Added filters did not improve the baseline
 
@@ -100,23 +112,15 @@ All 57 sessions contributed. Both preregistered primary point estimates were pos
 
 The positive **real mean** matters more than the larger real-minus-control difference because it shows that the result is not solely a consequence of a weak control series. Even so, this remains one execution-aware historical period and a quote-crossing proxy rather than actual broker fills.
 
-## Current frontier: the 2018 sample is frozen, outcome still untouched
+## 2018 execution-aware replication: hypothesis preserved, manual route deprioritized
 
-The next decision gate remains an independent **2018 execution-aware replication** using the same mechanism, quote-side mapping, 15-minute horizon, control construction, bootstrap, and classification rules.
+A separate 2018 execution-aware replication was frozen to test the same mechanism, quote-side mapping, 15-minute horizon, control construction, bootstrap, and classification rules on another unused period.
 
-The structural phase is now complete. The first **60 eligible 2018 sessions have been frozen** before any execution return was computed or inspected. Ten candidate dates were excluded under the frozen structural rules. The selected sample runs from 2018-01-02 through 2018-04-06.
+The structural phase completed successfully: the first **60 eligible 2018 sessions were frozen before any execution return was computed or inspected**, with ten candidate dates excluded under the fixed structural rules. The quote-acquisition manifest requires **2,066 event-hour-side units**. The latest durable checkpoint contains **23/2,066 exact units** and no outcome has been opened.
 
-The remaining bottleneck is historical BID/ASK Tick acquisition from the official Dukascopy interface. The frozen event manifest requires **2,066 event-hour-side units** (1,033 date-hours × BID/ASK). The latest durable checkpoint contains **23/2,066 exact units**, leaving 2,043 unresolved. The run stopped because browser-driven downloads were not being persisted reliably enough for safe broad acquisition.
+After repeated attempts, the manual one-hour/one-side browser acquisition route was **deprioritized on cost/value grounds**. The problem is operational, not evidential: roughly two thousand further manual acquisitions and identity checks would be required before a single new method result could be observed. The frozen sample, preregistration, manifest, existing 23 units, and untouched outcome are preserved.
 
-No 2018 execution return, session mean, primary estimate, bootstrap interval, or classification has been calculated or inspected. Partial Tick coverage is explicitly prohibited from being used for an interim performance estimate. The 2018 line therefore remains **in progress, outcome untouched**.
-
-## A separate prospective screen starts next
-
-A second research line is also moving from retrospective exploration toward prospective testing. An eight-week VIX-conditioned GOLD screen has been frozen to start on **2026-09-14 at 09:00 JST**.
-
-The calendar contains **32 non-overlapping Monday–Thursday 24-hour windows**. VIX is treated as a stress-regime conditioner using the fixed bands `<12`, `12–20`, and `>20`; GOLD outcomes are scored as `UP / DOWN / FLAT` with Brier score. The predictive-quality screen and later economic-effect evaluation are deliberately separated.
-
-At the time the calendar was frozen, no current VIX value, current GOLD value, or future market outcome had been used. This is a prospective research protocol, not a published result or directional trading signal.
+This is **not negative evidence about the horizontal-line hypothesis**. The 2018 hypothesis remains untested and therefore inconclusive. It can be resumed if a compliant first-party acquisition method materially reduces the mechanical burden without changing the frozen research conditions.
 
 ## What is not established
 
@@ -130,10 +134,10 @@ The current evidence does not establish:
 - transfer to another instrument;
 - a durable profitable trading rule.
 
-The correct public claim is therefore about a **replicated short-horizon reaction phenomenon under a frozen GOLD protocol**, plus one positive execution-aware historical validation. The ongoing 2018 replication and prospective VIX screen have not produced public performance conclusions.
+The correct public claim is therefore about a **replicated short-horizon reaction phenomenon across four separated samples under a frozen GOLD protocol**, plus one positive execution-aware historical validation. It is not a buy/sell instruction.
 
 ## Evidence boundary
 
-This page publishes reviewed summary statistics and the current research decision only. Raw files, manifests, internal work-order state, detailed acquisition logs, credentials, positions, and current trading decisions remain outside the public site.
+This page publishes reviewed summary statistics and research decisions only. Raw files, manifests, internal work-order state, detailed acquisition logs, credentials, positions, and current trading decisions remain outside the public site.
 
 *This is a research record, not investment advice. Historical validation does not establish future profitability.*

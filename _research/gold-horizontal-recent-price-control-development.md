@@ -3,7 +3,7 @@ layout: research
 title: "GOLD horizontal levels: development reaction rate exceeded a recent-price control"
 research_id: "PILOT-TRADING-001 / GOLD horizontal recent-price control"
 status: "Development — later replicated"
-updated: "2026-09-08"
+updated: "2026-09-14"
 topic: "Trading / GOLD horizontal levels"
 summary: "In a sealed 60-session 2024 development sample, 60-minute rolling-extrema zones had a higher pre-specified 15-minute directional-reaction rate than a recent observed non-extreme price control. This was development evidence; later independent and robustness replications are documented separately."
 ---
@@ -80,15 +80,17 @@ This result was sufficient to move the standalone horizontal-level mechanism fro
 
 At this stage the control had been created after an earlier control failure and after the 2024 real-side outcomes were known, so the result remained vulnerable to development-sample overfitting and structural differences between real extrema events and the control.
 
-## Later evidence — status updated 2026-09-10
+## Later evidence — status updated 2026-09-14
 
 This page is no longer the latest evidence boundary.
 
-The same frozen reaction mechanism subsequently produced a positive result in an **unused 2022 independent validation** and again in a **2020 robustness replication**. The real-minus-control effects were +23.79 and +25.44 percentage points respectively, with both 95% bootstrap intervals wholly above zero.
+The same frozen reaction mechanism subsequently produced positive real-minus-control results in an **unused 2022 independent validation**, a **2020 robustness replication**, and a preregistered **early-2025 robustness sample**. The effects were +23.79, +25.44, and +23.66 percentage points respectively, with all three 95% bootstrap intervals wholly above zero.
 
-A later **2019 execution-aware historical validation** used observed BID/ASK quote crossing after the M1 signal became observable. Its real mean return was +1.189 bps with a 95% interval of +0.528 to +1.889 bps; the real-minus-control difference was +3.498 bps with a 95% interval of +2.531 to +4.500 bps.
+A separate **2019 execution-aware historical validation** used observed BID/ASK quote crossing after the M1 signal became observable. Its real mean return was +1.189 bps with a 95% interval of +0.528 to +1.889 bps; the real-minus-control difference was +3.498 bps with a 95% interval of +2.531 to +4.500 bps.
 
-These later results materially strengthen the research case, but they still do not establish a durable live trading edge. See the [current replication and execution evidence summary]({{ '/research/gold-horizontal-replication-execution-evidence/' | relative_url }}) for the current interpretation and the ongoing 2018 replication.
+The frozen 2018 execution-aware hypothesis remains untested. Its sample is preserved, but the current one-hour/one-side manual acquisition route was deprioritized after repeated attempts because the mechanical burden dominated the expected information gain. That operational decision is not evidence against the mechanism.
+
+These later results materially strengthen the research case, but they still do not establish a durable live trading edge. See the [current replication and execution evidence summary]({{ '/research/gold-horizontal-replication-execution-evidence/' | relative_url }}) for the current interpretation.
 
 ## Evidence boundary
 

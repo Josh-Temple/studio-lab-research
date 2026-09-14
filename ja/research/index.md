@@ -13,15 +13,15 @@ description: Studio Labの公開研究。方法、結果、限界、根拠を分
   <div class="research-list">
     <article class="research-item">
       <div>
-        <h2><a href="{{ '/ja/research/gold-horizontal-replication-execution-evidence/' | relative_url }}">GOLD水平線：方向反応は3期間で再現し、2019年の実測BID/ASK検証でも正の結果</a></h2>
-        <p>同じ水平線定義で2024年・2022年・2020年に方向反応差が再現しました。2019年のexecution-aware検証でもreal平均リターンは正でした。現在は2018年の60セッションを凍結済みで、Tick取得完了前のため結果は未観測です。</p>
+        <h2><a href="{{ '/ja/research/gold-horizontal-replication-execution-evidence/' | relative_url }}">GOLD水平線：方向反応は4期間で再現し、2019年の実測BID/ASK検証でも正の結果</a></h2>
+        <p>同じ水平線定義で2024年・2022年・2020年・2025年初に方向反応差が再現しました。2019年のexecution-aware検証でもreal平均リターンは正でしたが、live trading edgeが確認されたわけではありません。</p>
       </div>
       <span class="status">再現確認 / execution-aware · 追加検証候補</span>
     </article>
     <article class="research-item">
       <div>
         <h2><a href="{{ '/ja/research/gold-horizontal-recent-price-control-development/' | relative_url }}">GOLD水平線反応：2024年開発データでは直近価格の対照群を上回った</a></h2>
-        <p>封印済み60セッションで、rolling extrema zoneの15分方向反応率は直近の実測価格を使った対照群を平均26.55ポイント上回りました。その後、2022年と2020年でも同じ方向の結果が再現しています。</p>
+        <p>封印済み60セッションで、rolling extrema zoneの15分方向反応率は直近の実測価格を使った対照群を平均26.55ポイント上回りました。その後、2022年・2020年・2025年初でも同じ方向の結果が再現しています。</p>
       </div>
       <span class="status">開発段階 · 後続検証あり</span>
     </article>
@@ -51,7 +51,7 @@ description: Studio Labの公開研究。方法、結果、限界、根拠を分
 
 <section class="section public-boundary">
   <p class="eyebrow">現在の研究</p>
-  <h2>過去データの再現検証とprospective screenを分けて進める</h2>
-  <p>GOLD水平線では2018年のexecution-aware再現を継続し、別系統では2026年9月14日から8週間・32イベントのVIX prospective screenを開始します。後者は現在値や将来結果を見ずにカレンダーと評価方法を固定しています。</p>
+  <h2>変化の速い進捗はTradingページに集約する</h2>
+  <p>VIXのprospective検証、別メカニズムのDiscovery Gate、execution-awareな追加検証などは短い周期で状態が変わるため、研究一覧には耐久性のある結果を残し、現在地はTradingページで更新します。</p>
   <a href="{{ '/ja/trading/' | relative_url }}">トレード研究の現在地を見る</a>
 </section>

@@ -75,20 +75,20 @@ description: Studio Lab is a public index of selected research, projects, writin
   <div class="section-heading">
     <div>
       <p class="eyebrow">Trading research</p>
-      <h2>Development signal, independent test next</h2>
+      <h2>Replicated signal, execution questions still open</h2>
     </div>
     <a href="{{ '/trading/' | relative_url }}">Trading research</a>
   </div>
   <div class="feature-grid feature-grid-wide">
     <article class="feature-card">
-      <p class="feature-meta">Latest development result</p>
-      <h3><a href="{{ '/research/gold-horizontal-recent-price-control-development/' | relative_url }}">GOLD rolling-extrema zones exceeded a recent-price control</a></h3>
-      <p>All 60 sealed 2024 sessions contributed. The primary 15-minute directional-reaction difference was +26.55 percentage points with a 95% bootstrap interval of +21.23 to +31.82 points.</p>
+      <p class="feature-meta">Published evidence</p>
+      <h3><a href="{{ '/research/gold-horizontal-replication-execution-evidence/' | relative_url }}">GOLD horizontal reactions repeated across four separated periods</a></h3>
+      <p>The same real-minus-control reaction-rate effect remained positive in 2024, 2022, 2020, and early 2025. A separate 2019 historical BID/ASK quote-crossing validation also produced a positive real-side mean. This is stronger evidence for a repeatable short-horizon reaction, not proof of a durable live trading edge.</p>
     </article>
     <article class="feature-card">
-      <p class="feature-meta">Current research · 2022 validation preregistered</p>
-      <h3>Test the same mechanism on an untouched period before adding variables</h3>
-      <p>The independent validation protocol freezes the same mechanism and control on the first 60 structurally eligible 2022 sessions. No 2022 horizontal-line outcome had been inspected when the protocol was frozen.</p>
+      <p class="feature-meta">Current program status</p>
+      <h3><a href="{{ '/trading/' | relative_url }}">Follow the prospective tests and open decision gates</a></h3>
+      <p>Fast-changing work—including the VIX prospective screen, distinct-mechanism discovery, and execution-aware follow-up—is maintained on the Trading page rather than duplicated here. This keeps the home page focused on durable evidence while preserving a clear route to current status.</p>
     </article>
   </div>
 </section>

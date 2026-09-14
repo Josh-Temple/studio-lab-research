@@ -5,7 +5,7 @@ lang: ja
 permalink: /ja/research/gold-horizontal-recent-price-control-development/
 research_id: "PILOT-TRADING-001 / GOLD horizontal recent-price control"
 status: "開発段階 — 後続検証で再現"
-updated: "2026-09-08"
+updated: "2026-09-14"
 topic: "トレード / GOLD水平線"
 summary: "封印済みの2024年60セッション開発データで、60分rolling extremaから作るzoneの15分方向反応率は、直近の実測非extreme価格を使った対照群を上回りました。このページは開発段階の結果を記録しており、その後の独立検証・robustness検証は別ページにまとめています。"
 ---
@@ -82,15 +82,17 @@ summary: "封印済みの2024年60セッション開発データで、60分rolli
 
 直近価格の対照群は、先行する対照設計が失敗し、2024年real側の結果を見た後に作られているため、development-sample overfittingやreal/control間の構造差が残る可能性がありました。
 
-## その後の検証 — 2026-09-10時点
+## その後の検証 — 2026-09-14時点
 
 このページは現在の研究境界そのものではありません。
 
-同じ方向反応メカニズムは、その後の**未使用2022年独立検証**でも正の結果となり、さらに**2020年robustness検証**でも再現しました。real-control差はそれぞれ+23.79ポイント、+25.44ポイントで、どちらも95% bootstrap区間の下限が0を上回りました。
+同じ方向反応メカニズムは、その後の**未使用2022年独立検証**、**2020年robustness検証**、事前固定した**2025年初robustness検証**でも正の結果となりました。real-control差はそれぞれ+23.79ポイント、+25.44ポイント、+23.66ポイントで、いずれも95% bootstrap区間の下限が0を上回りました。
 
 さらに**2019年のexecution-aware履歴検証**では、M1 signalが観測可能になった後の実測BID/ASK quoteを使い、real平均リターンは+1.189 bps、95%区間は+0.528〜+1.889 bpsでした。real-control差は+3.498 bps、95%区間は+2.531〜+4.500 bpsでした。
 
-これらは研究上の根拠を大きく強めましたが、継続的なlive trading edgeが確認されたわけではありません。現在の解釈と進行中の2018年再現については、[GOLD水平線の再現・execution-aware検証まとめ]({{ '/ja/research/gold-horizontal-replication-execution-evidence/' | relative_url }})を参照してください。
+2018年のexecution-aware仮説はまだ未検証です。サンプルと研究条件は保存していますが、1時間・片側ずつ行う現在の手動取得経路は、複数回の試行後に研究コストに見合わないと判断して優先度を下げています。これは水平線メカニズムに対するnegative evidenceではありません。
+
+これらは研究上の根拠を大きく強めましたが、継続的なlive trading edgeが確認されたわけではありません。現在の解釈は、[GOLD水平線の再現・execution-aware検証まとめ]({{ '/ja/research/gold-horizontal-replication-execution-evidence/' | relative_url }})を参照してください。
 
 ## 公開範囲
 
