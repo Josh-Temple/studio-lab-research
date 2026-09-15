@@ -2,27 +2,28 @@
 title: トレード
 lang: ja
 permalink: /ja/trading/
-updated: "2026-09-14"
-description: Studio Labのレビュー済みトレード研究。開発テスト、ホールドアウト、独立検証、execution-aware検証、prospective screen、リスク管理、negative resultを含みます。
+updated: "2026-09-16"
+description: Studio Labのレビュー済みトレード研究。開発テスト、ホールドアウト、未使用データ検証、execution-aware検証、prospective protocol、negative resultを含みます。
 ---
 
 <p class="eyebrow">トレード研究</p>
 <h1>ストーリーを信じる前に、優位性を検証する。</h1>
-<p class="lede">Studio Labの系統的トレード研究から、レビュー済みの開発結果、ホールドアウト、独立検証、execution-aware検証、prospective protocol、negative resultや混合結果を公開します。未確定の仮説は結果と明確に分けます。ライブの売買ダッシュボード、シグナル配信、現在ポジションの記録ではありません。</p>
+<p class="lede">Studio Labの系統的トレード研究から、positive・negative・混合結果を同じ研究記録として公開します。使用済み標本での探索と、未使用・prospectiveデータでの確認を分けて扱います。ライブの売買ダッシュボード、シグナル配信、現在ポジションの記録ではありません。</p>
 
 <section class="section">
-  <div class="section-heading"><div><p class="eyebrow">現在の根拠</p><h2>GOLD水平線の方向反応は4つの期間で再現した</h2></div></div>
+  <div class="section-heading"><div><p class="eyebrow">現在の根拠</p><h2>再現した方向反応は、無条件タッチedgeにはならなかった</h2></div></div>
   <div class="feature-grid feature-grid-wide">
     <article class="feature-card">
-      <p class="feature-meta">GOLD水平線 · 再現確認 / execution-aware</p>
-      <h3><a href="{{ '/ja/research/gold-horizontal-replication-execution-evidence/' | relative_url }}">方向反応は4期間で再現し、実測BID/ASKを使った2019年検証でも正の結果</a></h3>
-      <p>固定した15分方向反応のreal-control差は、2024年開発で+26.55ポイント、2022年独立検証で+23.79ポイント、2020年robustness検証で+25.44ポイント、2025年初の事前固定robustness検証で+23.66ポイントでした。さらに2019年の実測BID/ASK検証では、real平均+1.189 bps、real-control差+3.498 bpsでした。</p>
-      <p class="card-links"><a href="{{ '/ja/research/gold-horizontal-replication-execution-evidence/' | relative_url }}">現在の根拠をまとめて読む</a></p>
+      <p class="feature-meta">最新の未使用データ結果 · 2026H2</p>
+      <h3><a href="{{ '/ja/research/gold-horizontal-unconditional-touch-2026h2/' | relative_url }}">事前登録した無条件タッチ再現はnegative</a></h3>
+      <p>未使用の60セッション、評価可能4,786タッチeventで、15分の方向調整済み平均は<strong>−1.379 bps</strong>、session単位の95%区間は<strong>−1.909〜−0.862 bps</strong>でした。判定は<strong>NO_UNCONDITIONAL_TOUCH_SUPPORT</strong>です。</p>
+      <p class="card-links"><a href="{{ '/ja/research/gold-horizontal-unconditional-touch-2026h2/' | relative_url }}">negative replicationを読む</a></p>
     </article>
     <article class="feature-card">
-      <p class="feature-meta">追加しても改善しなかった条件</p>
-      <h3>指標を増やせば自動的に良くなるわけではなかった</h3>
-      <p>60分trend context、New York時間帯、前セッションvolatilityを1つずつ加えた検証では、水平線単独のベースラインを超える増分情報は確認できませんでした。recent session-direction continuationも棄却または優先度低下となっています。</p>
+      <p class="feature-meta">研究の流れ</p>
+      <h3><a href="{{ '/ja/research/gold-horizontal-replication-execution-evidence/' | relative_url }}">過去のpositive evidenceは残るが、現在の主張範囲は狭くなった</a></h3>
+      <p>過去の方向反応率差は2024年・2022年・2020年・2025年初で正となり、2019年のquote-crossing検証も固定条件では正でした。ただし、これらは関連する別の推定対象です。後続の未使用H2結果により、無条件タッチentryの正の効果までは示していなかったことが明確になりました。</p>
+      <p class="card-links"><a href="{{ '/ja/research/gold-horizontal-replication-execution-evidence/' | relative_url }}">結果のつながりを見る</a></p>
     </article>
   </div>
 </section>
@@ -46,35 +47,40 @@ description: Studio Labのレビュー済みトレード研究。開発テスト
 </section>
 
 <section class="section">
-  <div class="section-heading"><div><p class="eyebrow">現在の研究 · 2026年9月14日確認</p><h2>prospective検証、別メカニズム探索、execution課題の収束判断を並行して進める</h2></div></div>
+  <div class="section-heading"><div><p class="eyebrow">現在の研究 · 2026年9月16日確認</p><h2>同じ標本を掘り続けず、残った観測を未使用データへ移す</h2></div></div>
   <div class="feature-grid">
     <article class="feature-card">
-      <p class="feature-meta">VIX prospective screen · E01はfail-closed</p>
-      <h3>最初のイベントは開始したが、必要な開始時点の観測を確定できなかった</h3>
-      <p>E01は2026年9月14日に開始しましたが、09:00 JST時点の有効なVIX snapshotと、固定済みのXAU/USD開始観測を確定できませんでした。後から得た値で穴埋めせず、等確率forecastを保存したうえで<strong>ABSTAIN / HOLD</strong>とし、予測性能の結論は出していません。</p>
-      <p class="card-links">E02に向けてsource identityと09:00時点の保存手順を明示しました。ただし、データアクセスと1分足取得の確認には未解決点が残っています。VIX境界、24時間horizon、UP / DOWN / FLAT、Brier scoreは変更していません。</p>
+      <p class="feature-meta">Horizontal研究 · 使用済み標本の探索は収束</p>
+      <h3>探索的に残ったパターンは、別の確認段階へ送る</h3>
+      <p>使用済み2,685 tradeでは、固定UTC区分によるSTOP率差やSTOPの早期集中など、未使用データで確認する価値があるパターンが残りました。一方、同じ標本でsubsetや統計量を増やす探索は収束させています。残す観測は、条件を固定した未使用またはprospective protocolで確認して初めてconfirmatory evidenceになります。</p>
+      <p class="card-links">これらの探索結果を公開サイト上で「edge」とは扱わず、H2結果を見た後に使用済み標本から新ruleを調整することもしません。</p>
     </article>
     <article class="feature-card">
-      <p class="feature-meta">別メカニズム探索 · まずDiscovery Gate</p>
-      <h3>重いdata pathやbacktestを作る前に、安い一次証拠で候補を絞る</h3>
-      <p>現在は、既出familyと重複しないGOLDメカニズムを探し、まず一次資料でGOLDとの直接関係、結果前に観測できるmeasure、経済的な意味を確認しています。通過しない候補はparameter違いとして救済せず、早い段階で優先度を下げます。</p>
-      <p class="card-links">例としてCommercial Paperでは、CP金利とGoldを直接扱う過去研究は確認できましたが、根拠は同時点の関連にとどまり、予測edgeを示すものではありません。次段へ進む理由にはなっても、売買上の優位性の証拠にはしていません。</p>
+      <p class="feature-meta">prospective研究 · outcome前に固定</p>
+      <h3>新しい研究線は、結果を見る前に実行可能なtestへ変換する</h3>
+      <p>現在はtime/session、market profile、multi-timeframe、fundamentals-first、liquidity関連など、異なる問いについて最低限の観測条件と実行条件を固定しています。一次証拠やdata pathが不足する候補は、parameter違いで救済せずその段階で止めます。</p>
+      <p class="card-links">公開上の境界は明確です。protocolは結果ではなく、もっともらしいmechanismもedgeではありません。</p>
     </article>
     <article class="feature-card">
-      <p class="feature-meta">2018年execution-aware再現 · 取得経路を保留</p>
-      <h3>仮説は未検証のまま保存し、手動取得の繰り返しは止めた</h3>
-      <p>60セッションと研究条件は凍結済みで、必要な2,066 quote単位のうち23単位を保存し、2018年のreturnはまだ確認していません。一方、1時間・片側ずつブラウザで取得する経路は、研究価値に比べて機械的負担が大きいため優先度を下げました。</p>
-      <p class="card-links">これは水平線仮説に対するnegative resultではありません。条件を変えず、一次データの同一性を保ったまま取得負担を大きく下げられる経路が見つかれば再開できます。</p>
+      <p class="feature-meta">VIX prospective screen · 観測経路は未検証</p>
+      <h3>初期eventは予測性能の根拠として数えない</h3>
+      <p>E01では09:00 JST時点のVIX snapshotと固定XAU/USD開始観測を情報cutoff内でそろえて保存できず、fail-closedとしました。E02前のoperational feasibility確認でも、必要なcutoff snapshot保存と固定feedのruntime取得を成立させる証拠が不足していました。そのため、初期eventを予測性能の採点根拠として扱っていません。</p>
+      <p class="card-links">VIX境界、24時間horizon、UP / DOWN / FLAT、Brier scoreを欠損に合わせて変更することもしていません。</p>
     </article>
   </div>
 </section>
 
 <section class="section">
+  <div class="section-heading"><div><p class="eyebrow">残っているexecution課題</p><h2>2018年の固定再現は結果未観測のまま、手動取得経路を保留</h2></div></div>
+  <p>別系統の2018年execution-aware再現は、60セッションを結果前に固定済みで、結果はまだ開いていません。必要な2,066 quote単位のうち23単位を保存した段階で、1時間・片側ずつ取得する手動経路は研究価値に比べて負担が大きいため保留しました。これは2018年仮説に対するnegative evidenceではありません。</p>
+</section>
+
+<section class="section">
   <div class="section-heading"><div><p class="eyebrow">研究原則</p><h2>守りたい3つのこと</h2></div></div>
   <div class="feature-grid">
-    <article class="feature-card"><p class="feature-meta">01</p><h3>ホールドアウトはホールドアウトのまま使う</h3><p>未使用期間を見る前にルールや閾値を固定し、一度開いた期間を同じ主張の再調整に使いません。</p></article>
-    <article class="feature-card"><p class="feature-meta">02</p><h3>反応率と収益性を分ける</h3><p>方向反応率が高いことは追加検証の理由になりますが、それだけで期待値、drawdown、実行可能な利益が確認されたとは判断しません。</p></article>
-    <article class="feature-card"><p class="feature-meta">03</p><h3>execution evidenceにも限界がある</h3><p>履歴上の実測BID/ASKを使う検証はbarだけの反応率より強い根拠ですが、実際のbroker約定と同じものとして扱いません。</p></article>
+    <article class="feature-card"><p class="feature-meta">01</p><h3>ホールドアウトはホールドアウトのまま使う</h3><p>未使用期間を見る前にルールや閾値を固定し、一度問いに答えた期間を同じ主張の救済調整には使いません。</p></article>
+    <article class="feature-card"><p class="feature-meta">02</p><h3>反応率とリターンを分ける</h3><p>再現する方向反応の統計量は次の検証理由にはなりますが、それだけで期待値、drawdown、実行可能な利益が確認されたとは扱いません。</p></article>
+    <article class="feature-card"><p class="feature-meta">03</p><h3>失敗した研究線は閉じる</h3><p>事前登録した未使用データ検証で支持されなければ、自動的にparameter rescueへ進みません。異なる仮説は、別の固定条件と新しい根拠で検証します。</p></article>
   </div>
 </section>
 
