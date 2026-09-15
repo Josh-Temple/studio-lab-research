@@ -1,26 +1,30 @@
 ---
 layout: research
-title: "GOLD horizontal levels: the reaction effect replicated across four periods and survived one execution-aware validation"
+title: "GOLD horizontal levels: replicated reaction evidence, later unconditional-touch test negative"
 research_id: "PILOT-TRADING-001 / GOLD horizontal replication and execution"
-status: "Replicated / execution-aware — promising for further test"
-updated: "2026-09-14"
+status: "Mixed evidence — replicated signal, unconditional touch not supported"
+updated: "2026-09-15"
 topic: "Trading / GOLD horizontal levels"
-summary: "The same 60-minute rolling-extrema reaction effect was positive in 2024, 2022, 2020, and early 2025. A separate 2019 validation also remained positive after crossing observed historical BID/ASK quotes. The evidence is stronger, but it still does not establish a durable live trading edge."
+summary: "The horizontal-level reaction-rate difference was positive across four historical samples and a 2019 quote-crossing validation was positive under its specification. A later preregistered unused 2026H2 test did not support an unconditional touch effect, narrowing the claim substantially."
 ---
 
 ## Current conclusion
 
-The GOLD horizontal-level line has moved beyond a single development result.
+The GOLD horizontal-level research now contains **both replicated positive signal-level evidence and a material unused-data negative result**.
 
-Under the frozen XAU/USD BID M1 protocol, contacts with prior-60-minute rolling extrema were followed by the defined 15-minute directional reaction more often than a recent observed non-extreme price control in **four separated historical samples**: 2024 development, independent 2022 validation, 2020 robustness replication, and a preregistered early-2025 robustness sample. A separate execution-aware 2019 validation using observed historical BID/ASK quotes also produced a positive real-side mean return under the frozen quote-crossing proxy.
+Under the earlier frozen reaction-rate protocol, contacts with prior-60-minute rolling extrema showed a higher defined 15-minute directional-reaction rate than a recent-price control in four separated historical samples: 2024 development, independent 2022 validation, 2020 robustness, and preregistered early-2025 robustness. A separate 2019 historical BID/ASK quote-crossing validation was also positive under its specification.
 
-The research classification remains **PROMISING_FOR_FURTHER_TEST**. This is deliberately narrower than saying that the strategy is profitable or ready for live use.
+That evidence remains part of the research record. It is no longer sufficient, however, to summarize the current state as simply “promising.” A later preregistered test on **unused 2026H2 data** asked a stricter question: whether an unconditional horizontal touch itself carried positive 15-minute directional return. It did not. The primary mean was **−1.379 bps**, with a session-clustered 95% interval of **[−1.909, −0.862] bps**.
 
-## Reaction evidence across four periods
+The current public claim is therefore narrower: **a short-horizon reaction-rate difference replicated under the earlier signal definition, but it did not establish an unconditional touch edge on untouched data.**
 
-The mechanism and comparison were kept materially unchanged across the four reaction-rate studies.
+<p class="card-links"><a href="{{ '/research/gold-horizontal-unconditional-touch-2026h2/' | relative_url }}">Read the 2026H2 unused-data replication</a></p>
 
-<div class="result-summary-grid" aria-label="GOLD horizontal-level replication summary">
+## Historical reaction evidence across four periods
+
+The earlier reaction-rate studies kept the mechanism and comparison materially unchanged.
+
+<div class="result-summary-grid" aria-label="Historical GOLD horizontal-level reaction replication summary">
   <div class="result-stat">
     <span class="result-stat-label">2024 development</span>
     <strong>+26.55 pp</strong>
@@ -32,7 +36,7 @@ The mechanism and comparison were kept materially unchanged across the four reac
     <span>95% CI +18.73 to +29.02</span>
   </div>
   <div class="result-stat">
-    <span class="result-stat-label">2020 robustness replication</span>
+    <span class="result-stat-label">2020 robustness</span>
     <strong>+25.44 pp</strong>
     <span>95% CI +20.74 to +30.23</span>
   </div>
@@ -43,101 +47,69 @@ The mechanism and comparison were kept materially unchanged across the four reac
   </div>
 </div>
 
-<div class="metric-chart" role="img" aria-label="Real-minus-control 15-minute directional-reaction effect: 2024 development 26.55 percentage points, 2022 independent validation 23.79 points, 2020 robustness replication 25.44 points, early-2025 robustness replication 23.66 points.">
-  <div class="metric-row">
-    <div class="metric-label">2024 development</div>
-    <div class="bar-track"><span class="bar-fill bar-positive" style="width:100%"></span></div>
-    <div class="metric-value">+26.55 pp</div>
-  </div>
-  <div class="metric-row">
-    <div class="metric-label">2022 validation</div>
-    <div class="bar-track"><span class="bar-fill bar-positive" style="width:89.6%"></span></div>
-    <div class="metric-value">+23.79 pp</div>
-  </div>
-  <div class="metric-row">
-    <div class="metric-label">2020 robustness</div>
-    <div class="bar-track"><span class="bar-fill bar-positive" style="width:95.8%"></span></div>
-    <div class="metric-value">+25.44 pp</div>
-  </div>
-  <div class="metric-row">
-    <div class="metric-label">Early-2025 robustness</div>
-    <div class="bar-track"><span class="bar-fill bar-positive" style="width:89.1%"></span></div>
-    <div class="metric-value">+23.66 pp</div>
-  </div>
+<div class="metric-chart" role="img" aria-label="Historical real-minus-control 15-minute directional-reaction effect: 2024 development 26.55 percentage points, 2022 independent validation 23.79 points, 2020 robustness 25.44 points, early-2025 robustness 23.66 points.">
+  <div class="metric-row"><div class="metric-label">2024 development</div><div class="bar-track"><span class="bar-fill bar-positive" style="width:100%"></span></div><div class="metric-value">+26.55 pp</div></div>
+  <div class="metric-row"><div class="metric-label">2022 validation</div><div class="bar-track"><span class="bar-fill bar-positive" style="width:89.6%"></span></div><div class="metric-value">+23.79 pp</div></div>
+  <div class="metric-row"><div class="metric-label">2020 robustness</div><div class="bar-track"><span class="bar-fill bar-positive" style="width:95.8%"></span></div><div class="metric-value">+25.44 pp</div></div>
+  <div class="metric-row"><div class="metric-label">Early-2025 robustness</div><div class="bar-track"><span class="bar-fill bar-positive" style="width:89.1%"></span></div><div class="metric-value">+23.66 pp</div></div>
 </div>
 
-<p class="chart-note">The bars compare the same session-level real-minus-control reaction-rate metric. Exact estimates and 95% bootstrap intervals are printed above. Reaction rate is not trade return.</p>
+<p class="chart-note">These bars compare the same historical session-level real-minus-control reaction-rate metric. Reaction rate is not trade return.</p>
 
-The 2022 validation passed its design-validity gate with 60/60 contributing sessions. Its real session reaction rate was 0.790698 versus 0.550132 for the control, giving **+23.792 percentage points** with a 95% bootstrap interval of **[+18.734, +29.020] points**.
+The 2022 validation passed with 60/60 contributing sessions and a real-minus-control effect of **+23.792 pp**. The 2020 robustness replication also used 60/60 contributing sessions and produced **+25.439 pp**. Early-2025 froze the first 60 structurally eligible sessions before outcome computation and produced **+23.663 pp**; its selected sample covered 2025-01-02 through 2025-04-11, not the full year.
 
-The 2020 robustness replication also passed with 60/60 contributing sessions. Its primary effect was **+25.439 percentage points**, with a 95% bootstrap interval of **[+20.741, +30.230] points**.
+The similarity of those estimates made a one-period explanation less plausible for that specific reaction-rate construct. It did not prove that the same information survived every entry rule or selection process.
 
-The early-2025 robustness study froze the first 60 structurally eligible sessions before outcome computation. All 60 contributed. The primary effect was **+23.663 percentage points**, with a 95% bootstrap interval of **[+19.435, +28.017] points**. The selected sample runs from 2025-01-02 through 2025-04-11, so this is evidence about early 2025 rather than the full calendar year. It also uses the same implementation and first-party data source as the earlier studies, making it a temporal replication rather than an independent implementation replication.
+## 2019 execution-aware historical validation
 
-The similarity of the four point estimates does not prove invariance across regimes. It does, however, make a one-period explanation for the signal-level reaction difference less plausible under this exact protocol. Further repetitions of the same reaction-rate test now have lower expected information gain than execution-aware validation.
+The 2019 study used observed historical BID/ASK quotes after the M1 contact bar became observable. Long events entered at ASK and exited at BID; short events entered at BID and exited at ASK, with a 15-minute horizon. No synthetic spread, commission, extra slippage, latency, market impact, or fill-probability assumption was added.
 
-## Added filters did not improve the baseline
-
-After the standalone horizontal mechanism survived independent validation, several simple conditioning ideas were tested separately. The reviewed research record did **not** find incremental information from the tested 60-minute trend context, New York time context, or prior-session volatility state beyond the horizontal-line baseline. A separate recent session-direction continuation line was also rejected or deprioritized.
-
-These negative results are useful: the current evidence supports keeping the mechanism simple rather than stacking indicators merely because the base effect replicated.
-
-## Execution-aware 2019 validation
-
-The next major question was whether the phenomenon survived a more realistic historical quote-crossing proxy.
-
-The 2019 study used the same horizontal signal family but waited until the M1 contact bar was fully observable, then used **observed historical BID/ASK quotes** for entry and exit. Long events entered at ASK and exited at BID; short events entered at BID and exited at ASK. The exit horizon remained 15 minutes. No synthetic spread, commission, extra slippage, latency, market impact, or fill-probability assumption was added.
-
-The original plan called for 60 sessions. A full-year structural scan found only 57 eligible sessions, so the sample rule was prospectively amended to use all 57 **before any 2019 return was computed or inspected**. This weakens the purity of the original preregistration and is part of the result.
+The original target was 60 sessions, but the structural scan found only 57 eligible sessions. The rule was prospectively amended to use all 57 before any 2019 return was computed. That deviation from the original preregistration remains a limitation.
 
 <div class="result-summary-grid" aria-label="2019 execution-aware validation summary">
-  <div class="result-stat">
-    <span class="result-stat-label">Real mean return</span>
-    <strong>+1.189 bps</strong>
-    <span>95% CI +0.528 to +1.889</span>
-  </div>
-  <div class="result-stat">
-    <span class="result-stat-label">Control mean</span>
-    <strong>−2.309 bps</strong>
-    <span>recent-price control</span>
-  </div>
-  <div class="result-stat">
-    <span class="result-stat-label">Real − control</span>
-    <strong>+3.498 bps</strong>
-    <span>95% CI +2.531 to +4.500</span>
-  </div>
+  <div class="result-stat"><span class="result-stat-label">Real mean return</span><strong>+1.189 bps</strong><span>95% CI +0.528 to +1.889</span></div>
+  <div class="result-stat"><span class="result-stat-label">Control mean</span><strong>−2.309 bps</strong><span>recent-price control</span></div>
+  <div class="result-stat"><span class="result-stat-label">Real − control</span><strong>+3.498 bps</strong><span>95% CI +2.531 to +4.500</span></div>
 </div>
 
-All 57 sessions contributed. Both preregistered primary point estimates were positive and both bootstrap lower bounds were above zero, so the frozen support condition was met.
+All 57 sessions contributed and the frozen support condition was met. This was stronger than a bar-only reaction comparison, but it remained a historical quote-crossing proxy rather than actual broker execution.
 
-The positive **real mean** matters more than the larger real-minus-control difference because it shows that the result is not solely a consequence of a weak control series. Even so, this remains one execution-aware historical period and a quote-crossing proxy rather than actual broker fills.
+## Later evidence changed the boundary
 
-## 2018 execution-aware replication: hypothesis preserved, manual route deprioritized
+The research program then tested where the apparent effect was being lost.
 
-A separate 2018 execution-aware replication was frozen to test the same mechanism, quote-side mapping, 15-minute horizon, control construction, bootstrap, and classification rules on another unused period.
+On the consumed 2026H1 strategy sample, the average path from touch to the later confirmed entry was favorable, while the average post-entry path was adverse. That diagnosis suggested that event selection around the confirmation step could matter. It was exploratory because the H1 sample had already been consumed.
 
-The structural phase completed successfully: the first **60 eligible 2018 sessions were frozen before any execution return was computed or inspected**, with ten candidate dates excluded under the fixed structural rules. The quote-acquisition manifest requires **2,066 event-hour-side units**. The latest durable checkpoint contains **23/2,066 exact units** and no outcome has been opened.
+The decisive follow-up was therefore not another H1 parameter search. The unconditional-touch question was preregistered and moved to unused 2026H2 data. Across 60 frozen sessions, **4,786 evaluable touch events** produced a mean 15-minute direction-adjusted return of **−1.379 bps**, with the clustered interval entirely below zero. The classification was **NO_UNCONDITIONAL_TOUCH_SUPPORT**.
 
-After repeated attempts, the manual one-hour/one-side browser acquisition route was **deprioritized on cost/value grounds**. The problem is operational, not evidential: roughly two thousand further manual acquisitions and identity checks would be required before a single new method result could be observed. The frozen sample, preregistration, manifest, existing 23 units, and untouched outcome are preserved.
+This makes the evidence internally coherent without forcing all tests to say the same thing: an earlier reaction-vs-control statistic can replicate while a later unconditional-return claim fails. They are related, but they are not identical estimands.
 
-This is **not negative evidence about the horizontal-line hypothesis**. The 2018 hypothesis remains untested and therefore inconclusive. It can be resumed if a compliant first-party acquisition method materially reduces the mechanical burden without changing the frozen research conditions.
+## What did not justify rescue tuning
+
+Several simple additions had already failed to add clear information to the historical baseline, including the tested 60-minute trend context, New York time context, and prior-session volatility state. The new H2 result also does not trigger a search for a better confirmation delay, time window, side filter, or threshold on the consumed samples.
+
+The unconditional-touch line is closed as not supported. A materially different mechanism must be framed as a new hypothesis, frozen before outcomes, and tested on another unused or prospective sample.
+
+## 2018 execution-aware replication remains parked
+
+A separate 2018 execution-aware replication was frozen before outcome inspection. The first 60 eligible sessions were selected and the quote-acquisition manifest requires 2,066 event-hour-side units; 23 exact units were preserved before the manual acquisition route was deprioritized.
+
+No 2018 return has been opened. The route was parked because completing roughly two thousand further one-hour/one-side manual acquisitions would make data collection dominate the research value. This is an operational decision, not evidence for or against the 2018 hypothesis.
 
 ## What is not established
 
-The current evidence does not establish:
+The combined research record does not establish:
 
+- a durable profitable horizontal-level trading rule;
+- a profitable opposite-direction rule from the negative H2 result;
 - actual broker fills or broker-specific spread behavior;
-- commissions, swap, or slippage beyond the observed quote crossing;
-- latency, rejection, market impact, or fill probability;
-- position sizing, drawdown, tail risk, or capacity;
-- live performance or validity in the current market regime;
-- transfer to another instrument;
-- a durable profitable trading rule.
-
-The correct public claim is therefore about a **replicated short-horizon reaction phenomenon across four separated samples under a frozen GOLD protocol**, plus one positive execution-aware historical validation. It is not a buy/sell instruction.
+- commissions, swap, latency, rejection, market impact, or fill probability beyond the tested proxies;
+- a causal explanation for the positive or negative effects;
+- transfer to another instrument or horizon;
+- live performance in the current market regime.
 
 ## Evidence boundary
 
-This page publishes reviewed summary statistics and research decisions only. Raw files, manifests, internal work-order state, detailed acquisition logs, credentials, positions, and current trading decisions remain outside the public site.
+This page publishes reviewed summary statistics and research decisions only. Raw files, manifests, event-level ledgers, internal work-order state, credentials, positions, and current trading decisions remain outside the public site.
 
 *This is a research record, not investment advice. Historical validation does not establish future profitability.*

@@ -1,32 +1,33 @@
 ---
 title: Trading
 permalink: /trading/
-updated: "2026-09-14"
-description: Reviewed Studio Lab trading research, including development tests, holdouts, independent validations, execution-aware checks, prospective screens, risk controls, and negative results.
+updated: "2026-09-16"
+description: Reviewed Studio Lab trading research, including development tests, holdouts, unused-data replications, execution-aware checks, prospective protocols, and negative results.
 ---
 
 <p class="eyebrow">Trading research</p>
 <h1>Test the edge before trusting the story.</h1>
-<p class="lede">Selected systematic-trading research from Studio Lab. This section publishes reviewed development results, holdouts, independent validations, execution-aware checks, prospective protocols, and negative or mixed findings while keeping unresolved hypotheses separate. It is not a live trading dashboard, signal service, or record of current positions.</p>
+<p class="lede">Selected systematic-trading research from Studio Lab. This section keeps positive, negative, and mixed results in the same record, and separates consumed-sample exploration from unused or prospective confirmation. It is not a live trading dashboard, signal service, or record of current positions.</p>
 
 <section class="section">
   <div class="section-heading">
     <div>
       <p class="eyebrow">Current evidence</p>
-      <h2>GOLD horizontal reactions have repeated across four periods</h2>
+      <h2>Repeated reactions did not become an unconditional touch edge</h2>
     </div>
   </div>
   <div class="feature-grid feature-grid-wide">
     <article class="feature-card">
-      <p class="feature-meta">GOLD horizontal levels · replicated / execution-aware</p>
-      <h3><a href="{{ '/research/gold-horizontal-replication-execution-evidence/' | relative_url }}">The reaction effect replicated across four periods and remained positive in one quote-crossing validation</a></h3>
-      <p>The frozen real-minus-control 15-minute reaction effect was +26.55 pp in 2024 development, +23.79 pp in independent 2022 validation, +25.44 pp in 2020 robustness, and +23.66 pp in a preregistered early-2025 robustness sample. A separate 2019 validation using observed BID/ASK quote crossing produced a +1.189 bps real mean and +3.498 bps real-minus-control difference.</p>
-      <p class="card-links"><a href="{{ '/research/gold-horizontal-replication-execution-evidence/' | relative_url }}">Read the current evidence summary</a></p>
+      <p class="feature-meta">Latest unused-data result · 2026H2</p>
+      <h3><a href="{{ '/research/gold-horizontal-unconditional-touch-2026h2/' | relative_url }}">The preregistered unconditional-touch replication was negative</a></h3>
+      <p>Across 60 frozen unused sessions and 4,786 evaluable touch events, the 15-minute direction-adjusted mean was <strong>−1.379 bps</strong>, with a session-clustered 95% interval of <strong>−1.909 to −0.862 bps</strong>. The result was classified as <strong>NO_UNCONDITIONAL_TOUCH_SUPPORT</strong>.</p>
+      <p class="card-links"><a href="{{ '/research/gold-horizontal-unconditional-touch-2026h2/' | relative_url }}">Read the negative replication</a></p>
     </article>
     <article class="feature-card">
-      <p class="feature-meta">What did not add value</p>
-      <h3>More indicators have not automatically improved the baseline</h3>
-      <p>Reviewed incremental tests of 60-minute trend context, New York time context, and prior-session volatility did not demonstrate additional information beyond the standalone horizontal-line baseline. Recent session-direction continuation was also rejected or deprioritized.</p>
+      <p class="feature-meta">Evidence lineage</p>
+      <h3><a href="{{ '/research/gold-horizontal-replication-execution-evidence/' | relative_url }}">The older positive evidence remains real, but the claim is narrower now</a></h3>
+      <p>Historical reaction-rate differences were positive across 2024, 2022, 2020, and early 2025, and a 2019 quote-crossing specification was positive. Those studies tested related but different constructs. The later untouched H2 result shows that they did not establish a positive unconditional touch-entry effect.</p>
+      <p class="card-links"><a href="{{ '/research/gold-horizontal-replication-execution-evidence/' | relative_url }}">See how the evidence fits together</a></p>
     </article>
   </div>
 </section>
@@ -57,30 +58,40 @@ description: Reviewed Studio Lab trading research, including development tests, 
 <section class="section">
   <div class="section-heading">
     <div>
-      <p class="eyebrow">Current research · reviewed 2026-09-14</p>
-      <h2>Prospective screening, discovery gates, and execution closure are running in parallel</h2>
+      <p class="eyebrow">Current research · reviewed 2026-09-16</p>
+      <h2>Move promising observations to unused data instead of mining the same sample</h2>
     </div>
   </div>
   <div class="feature-grid">
     <article class="feature-card">
-      <p class="feature-meta">VIX prospective screen · E01 fail-closed</p>
-      <h3>The first event started, but the required start observations were unavailable</h3>
-      <p>E01 began on 2026-09-14, but a valid 09:00 JST VIX snapshot and the specified XAU/USD start observation could not be established within the frozen information boundary. Later values were not substituted. The event therefore recorded an equal-probability forecast, <strong>ABSTAIN / HOLD</strong>, and no performance conclusion.</p>
-      <p class="card-links">The E02 preparation now makes the source identities and capture rules explicit. Data-access and one-minute-feed verification still need to pass before the next event can produce a valid observation. Thresholds, horizon, outcome categories, and Brier scoring remain unchanged.</p>
+      <p class="feature-meta">Horizontal research · consumed sample closed</p>
+      <h3>Exploratory diagnostics now require a separate confirmation step</h3>
+      <p>Diagnostics on the consumed 2,685-trade sample identified several patterns worth checking, including fixed UTC differences in stop outcomes and unusually early stop concentration. The internal analysis has converged rather than expanding into more subsets. Any retained pattern must now use a fixed unused-data or prospective protocol before it can become confirmatory evidence.</p>
+      <p class="card-links">These exploratory patterns are not published here as trading edges, and the consumed sample is not being used to tune a new rule after the H2 result.</p>
     </article>
     <article class="feature-card">
-      <p class="feature-meta">Distinct-mechanism discovery · gate first</p>
-      <h3>Test cheap evidence before building data pipelines or backtests</h3>
-      <p>The current discovery line screens scientifically distinct GOLD mechanisms with primary evidence first, then asks whether the measure can be observed before outcomes and whether an economic effect is large enough to justify strict validation. Candidates that fail or overlap are pruned rather than turned into parameter variants.</p>
-      <p class="card-links">For example, a prospective Commercial Paper check found direct historical research linking CP rates and gold, but only at an associational/contemporaneous level. That is enough to continue evidence-path work, not enough to claim predictive edge.</p>
+      <p class="feature-meta">Prospective research · pre-outcome freeze</p>
+      <h3>New lines are being converted into executable tests before outcomes are opened</h3>
+      <p>Current work is fixing minimum observation and execution conditions for distinct questions such as time/session effects, market-profile context, multi-timeframe conditioning, fundamentals-first market selection, and liquidity-related hypotheses. A candidate can stop at the data or evidence gate rather than being rescued with another parameter variant.</p>
+      <p class="card-links">The public boundary remains simple: a protocol is not a result, and a plausible mechanism is not an edge.</p>
     </article>
     <article class="feature-card">
-      <p class="feature-meta">2018 execution-aware replication · parked</p>
-      <h3>The hypothesis remains untouched; the manual acquisition route was deprioritized</h3>
-      <p>The 60-session sample and research rules remain frozen, with 23 of 2,066 required quote units preserved and no 2018 return inspected. After repeated attempts, the one-hour/one-side browser acquisition route was judged too mechanically expensive relative to its information value.</p>
-      <p class="card-links">This is an operational decision, not evidence against the horizontal mechanism. The experiment can resume if a compliant first-party route materially reduces acquisition burden without changing the frozen design.</p>
+      <p class="feature-meta">VIX prospective screen · observation path not yet validated</p>
+      <h3>Early events do not count as forecast-performance evidence</h3>
+      <p>E01 failed closed because the required 09:00 JST VIX snapshot and fixed XAU/USD start observation were not both preserved within the information boundary. Before E02, the operational feasibility gate still lacked proof of the required cutoff capture and fixed-feed runtime retrieval path, so the research record does not treat those early events as scored predictive evidence.</p>
+      <p class="card-links">Thresholds, 24-hour horizon, UP / DOWN / FLAT outcome categories, and Brier scoring were not changed to work around the missing observations.</p>
     </article>
   </div>
+</section>
+
+<section class="section">
+  <div class="section-heading">
+    <div>
+      <p class="eyebrow">Open execution question</p>
+      <h2>The frozen 2018 replication remains untouched, but the manual route is parked</h2>
+    </div>
+  </div>
+  <p>The separate 2018 execution-aware replication still has 60 frozen sessions and an untouched outcome. Only 23 of 2,066 required quote units were preserved before the one-hour/one-side browser acquisition route was deprioritized as too mechanically expensive. This is an operational hold, not negative evidence about the 2018 hypothesis.</p>
 </section>
 
 <section class="section">
@@ -91,21 +102,9 @@ description: Reviewed Studio Lab trading research, including development tests, 
     </div>
   </div>
   <div class="feature-grid">
-    <article class="feature-card">
-      <p class="feature-meta">01</p>
-      <h3>Holdouts stay holdouts</h3>
-      <p>Rules and thresholds should be fixed before untouched evaluation periods are opened. Once opened, those periods are not reused to retune the same claim.</p>
-    </article>
-    <article class="feature-card">
-      <p class="feature-meta">02</p>
-      <h3>Reaction is not return</h3>
-      <p>A higher directional-reaction rate can justify further mechanism testing without implying positive expectancy, acceptable drawdown, or executable profit.</p>
-    </article>
-    <article class="feature-card">
-      <p class="feature-meta">03</p>
-      <h3>Execution evidence still has boundaries</h3>
-      <p>Historical BID/ASK quote crossing is stronger than bar-only reaction evidence, but it is still not actual broker execution and must not be presented as such.</p>
-    </article>
+    <article class="feature-card"><p class="feature-meta">01</p><h3>Holdouts stay holdouts</h3><p>Rules and thresholds are fixed before untouched periods are opened. Once a period answers the question, it is not reused to rescue the same claim.</p></article>
+    <article class="feature-card"><p class="feature-meta">02</p><h3>Reaction is not return</h3><p>A repeatable directional-reaction statistic can justify another test without establishing positive expectancy, acceptable drawdown, or executable profit.</p></article>
+    <article class="feature-card"><p class="feature-meta">03</p><h3>Failure closes a line</h3><p>When a preregistered unused-data result fails, the next step is not automatic parameter rescue. A materially different idea requires a new frozen hypothesis and new evidence.</p></article>
   </div>
 </section>
 
