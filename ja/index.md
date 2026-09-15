@@ -9,19 +9,11 @@ description: Studio Labの公開研究、プロジェクト、記事、方法を
   <p class="eyebrow">Studio Lab</p>
   <h1>研究、実験、ツールを、根拠とともに公開する。</h1>
   <p class="lede">選定した成果を外向きに整理する公開ダッシュボードです。研究では方法と限界を示し、プロジェクトでは実際に使えるツールへつなぎ、記事では研究や設計の内容を読みやすく説明します。内部の運用状況はここには表示しません。</p>
-  <div class="hero-actions">
-    <a class="button primary" href="{{ '/ja/research/' | relative_url }}">研究を見る</a>
-    <a class="button secondary" href="{{ '/ja/projects/' | relative_url }}">プロジェクトを見る</a>
-  </div>
+  <div class="hero-actions"><a class="button primary" href="{{ '/ja/research/' | relative_url }}">研究を見る</a><a class="button secondary" href="{{ '/ja/projects/' | relative_url }}">プロジェクトを見る</a></div>
 </section>
 
 <section class="section compact-section" aria-labelledby="areas-title-ja">
-  <div class="section-heading">
-    <div>
-      <p class="eyebrow">公開ダッシュボード</p>
-      <h2 id="areas-title-ja">4つの入口</h2>
-    </div>
-  </div>
+  <div class="section-heading"><div><p class="eyebrow">公開ダッシュボード</p><h2 id="areas-title-ja">4つの入口</h2></div></div>
   <div class="area-grid">
     <a class="area-card" href="{{ '/ja/research/' | relative_url }}"><span class="area-kicker">01</span><h3>研究</h3><p>問い、方法、観測結果、限界、公開可能な根拠。</p></a>
     <a class="area-card" href="{{ '/ja/projects/' | relative_url }}"><span class="area-kicker">02</span><h3>プロジェクト</h3><p>実際に試せるツールと学習システム。</p></a>
@@ -33,17 +25,17 @@ description: Studio Labの公開研究、プロジェクト、記事、方法を
 <section class="section">
   <div class="section-heading"><div><p class="eyebrow">最新の研究</p><h2>公開済み研究</h2></div><a href="{{ '/ja/research/' | relative_url }}">一覧を見る</a></div>
   <div class="research-list">
-    <article class="research-item"><div><h3><a href="{{ '/ja/research/gold-horizontal-replication-execution-evidence/' | relative_url }}">GOLD水平線の再現・execution-aware検証</a></h3><p>方向反応の差は2024年・2022年・2020年・2025年初の4期間で再現し、2019年の実測BID/ASKを使った履歴検証でもreal側の平均リターンは正でした。</p></div><span class="status">再現確認 · 追加検証候補</span></article>
+    <article class="research-item"><div><h3><a href="{{ '/ja/research/gold-horizontal-unconditional-touch-2026h2/' | relative_url }}">GOLD水平線：未使用2026H2の無条件タッチ検証</a></h3><p>事前登録した未使用60セッションで、水平線タッチ後15分の方向調整済み平均リターンは−1.379 bps、95%区間は−1.909〜−0.862 bpsとなり、無条件タッチ仮説は支持されませんでした。</p></div><span class="status">完了 · 支持されず</span></article>
+    <article class="research-item"><div><h3><a href="{{ '/ja/research/gold-horizontal-replication-execution-evidence/' | relative_url }}">GOLD水平線の再現・execution-aware研究</a></h3><p>過去4期間の方向反応差と2019年のpositiveなquote-crossing検証を残しつつ、後続H2 negative resultにより現在の主張範囲を狭めています。</p></div><span class="status">混合した根拠</span></article>
     <article class="research-item"><div><h3><a href="{{ '/ja/research/gold-session-range-independent-validation/' | relative_url }}">GOLDのセッションレンジ独立検証</a></h3><p>2024年の開発データで強く見えた関係は、2021年の独立検証では統計的に支持された形で確認できませんでした。</p></div><span class="status">完了 · 独立検証は判定保留</span></article>
-    <article class="research-item"><div><h3><a href="{{ '/ja/research/repeat-trading-external-holdout/' | relative_url }}">リピート取引の外部ホールドアウト</a></h3><p>動的exitはリスク負担を軽減した一方、外部ホールドアウトでは収益改善を再現しませんでした。</p></div><span class="status">完了 · 混合 / 判定保留</span></article>
   </div>
 </section>
 
 <section class="section">
-  <div class="section-heading"><div><p class="eyebrow">トレード研究</p><h2>再現した反応から、実行可能性とprospective検証へ</h2></div><a href="{{ '/ja/trading/' | relative_url }}">トレード研究へ</a></div>
+  <div class="section-heading"><div><p class="eyebrow">トレード研究</p><h2>再現したストーリーを、より厳しい未使用データで反証する</h2></div><a href="{{ '/ja/trading/' | relative_url }}">トレード研究へ</a></div>
   <div class="feature-grid feature-grid-wide">
-    <article class="feature-card"><p class="feature-meta">公開済みの根拠</p><h3><a href="{{ '/ja/research/gold-horizontal-replication-execution-evidence/' | relative_url }}">GOLD水平線の方向反応は4期間で再現</a></h3><p>同じreal-control反応率の差は、2024年、2022年、2020年、2025年初の4期間で正でした。2019年の実測BID/ASK検証でもreal平均は正でした。反応の再現性を支持する根拠は増えましたが、継続的なlive edgeを示すものではありません。</p></article>
-    <article class="feature-card"><p class="feature-meta">現在の研究状況</p><h3><a href="{{ '/ja/trading/' | relative_url }}">prospective検証と探索の現在地を見る</a></h3><p>VIX prospective screen、別メカニズムのDiscovery Gate、execution-awareな追加検証など、変化の速い進捗はTradingページに集約しています。トップページには耐久性のある結果だけを残します。</p></article>
+    <article class="feature-card"><p class="feature-meta">最新の公開結果</p><h3><a href="{{ '/ja/research/gold-horizontal-unconditional-touch-2026h2/' | relative_url }}">未使用2026H2では無条件タッチ仮説を確認できなかった</a></h3><p>60セッションの固定検証で主要平均は−1.379 bps、95%区間は−1.909〜−0.862 bpsでした。使用済み標本でparameterを調整して結果を救済せず、この研究線を支持されず終了としています。</p></article>
+    <article class="feature-card"><p class="feature-meta">根拠の文脈</p><h3><a href="{{ '/ja/research/gold-horizontal-replication-execution-evidence/' | relative_url }}">過去のpositive evidenceも削除せず残す</a></h3><p>過去4期間で再現した方向反応差と2019年のpositiveなquote-crossing結果は研究記録として残ります。最新H2結果により、「反応統計の再現」と「無条件で売買可能なedge」は別だと、より明確になりました。</p></article>
   </div>
 </section>
 
