@@ -21,126 +21,65 @@ description: Studio Lab is a public index of selected research, projects, writin
     </div>
   </div>
   <div class="area-grid">
-    <a class="area-card" href="{{ '/research/' | relative_url }}">
-      <span class="area-kicker">01</span>
-      <h3>Research</h3>
-      <p>Questions, methods, observations, limits, and public evidence.</p>
-    </a>
-    <a class="area-card" href="{{ '/projects/' | relative_url }}">
-      <span class="area-kicker">02</span>
-      <h3>Projects</h3>
-      <p>Selected tools and learning systems that can be tried directly.</p>
-    </a>
-    <a class="area-card" href="{{ '/writing/' | relative_url }}">
-      <span class="area-kicker">03</span>
-      <h3>Writing</h3>
-      <p>Readable articles that explain findings, design choices, and lessons.</p>
-    </a>
-    <a class="area-card" href="{{ '/methods/' | relative_url }}">
-      <span class="area-kicker">04</span>
-      <h3>Methods</h3>
-      <p>How claims are bounded, checked, stopped, and prepared for publication.</p>
-    </a>
+    <a class="area-card" href="{{ '/research/' | relative_url }}"><span class="area-kicker">01</span><h3>Research</h3><p>Questions, methods, observations, limits, and public evidence.</p></a>
+    <a class="area-card" href="{{ '/projects/' | relative_url }}"><span class="area-kicker">02</span><h3>Projects</h3><p>Selected tools and learning systems that can be tried directly.</p></a>
+    <a class="area-card" href="{{ '/writing/' | relative_url }}"><span class="area-kicker">03</span><h3>Writing</h3><p>Readable articles that explain findings, design choices, and lessons.</p></a>
+    <a class="area-card" href="{{ '/methods/' | relative_url }}"><span class="area-kicker">04</span><h3>Methods</h3><p>How claims are bounded, checked, stopped, and prepared for publication.</p></a>
   </div>
 </section>
 
 <section class="section">
   <div class="section-heading">
-    <div>
-      <p class="eyebrow">Latest research</p>
-      <h2>Published studies</h2>
-    </div>
+    <div><p class="eyebrow">Latest research</p><h2>Published studies</h2></div>
     <a href="{{ '/research/' | relative_url }}">View all</a>
   </div>
-
   {% assign items = site.research | sort: 'updated' | reverse %}
   {% if items.size > 0 %}
   <div class="research-list">
     {% for item in items limit: 3 %}
     <article class="research-item">
-      <div>
-        <h3><a href="{{ item.url | relative_url }}">{{ item.title }}</a></h3>
-        {% if item.summary %}<p>{{ item.summary }}</p>{% endif %}
-      </div>
+      <div><h3><a href="{{ item.url | relative_url }}">{{ item.title }}</a></h3>{% if item.summary %}<p>{{ item.summary }}</p>{% endif %}</div>
       {% if item.status %}<span class="status">{{ item.status }}</span>{% endif %}
     </article>
     {% endfor %}
   </div>
-  {% else %}
-  <p class="empty-state">No public research pages yet.</p>
-  {% endif %}
+  {% else %}<p class="empty-state">No public research pages yet.</p>{% endif %}
 </section>
 
 <section class="section">
   <div class="section-heading">
-    <div>
-      <p class="eyebrow">Trading research</p>
-      <h2>Replicated signal, execution questions still open</h2>
-    </div>
+    <div><p class="eyebrow">Trading research</p><h2>A replicated story met a stricter unused-data test</h2></div>
     <a href="{{ '/trading/' | relative_url }}">Trading research</a>
   </div>
   <div class="feature-grid feature-grid-wide">
     <article class="feature-card">
-      <p class="feature-meta">Published evidence</p>
-      <h3><a href="{{ '/research/gold-horizontal-replication-execution-evidence/' | relative_url }}">GOLD horizontal reactions repeated across four separated periods</a></h3>
-      <p>The same real-minus-control reaction-rate effect remained positive in 2024, 2022, 2020, and early 2025. A separate 2019 historical BID/ASK quote-crossing validation also produced a positive real-side mean. This is stronger evidence for a repeatable short-horizon reaction, not proof of a durable live trading edge.</p>
+      <p class="feature-meta">Latest public result</p>
+      <h3><a href="{{ '/research/gold-horizontal-unconditional-touch-2026h2/' | relative_url }}">Untouched 2026H2 data did not support the unconditional horizontal-touch hypothesis</a></h3>
+      <p>The preregistered 60-session test produced a mean 15-minute direction-adjusted return of −1.379 bps, with a 95% session-clustered interval of −1.909 to −0.862 bps. The research line was closed without rescue tuning on the consumed samples.</p>
     </article>
     <article class="feature-card">
-      <p class="feature-meta">Current program status</p>
-      <h3><a href="{{ '/trading/' | relative_url }}">Follow the prospective tests and open decision gates</a></h3>
-      <p>Fast-changing work—including the VIX prospective screen, distinct-mechanism discovery, and execution-aware follow-up—is maintained on the Trading page rather than duplicated here. This keeps the home page focused on durable evidence while preserving a clear route to current status.</p>
+      <p class="feature-meta">Evidence context</p>
+      <h3><a href="{{ '/research/gold-horizontal-replication-execution-evidence/' | relative_url }}">Earlier reaction evidence remains part of the record</a></h3>
+      <p>Reaction-rate differences had replicated across four historical periods and a 2019 quote-crossing specification was positive. The later H2 result narrows what those findings can support: repeatable reaction statistics are not the same as an unconditional tradable edge.</p>
     </article>
   </div>
 </section>
 
 <section class="section">
-  <div class="section-heading">
-    <div>
-      <p class="eyebrow">Featured projects</p>
-      <h2>Tools in use</h2>
-    </div>
-    <a href="{{ '/projects/' | relative_url }}">Project index</a>
-  </div>
+  <div class="section-heading"><div><p class="eyebrow">Featured projects</p><h2>Tools in use</h2></div><a href="{{ '/projects/' | relative_url }}">Project index</a></div>
   <div class="feature-grid">
-    <article class="feature-card">
-      <p class="feature-meta">Daily use</p>
-      <h3><a href="https://circuit-gold.vercel.app/">CIRCUIT</a></h3>
-      <p>Two-digit multiplication practice with problem-level review of speed and accuracy.</p>
-    </article>
-    <article class="feature-card">
-      <p class="feature-meta">Learning system</p>
-      <h3><a href="https://world-history-lab.vercel.app/">World History Lab</a></h3>
-      <p>World history through chronology, causality, comparison, sources, and argument.</p>
-    </article>
-    <article class="feature-card">
-      <p class="feature-meta">Knowledge infrastructure</p>
-      <h3><a href="https://commonplace-sable.vercel.app/">Lumen / Commonplace</a></h3>
-      <p>A connected, source-aware knowledge base for reading, research, and publishing.</p>
-    </article>
+    <article class="feature-card"><p class="feature-meta">Daily use</p><h3><a href="https://circuit-gold.vercel.app/">CIRCUIT</a></h3><p>Two-digit multiplication practice with problem-level review of speed and accuracy.</p></article>
+    <article class="feature-card"><p class="feature-meta">Learning system</p><h3><a href="https://world-history-lab.vercel.app/">World History Lab</a></h3><p>World history through chronology, causality, comparison, sources, and argument.</p></article>
+    <article class="feature-card"><p class="feature-meta">Knowledge infrastructure</p><h3><a href="https://commonplace-sable.vercel.app/">Lumen / Commonplace</a></h3><p>A connected, source-aware knowledge base for reading, research, and publishing.</p></article>
   </div>
 </section>
 
 <section class="section">
-  <div class="section-heading">
-    <div>
-      <p class="eyebrow">Recent writing</p>
-      <h2>From the notebook</h2>
-    </div>
-    <a href="{{ '/writing/' | relative_url }}">View writing</a>
-  </div>
+  <div class="section-heading"><div><p class="eyebrow">Recent writing</p><h2>From the notebook</h2></div><a href="{{ '/writing/' | relative_url }}">View writing</a></div>
   <div class="writing-list">
-    <a class="writing-item" href="https://note.com/joshuajosh/n/nc84e060cf7eb">
-      <span>2026-08-29</span>
-      <strong>公開AI一覧は「件数」だけで比べない</strong>
-    </a>
-    <a class="writing-item" href="https://note.com/joshuajosh/n/nc074fbf930f1">
-      <span>2026-08-27</span>
-      <strong>AIに「最新版」を一つにそろえさせる――検索・編集・レビュー・提出の版ずれを防ぐ実務設計</strong>
-    </a>
-    <a class="writing-item" href="https://note.com/joshuajosh/n/ned9be54efabf">
-      <span>2026-08-27</span>
-      <strong>AIと研究して見えた「確認しすぎる」という問題</strong>
-    </a>
+    <a class="writing-item" href="https://note.com/joshuajosh/n/nc84e060cf7eb"><span>2026-08-29</span><strong>公開AI一覧は「件数」だけで比べない</strong></a>
+    <a class="writing-item" href="https://note.com/joshuajosh/n/nc074fbf930f1"><span>2026-08-27</span><strong>AIに「最新版」を一つにそろえさせる――検索・編集・レビュー・提出の版ずれを防ぐ実務設計</strong></a>
+    <a class="writing-item" href="https://note.com/joshuajosh/n/ned9be54efabf"><span>2026-08-27</span><strong>AIと研究して見えた「確認しすぎる」という問題</strong></a>
   </div>
 </section>
 
