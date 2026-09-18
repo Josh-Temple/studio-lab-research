@@ -32,6 +32,8 @@ A normal substantive update is:
 
 Trading research follows the same boundary: reviewed historical or simulated findings may be published, while live positions, account information, current trade decisions, and unresolved experiments remain private.
 
+The public market page refreshes hourly through the Pages build and fails closed when the market-data source is unavailable.
+
 ## Public site
 
 https://josh-temple.github.io/studio-lab-research/
