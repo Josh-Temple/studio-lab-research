@@ -9,6 +9,7 @@ The repository name remains `studio-lab-research`, but the GitHub Pages site ser
 - `_research/` — published research pages. Each Markdown file becomes a page under `/research/`.
 - `research/index.md` — research catalog and research-area entry points.
 - `trading.md` — public landing page for reviewed systematic-trading research.
+- `market.md` / `ja/market.md` — lightweight public market-observation pages built from an hourly snapshot; descriptive data only, separate from trading decisions and internal telemetry.
 - `projects.md` — selected public projects and links to the curated Baukasten portfolio.
 - `writing.md` — curated links to published writing.
 - `methods.md` — public research and publication principles.
@@ -19,7 +20,7 @@ The repository name remains `studio-lab-research`, but the GitHub Pages site ser
 
 ## Publishing model
 
-Internal research state, live work queues, private data, credentials, operational logs, drafts, and unpublished claims remain in their canonical systems. This repository is a public presentation layer.
+Internal research state, live work queues, private data, credentials, operational logs, drafts, unpublished claims, positions, and current trade decisions remain in their canonical systems. This repository is a public presentation layer. The `/market/` page is a narrow exception for public descriptive observations: it publishes only a bounded market snapshot and standard indicators, not Studio Lab control state or trading instructions.
 
 A normal substantive update is:
 
