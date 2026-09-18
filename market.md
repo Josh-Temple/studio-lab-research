@@ -8,7 +8,7 @@ description: A lightweight public market-observation page generated from hourly 
 <h1>Eight markets. One lightweight snapshot.</h1>
 <p class="lede">An hourly, read-only observation layer for Studio Lab. It shows a small set of market proxies and standard descriptive indicators. It is not a signal service, a position dashboard, or a recommendation to trade.</p>
 
-<section class="section market-panel" aria-labelledby="market-status-title">
+<section class="section market-panel">
   <div class="market-meta">
     <div><span>Snapshot</span><strong id="market-updated">Loading…</strong></div>
     <div><span>Provider</span><strong id="market-provider">—</strong></div>
