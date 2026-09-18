@@ -3,6 +3,8 @@ name: Deploy GitHub Pages
 on:
   push:
     branches: ["main"]
+  schedule:
+    - cron: "37 * * * *"
   workflow_dispatch:
 
 permissions:
@@ -17,9 +19,17 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      TWELVE_DATA_API_KEY: ${{ secrets.TWELVE_DATA_API_KEY }}
     steps:
       - name: Checkout
         uses: actions/checkout@v6
+      - name: Setup Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.11"
+      - name: Generate public market snapshot
+        run: python scripts/market_observer.py
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
