@@ -9,7 +9,7 @@ description: 毎時のデータスナップショットを表示する軽量な�
 <h1>8市場を、1枚の軽い画面で見る。</h1>
 <p class="lede">Studio Labの毎時・読み取り専用の市場観測ページです。少数の市場proxyと標準的な記述指標だけを表示します。売買シグナル、ポジション画面、取引推奨ではありません。</p>
 
-<section class="section market-panel" aria-labelledby="market-status-title-ja">
+<section class="section market-panel">
   <div class="market-meta">
     <div><span>更新時刻</span><strong id="market-updated">読み込み中…</strong></div>
     <div><span>データ元</span><strong id="market-provider">—</strong></div>
