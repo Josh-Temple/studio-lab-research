@@ -1,33 +1,70 @@
 ---
 title: Portfolio
-description: Selected case studies in public-sector AI, digital transformation, and evidence-backed operational design.
+description: Selected case studies in public-sector digital transformation, operational reform, and AI under real-world constraints.
 permalink: /portfolio/
 ---
 
 <section class="hero">
   <p class="eyebrow">Portfolio</p>
-  <h1>From ambiguous problems to evidence-backed implementation.</h1>
-  <p class="lede">Selected self-initiated case studies in public-sector AI, digital transformation, and operational design. Each case is structured around the problem, analysis, proposed operating model, implementation path, risks, and evidence limits.</p>
+  <h1>Move operational reform forward under real constraints.</h1>
+  <p class="lede">Self-initiated research and implementation cases focused on public-sector digital transformation and operational reform. AI is treated as one enabling tool, not the objective. Each case follows the path from problem framing and research to process design, small-scale implementation, evaluation, and wider adoption.</p>
 </section>
 
 <section class="section">
   <div class="section-heading">
-    <div><p class="eyebrow">Case study 01</p><h2>Public-sector AI workflow redesign</h2></div>
+    <div><p class="eyebrow">Case study 01</p><h2>Scaling digital improvement across a constrained organization</h2></div>
     <span class="status">In progress</span>
   </div>
   <div class="feature-grid feature-grid-wide">
     <article class="feature-card">
       <p class="feature-meta">Problem</p>
-      <h3>Design a safer, faster administrative workflow with generative AI</h3>
-      <p>A self-initiated case study on high-volume administrative processing. The case will map the current workflow, identify bottlenecks, define where AI can assist, and preserve human judgment where errors or discretion matter.</p>
+      <h3>Turn isolated DX examples into organizational improvement capability</h3>
+      <p>The case treats a common problem in large organizations: useful digital-transformation examples remain inside limited communities and are difficult for other teams to discover or reuse. The aim is to connect case sharing, consultation, improvement support, and wider adoption into one operating loop.</p>
     </article>
     <article class="feature-card">
-      <p class="feature-meta">Planned deliverables</p>
-      <h3>Analysis, target process, prototype, and rollout plan</h3>
-      <p>The final package will include an As-Is / To-Be process, issue analysis, AI and non-AI controls, KPI design, governance, a small working prototype, and a phased proof-of-concept plan.</p>
+      <p class="feature-meta">Research and implementation</p>
+      <h3>From evidence review to information and process design</h3>
+      <p>Public cases will be compared to design a reusable DX case template, discovery structure, consultation workflow, and evaluation measures. Where practical, small-scale application will separate observed outcomes from assumptions and hypotheses.</p>
     </article>
   </div>
-  <p class="small-note">This case uses public information, fictionalized examples, or synthetic data only. No confidential employer information or production administrative data will be published.</p>
+  <p class="small-note">This case uses public information, generalized workflows, fictionalized examples, or synthetic data only. No confidential employer information, personal information, or production administrative data will be published.</p>
+</section>
+
+<section class="section">
+  <div class="section-heading"><div><p class="eyebrow">Research lines</p><h2>Connect research to operational problems.</h2></div></div>
+  <div class="feature-grid">
+    <article class="feature-card">
+      <p class="feature-meta">01 / First</p>
+      <h3>Scaling DX cases across teams</h3>
+      <p>Study how cases should be structured and surfaced so that other teams can find them, judge applicability, and reuse them in their own work.</p>
+    </article>
+    <article class="feature-card">
+      <p class="feature-meta">02 / Next</p>
+      <h3>Redesigning inquiry workflows</h3>
+      <p>Go beyond moving email to another tool by examining structured information, visible status, reuse of prior answers, and handover.</p>
+    </article>
+    <article class="feature-card">
+      <p class="feature-meta">03 / Next</p>
+      <h3>Internal DX consultation and enablement</h3>
+      <p>Design an internal-consulting flow from problem framing and diagnosis to small experiments, outcome checks, and wider adoption.</p>
+    </article>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-heading"><div><p class="eyebrow">AI position</p><h2>Use AI where it fits; do not make it the starting point.</h2></div></div>
+  <div class="feature-grid feature-grid-wide">
+    <article class="feature-card">
+      <p class="feature-meta">Design principle</p>
+      <h3>Build improvements that remain useful without AI</h3>
+      <p>Security, privacy, existing systems, authority, procurement, and staff capability are treated as design constraints. AI-enabled and non-AI steps are separated explicitly.</p>
+    </article>
+    <article class="feature-card">
+      <p class="feature-meta">Phased adoption</p>
+      <h3>From approved assistance to future safe integration</h3>
+      <p>Current uses such as drafting and analysis are separated from future system integration, avoiding confusion between what is technically possible and what an organization can safely operate.</p>
+    </article>
+  </div>
 </section>
 
 <section class="section">
@@ -54,5 +91,5 @@ permalink: /portfolio/
 <section class="section public-boundary">
   <p class="eyebrow">Portfolio standard</p>
   <h2>Show the reasoning, not just the final slide.</h2>
-  <p>Portfolio cases will separate observed facts, assumptions, analysis, and recommendations. Where a result is estimated rather than measured, the estimation method and conditions will be stated explicitly.</p>
+  <p>Portfolio cases separate observed facts, assumptions, analysis, and recommendations. Where a result is estimated rather than measured, the estimation method and conditions are stated explicitly.</p>
 </section>
