@@ -47,32 +47,27 @@ description: Studio Labのレビュー済みトレード研究。開発テスト
 </section>
 
 <section class="section">
-  <div class="section-heading"><div><p class="eyebrow">現在の研究 · 2026年9月20日確認</p><h2>使用済み標本の救済調整ではなく、独立した事前固定検証へ移る</h2></div></div>
+  <div class="section-heading"><div><p class="eyebrow">現在の研究 · 2026年9月20日確認</p><h2>現在の制約は、結果を見ずに実行可能な検証まで進めること</h2></div></div>
   <div class="feature-grid">
     <article class="feature-card">
-      <p class="feature-meta">金利のcross-market研究 · 条件固定の途中</p>
-      <h3>米10年金利からJGB10年金利への5営業日spilloverを、結果を見る前に検証可能な形へ固定する</h3>
-      <p>対象市場、5営業日のhorizon、方向判定、公式データ元、null resultの扱いまでは固定済みです。残っている科学条件は連続した評価期間で、これを固定する前に履歴のoutcome値は開きません。</p>
-      <p class="card-links">現段階は検証仕様であり、関係の存在を示す結果ではありません。</p>
+      <p class="feature-meta">独立cross-market研究 · 結果は未観測</p>
+      <h3>履歴結果を開く前に、異なる市場・時間軸・機序の候補を固定する</h3>
+      <p>直近のbounded screenでは、EIAの商業原油在庫公表とWTI、RBAの商品価格指数とAUD/USD、S&amp;P 500の30日variance risk premiumなど、互いに異なる問いを候補として整理しています。いずれも現時点では研究候補または入力経路の確認段階で、売買成績の結果ではありません。</p>
+      <p class="card-links">使用済みGOLD水平線標本のvariantを増やすのではなく、market × horizon × mechanismが独立する問いへ広げています。</p>
     </article>
     <article class="feature-card">
-      <p class="feature-meta">USD/JPY × EFFR · prospectiveのみ</p>
-      <h3>過去のdecision timeで利用可能だった政策金利値を十分に再構成できないため、retrospective検証は保留する</h3>
-      <p>対象系列と公表時刻は公式資料で確認できましたが、各時点で実際に利用可能だった値を後から一意に再現する経路は確認できませんでした。改定後の履歴値で代用せず、将来のpoint-in-time snapshotから検証する方針です。</p>
-      <p class="card-links">データ取得上の制約を、仮説に対するnegative evidenceへ置き換えません。</p>
+      <p class="feature-meta">人間判断の境界 · 科学条件が未固定</p>
+      <h3>安全な既定値がない条件は、AIが選ばず人間へ返す</h3>
+      <p>regime、session transition、fundamentals-first、multi-timeframe、simple trend、FOMC event-risk、S&amp;P 500 variance risk premiumの具体的評価期間など、結果前に人間が固定すべき条件が残る研究線があります。性能を比較してAIが都合のよい条件を選ぶことはせず、HUMAN_BOUNDARYで停止します。</p>
+      <p class="card-links">条件が決まるまで未使用データの結果は開きません。</p>
     </article>
     <article class="feature-card">
-      <p class="feature-meta">中期研究 · outcome前の事前固定</p>
-      <h3>variance riskとGOLDの4H〜日次候補は、まだ結果を測る段階ではない</h3>
-      <p>候補の形は進んでいますが、具体的な評価期間、単一mechanism、horizon、比較基準など、結果前に固定すべき条件が残っています。これらを一意に決められなければHOLDとし、結果を見てから条件を選びません。</p>
-      <p class="card-links">positive resultの数ではなく、nullやnegativeも含む独立empirical testの完了を優先します。</p>
+      <p class="feature-meta">実行能力 · 仮説の成否とは分離</p>
+      <h3>取得方法が決まっても、そのまま検証を実行できるとは限らない</h3>
+      <p>prospectiveなtime/session研究の一例では、XAU/USDの1分足を取得するrequest形と必要時間帯は価格を取らずに確認できました。一方、Workerが認証付きで取得し、観測時点のraw dataを保存する経路は確認できていないため、人間のcredential・execution境界で停止しています。</p>
+      <p class="card-links">現在の優先対象は、positive resultの数ではなく、nullやnegativeを含む独立empirical testの完了です。</p>
     </article>
   </div>
-</section>
-
-<section class="section">
-  <div class="section-heading"><div><p class="eyebrow">残っているexecution課題</p><h2>2018年の固定再現は結果未観測のまま、手動取得経路を保留</h2></div></div>
-  <p>別系統の2018年execution-aware再現は、60セッションを結果前に固定済みで、結果はまだ開いていません。必要な2,066 quote単位のうち23単位を保存した段階で、1時間・片側ずつ取得する手動経路は研究価値に比べて負担が大きいため保留しました。これは2018年仮説に対するnegative evidenceではありません。</p>
 </section>
 
 <section class="section">
