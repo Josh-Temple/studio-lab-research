@@ -2,14 +2,30 @@
 title: ホーム
 lang: ja
 permalink: /ja/
-description: Studio Labの公開研究、プロジェクト、記事、方法をまとめた日本語版ダッシュボード。
+description: Studio Labのケーススタディ、公開研究、プロジェクト、記事、方法をまとめた日本語版ダッシュボード。
 ---
 
 <section class="hero dashboard-hero">
   <p class="eyebrow">Studio Lab</p>
   <h1>研究、実験、ツールを、根拠とともに公開する。</h1>
-  <p class="lede">選定した成果を外向きに整理する公開ダッシュボードです。研究では方法と限界を示し、プロジェクトでは実際に使えるツールへつなぎ、記事では研究や設計の内容を読みやすく説明します。内部の運用状況はここには表示しません。</p>
-  <div class="hero-actions"><a class="button primary" href="{{ '/ja/research/' | relative_url }}">研究を見る</a><a class="button secondary" href="{{ '/ja/projects/' | relative_url }}">プロジェクトを見る</a></div>
+  <p class="lede">選定した成果を外向きに整理する公開ダッシュボードです。ポートフォリオでは課題設定から実装案までを示し、研究では方法と限界を示し、プロジェクトでは実際に使えるツールへつなぎます。内部の運用状況はここには表示しません。</p>
+  <div class="hero-actions"><a class="button primary" href="{{ '/ja/portfolio/' | relative_url }}">ポートフォリオを見る</a><a class="button secondary" href="{{ '/ja/research/' | relative_url }}">研究を見る</a></div>
+</section>
+
+<section class="section compact-section" aria-labelledby="portfolio-title-ja">
+  <div class="section-heading"><div><p class="eyebrow">Portfolio</p><h2 id="portfolio-title-ja">コンサル型ケーススタディ</h2></div><a href="{{ '/ja/portfolio/' | relative_url }}">一覧を見る</a></div>
+  <div class="feature-grid feature-grid-wide">
+    <article class="feature-card">
+      <p class="feature-meta">制作中</p>
+      <h3><a href="{{ '/ja/portfolio/' | relative_url }}">自治体業務の生成AI活用・業務再設計</a></h3>
+      <p>現状業務の分析から、人が判断を残すTo-Be業務、ガバナンス、試作品、KPI、段階的なPoC計画までを一つのケースとして作成します。</p>
+    </article>
+    <article class="feature-card">
+      <p class="feature-meta">既存の土台</p>
+      <h3><a href="{{ '/ja/methods/' | relative_url }}">仮定と限界を明示する検証方法</a></h3>
+      <p>根拠の範囲、停止条件、再現可能な確認、支持されなかった結果の保存など、Studio Labで使っている方法をケーススタディにも適用します。</p>
+    </article>
+  </div>
 </section>
 
 <section class="section compact-section" aria-labelledby="areas-title-ja">
