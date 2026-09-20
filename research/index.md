@@ -29,6 +29,14 @@ description: Public Studio Lab research, with methods, findings, limits, and evi
   </div>
 </section>
 
+<section class="section compact-section">
+  <div class="section-heading">
+    <div><p class="eyebrow">Current direction · reviewed 2026-09-20</p><h2>Independent tests are replacing additional rescue tuning</h2></div>
+    <a href="{{ '/trading/' | relative_url }}">Full trading status</a>
+  </div>
+  <p class="lede">The latest trading work is preparing independent cross-market and medium-horizon tests while preserving pre-outcome boundaries. No new performance result is claimed here: one rates test still needs its evaluation period fixed, a USD/JPY–EFFR line is prospective-only because historical point-in-time inputs cannot be reconstructed reliably, and other medium-horizon candidates remain before measurement.</p>
+</section>
+
 <section class="section">
   <div class="section-heading">
     <div>
