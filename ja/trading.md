@@ -2,7 +2,7 @@
 title: トレード
 lang: ja
 permalink: /ja/trading/
-updated: "2026-09-16"
+updated: "2026-09-20"
 description: Studio Labのレビュー済みトレード研究。開発テスト、ホールドアウト、未使用データ検証、execution-aware検証、prospective protocol、negative resultを含みます。
 ---
 
@@ -47,25 +47,25 @@ description: Studio Labのレビュー済みトレード研究。開発テスト
 </section>
 
 <section class="section">
-  <div class="section-heading"><div><p class="eyebrow">現在の研究 · 2026年9月16日確認</p><h2>同じ標本を掘り続けず、残った観測を未使用データへ移す</h2></div></div>
+  <div class="section-heading"><div><p class="eyebrow">現在の研究 · 2026年9月20日確認</p><h2>使用済み標本の救済調整ではなく、独立した事前固定検証へ移る</h2></div></div>
   <div class="feature-grid">
     <article class="feature-card">
-      <p class="feature-meta">Horizontal研究 · 使用済み標本の探索は収束</p>
-      <h3>探索的に残ったパターンは、別の確認段階へ送る</h3>
-      <p>使用済み2,685 tradeでは、固定UTC区分によるSTOP率差やSTOPの早期集中など、未使用データで確認する価値があるパターンが残りました。一方、同じ標本でsubsetや統計量を増やす探索は収束させています。残す観測は、条件を固定した未使用またはprospective protocolで確認して初めてconfirmatory evidenceになります。</p>
-      <p class="card-links">これらの探索結果を公開サイト上で「edge」とは扱わず、H2結果を見た後に使用済み標本から新ruleを調整することもしません。</p>
+      <p class="feature-meta">金利のcross-market研究 · 条件固定の途中</p>
+      <h3>米10年金利からJGB10年金利への5営業日spilloverを、結果を見る前に検証可能な形へ固定する</h3>
+      <p>対象市場、5営業日のhorizon、方向判定、公式データ元、null resultの扱いまでは固定済みです。残っている科学条件は連続した評価期間で、これを固定する前に履歴のoutcome値は開きません。</p>
+      <p class="card-links">現段階は検証仕様であり、関係の存在を示す結果ではありません。</p>
     </article>
     <article class="feature-card">
-      <p class="feature-meta">prospective研究 · outcome前に固定</p>
-      <h3>新しい研究線は、結果を見る前に実行可能なtestへ変換する</h3>
-      <p>現在はtime/session、market profile、multi-timeframe、fundamentals-first、liquidity関連など、異なる問いについて最低限の観測条件と実行条件を固定しています。一次証拠やdata pathが不足する候補は、parameter違いで救済せずその段階で止めます。</p>
-      <p class="card-links">公開上の境界は明確です。protocolは結果ではなく、もっともらしいmechanismもedgeではありません。</p>
+      <p class="feature-meta">USD/JPY × EFFR · prospectiveのみ</p>
+      <h3>過去のdecision timeで利用可能だった政策金利値を十分に再構成できないため、retrospective検証は保留する</h3>
+      <p>対象系列と公表時刻は公式資料で確認できましたが、各時点で実際に利用可能だった値を後から一意に再現する経路は確認できませんでした。改定後の履歴値で代用せず、将来のpoint-in-time snapshotから検証する方針です。</p>
+      <p class="card-links">データ取得上の制約を、仮説に対するnegative evidenceへ置き換えません。</p>
     </article>
     <article class="feature-card">
-      <p class="feature-meta">VIX prospective screen · 観測経路は未検証</p>
-      <h3>初期eventは予測性能の根拠として数えない</h3>
-      <p>E01では09:00 JST時点のVIX snapshotと固定XAU/USD開始観測を情報cutoff内でそろえて保存できず、fail-closedとしました。E02前のoperational feasibility確認でも、必要なcutoff snapshot保存と固定feedのruntime取得を成立させる証拠が不足していました。そのため、初期eventを予測性能の採点根拠として扱っていません。</p>
-      <p class="card-links">VIX境界、24時間horizon、UP / DOWN / FLAT、Brier scoreを欠損に合わせて変更することもしていません。</p>
+      <p class="feature-meta">中期研究 · outcome前の事前固定</p>
+      <h3>variance riskとGOLDの4H〜日次候補は、まだ結果を測る段階ではない</h3>
+      <p>候補の形は進んでいますが、具体的な評価期間、単一mechanism、horizon、比較基準など、結果前に固定すべき条件が残っています。これらを一意に決められなければHOLDとし、結果を見てから条件を選びません。</p>
+      <p class="card-links">positive resultの数ではなく、nullやnegativeも含む独立empirical testの完了を優先します。</p>
     </article>
   </div>
 </section>
