@@ -1,7 +1,7 @@
 ---
 title: Trading
 permalink: /trading/
-updated: "2026-09-16"
+updated: "2026-09-20"
 description: Reviewed Studio Lab trading research, including development tests, holdouts, unused-data replications, execution-aware checks, prospective protocols, and negative results.
 ---
 
@@ -58,28 +58,28 @@ description: Reviewed Studio Lab trading research, including development tests, 
 <section class="section">
   <div class="section-heading">
     <div>
-      <p class="eyebrow">Current research · reviewed 2026-09-16</p>
-      <h2>Move promising observations to unused data instead of mining the same sample</h2>
+      <p class="eyebrow">Current research · reviewed 2026-09-20</p>
+      <h2>Shift from rescue tuning to independent, pre-outcome tests</h2>
     </div>
   </div>
   <div class="feature-grid">
     <article class="feature-card">
-      <p class="feature-meta">Horizontal research · consumed sample closed</p>
-      <h3>Exploratory diagnostics now require a separate confirmation step</h3>
-      <p>Diagnostics on the consumed 2,685-trade sample identified several patterns worth checking, including fixed UTC differences in stop outcomes and unusually early stop concentration. The internal analysis has converged rather than expanding into more subsets. Any retained pattern must now use a fixed unused-data or prospective protocol before it can become confirmatory evidence.</p>
-      <p class="card-links">These exploratory patterns are not published here as trading edges, and the consumed sample is not being used to tune a new rule after the H2 result.</p>
+      <p class="feature-meta">Cross-market rates · conditions partly fixed</p>
+      <h3>A five-day U.S. 10-year to JGB 10-year spillover test is being prepared without opening outcomes</h3>
+      <p>The market, five-business-day horizon, directional rule, official source identities, and null interpretation are fixed. The remaining scientific choice is the continuous evaluation period. Historical outcome values are not being opened before that period is fixed.</p>
+      <p class="card-links">This is a test specification, not evidence that the relationship exists.</p>
     </article>
     <article class="feature-card">
-      <p class="feature-meta">Prospective research · pre-outcome freeze</p>
-      <h3>New lines are being converted into executable tests before outcomes are opened</h3>
-      <p>Current work is fixing minimum observation and execution conditions for distinct questions such as time/session effects, market-profile context, multi-timeframe conditioning, fundamentals-first market selection, and liquidity-related hypotheses. A candidate can stop at the data or evidence gate rather than being rescued with another parameter variant.</p>
-      <p class="card-links">The public boundary remains simple: a protocol is not a result, and a plausible mechanism is not an edge.</p>
+      <p class="feature-meta">USD/JPY × EFFR · prospective only</p>
+      <h3>The retrospective test is on hold because point-in-time policy-rate inputs cannot be reconstructed reliably</h3>
+      <p>The official documentation is sufficient to identify the intended series and publication timing, but not to reconstruct the exact value that would have been available at each historical decision time. Rather than substitute revised history, the line is limited to future point-in-time snapshots.</p>
+      <p class="card-links">A data-availability limit is not being converted into a negative market result.</p>
     </article>
     <article class="feature-card">
-      <p class="feature-meta">VIX prospective screen · observation path not yet validated</p>
-      <h3>Early events do not count as forecast-performance evidence</h3>
-      <p>E01 failed closed because the required 09:00 JST VIX snapshot and fixed XAU/USD start observation were not both preserved within the information boundary. Before E02, the operational feasibility gate still lacked proof of the required cutoff capture and fixed-feed runtime retrieval path, so the research record does not treat those early events as scored predictive evidence.</p>
-      <p class="card-links">Thresholds, 24-hour horizon, UP / DOWN / FLAT outcome categories, and Brier scoring were not changed to work around the missing observations.</p>
+      <p class="feature-meta">Medium horizon · preregistration before measurement</p>
+      <h3>Variance-risk and 4H-to-daily GOLD candidates remain before the outcome stage</h3>
+      <p>Candidate definitions have progressed, but important scientific conditions such as the exact evaluation window or the single mechanism, horizon, and comparator are not yet uniquely fixed. Those choices must be settled before results are inspected; otherwise the research line stays on hold.</p>
+      <p class="card-links">The priority is to complete independent empirical tests, including null or negative results, rather than maximize the number of positive findings.</p>
     </article>
   </div>
 </section>
