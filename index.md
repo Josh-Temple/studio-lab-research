@@ -5,32 +5,11 @@ description: Studio Lab presents selected public-sector operational reform cases
 
 <section class="hero dashboard-hero">
   <p class="eyebrow">Studio Lab</p>
-  <h1>Operational reform, research, and tools—with the evidence behind the work.</h1>
-  <p class="lede">A public record of selected case studies and research. The portfolio shows how problems are framed and redesigned under real constraints; the research pages show methods, results, and limits—including findings that did not survive stricter tests.</p>
+  <h1>Research, reform, and tools—with evidence attached.</h1>
+  <p class="lede">Selected case studies and research, with methods, results, and limits—including findings that did not survive stricter tests.</p>
   <div class="hero-actions">
-    <a class="button primary" href="{{ '/portfolio/' | relative_url }}">View portfolio</a>
-    <a class="button secondary" href="{{ '/research/' | relative_url }}">Explore research</a>
-  </div>
-</section>
-
-<section class="section compact-section" aria-labelledby="featured-case-title">
-  <div class="section-heading">
-    <div>
-      <p class="eyebrow">Featured case</p>
-      <h2 id="featured-case-title">Scaling digital improvement across a constrained organization</h2>
-    </div>
-    <a href="{{ '/portfolio/' | relative_url }}">Full case →</a>
-  </div>
-  <div class="editorial-feature">
-    <div class="editorial-feature-main">
-      <p class="feature-deck">A public-sector operational reform case built around a practical question: how can useful DX examples move from isolated successes to repeatable organizational capability?</p>
-      <p>The work connects case sharing, inquiry redesign, consultation, small experiments, evaluation, and wider adoption. AI is treated as one enabling tool rather than the objective.</p>
-    </div>
-    <dl class="evidence-note" aria-label="Case study structure">
-      <div><dt>01</dt><dd><strong>Problem framing</strong><span>Define the operational constraint before choosing technology.</span></dd></div>
-      <div><dt>02</dt><dd><strong>Operating design</strong><span>Show the process, handoffs, controls, and implementation path.</span></dd></div>
-      <div><dt>03</dt><dd><strong>Evidence and limits</strong><span>Separate observed results, estimates, assumptions, and unresolved questions.</span></dd></div>
-    </dl>
+    <a class="button primary" href="{{ '/research/' | relative_url }}">Explore research</a>
+    <a class="button secondary" href="{{ '/portfolio/' | relative_url }}">View portfolio</a>
   </div>
 </section>
 
@@ -91,6 +70,27 @@ description: Studio Lab presents selected public-sector operational reform cases
       <div><strong>Unused-data test did not support the unconditional claim</strong><span>2026H2 · preregistered · 60 sessions</span><p>The unconditional touch mean was −1.379 bps, so that research line was closed without tuning the consumed sample to rescue it.</p></div>
     </li>
   </ol>
+</section>
+
+<section class="section compact-section" aria-labelledby="featured-case-title">
+  <div class="section-heading">
+    <div>
+      <p class="eyebrow">Featured case</p>
+      <h2 id="featured-case-title">Scaling digital improvement across a constrained organization</h2>
+    </div>
+    <a href="{{ '/portfolio/' | relative_url }}">Full case →</a>
+  </div>
+  <div class="editorial-feature">
+    <div class="editorial-feature-main">
+      <p class="feature-deck">A public-sector operational reform case built around a practical question: how can useful DX examples move from isolated successes to repeatable organizational capability?</p>
+      <p>The work connects case sharing, inquiry redesign, consultation, small experiments, evaluation, and wider adoption. AI is treated as one enabling tool rather than the objective.</p>
+    </div>
+    <dl class="evidence-note" aria-label="Case study structure">
+      <div><dt>01</dt><dd><strong>Problem framing</strong><span>Define the operational constraint before choosing technology.</span></dd></div>
+      <div><dt>02</dt><dd><strong>Operating design</strong><span>Show the process, handoffs, controls, and implementation path.</span></dd></div>
+      <div><dt>03</dt><dd><strong>Evidence and limits</strong><span>Separate observed results, estimates, assumptions, and unresolved questions.</span></dd></div>
+    </dl>
+  </div>
 </section>
 
 <section class="section">
