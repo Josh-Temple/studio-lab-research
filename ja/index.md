@@ -49,6 +49,10 @@ description: 公共分野の業務改革ケース、研究、ツールを、判�
       <span class="finding-kicker">GOLD · 2026H2</span>
       <strong>−1.379 bps</strong>
       <span>15分後の方向調整済み平均リターン</span>
+      <dl class="finding-facts" aria-label="代表結果の根拠">
+        <div><dt>標本</dt><dd>未使用60セッション</dd></div>
+        <div><dt>95%区間</dt><dd>−1.909〜−0.862 bps</dd></div>
+      </dl>
     </div>
     <div class="finding-copy">
       <p class="finding-conclusion">事前登録した無条件タッチ仮説は支持されませんでした。</p>

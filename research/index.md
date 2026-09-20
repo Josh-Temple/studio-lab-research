@@ -8,29 +8,38 @@ description: Public Studio Lab research, with methods, findings, limits, and evi
 <h1>Studies and investigations</h1>
 <p class="lede">Each page separates the research question, method, observations, interpretation, limitations, and supporting material where it can be shared publicly.</p>
 
-<section class="section compact-section">
+<section class="section compact-section" aria-labelledby="research-lines-title">
   <div class="section-heading">
     <div>
-      <p class="eyebrow">Research areas</p>
-      <h2>Browse by line of work</h2>
+      <p class="eyebrow">Research lines</p>
+      <h2 id="research-lines-title">Start with the question, then follow the evidence</h2>
     </div>
   </div>
-  <div class="feature-grid feature-grid-wide">
-    <article class="feature-card">
-      <p class="feature-meta">Trading</p>
-      <h3><a href="{{ '/trading/' | relative_url }}">Systematic trading research</a></h3>
-      <p>Development tests, untouched validations, replication across periods, execution-aware checks, negative results, and the difference between a repeatable market reaction and a tradable edge.</p>
-    </article>
-    <article class="feature-card">
-      <p class="feature-meta">Research methodology</p>
-      <h3><a href="{{ '/research/openalex-bridge-adoption-lag/' | relative_url }}">Validity gates and methodological non-results</a></h3>
-      <p>Research designs that stop before the primary comparison when the evidence needed for interpretation does not meet a pre-set threshold.</p>
-    </article>
-    <article class="feature-card">
-      <p class="feature-meta">Reproducibility checks</p>
-      <h3><a href="{{ '/research/heckerman-replicability-bounded-replication/' | relative_url }}">Bounded replication checks</a></h3>
-      <p>Small, pre-specified recomputations that verify one reported numeric relation without expanding the claim to the source paper's full conclusions.</p>
-    </article>
+  <div class="research-line-list">
+    <a class="research-line" href="{{ '/trading/' | relative_url }}">
+      <span class="research-line-index">01</span>
+      <div>
+        <span class="research-line-kicker">Trading</span>
+        <strong>Systematic trading research</strong>
+        <p>Development tests, untouched validations, replication across periods, execution-aware checks, and negative results.</p>
+      </div>
+    </a>
+    <a class="research-line" href="{{ '/research/openalex-bridge-adoption-lag/' | relative_url }}">
+      <span class="research-line-index">02</span>
+      <div>
+        <span class="research-line-kicker">Research methodology</span>
+        <strong>Validity gates and methodological non-results</strong>
+        <p>Research designs that stop before the primary comparison when the evidence needed for interpretation does not meet a pre-set threshold.</p>
+      </div>
+    </a>
+    <a class="research-line" href="{{ '/research/heckerman-replicability-bounded-replication/' | relative_url }}">
+      <span class="research-line-index">03</span>
+      <div>
+        <span class="research-line-kicker">Reproducibility</span>
+        <strong>Bounded replication checks</strong>
+        <p>Small, pre-specified recomputations that verify one reported numeric relation without expanding the claim to a paper's broader conclusions.</p>
+      </div>
+    </a>
   </div>
 </section>
 
@@ -39,7 +48,7 @@ description: Public Studio Lab research, with methods, findings, limits, and evi
     <div><p class="eyebrow">Current direction · reviewed 2026-09-20</p><h2>Finish pre-outcome decisions, then open the test</h2></div>
     <a href="{{ '/trading/' | relative_url }}">Full trading status</a>
   </div>
-  <p class="lede">No newer confirmatory trading-performance result has replaced the unused-data GOLD result above. Current work is moving independent cross-market and medium-horizon candidates toward executable tests while keeping outcomes closed. When a scientific condition has no unique pre-outcome default, the line now stops at a human boundary rather than letting automation choose from performance.</p>
+  <p class="lede">No newer confirmatory trading-performance result has replaced the unused-data GOLD result above. Current work is moving independent cross-market and medium-horizon candidates toward executable tests while keeping outcomes closed. When a scientific condition has no unique pre-outcome default, the line stops at a human boundary rather than letting automation choose from performance.</p>
 </section>
 
 <section class="section">
@@ -49,12 +58,17 @@ description: Public Studio Lab research, with methods, findings, limits, and evi
       <h2>Published studies</h2>
     </div>
   </div>
+  <p class="registry-note">The research lines above are curated entry points. This list remains the full public record, including negative and stopped studies.</p>
   {% assign items = site.research | sort: 'updated' | reverse %}
   {% if items.size > 0 %}
   <div class="research-list">
     {% for item in items %}
     <article class="research-item">
       <div>
+        <p class="research-entry-meta">
+          {% if item.topic %}<span>{{ item.topic }}</span>{% endif %}
+          {% if item.updated %}<time datetime="{{ item.updated }}">{{ item.updated }}</time>{% endif %}
+        </p>
         <h2><a href="{{ item.url | relative_url }}">{{ item.title }}</a></h2>
         {% if item.summary %}<p>{{ item.summary }}</p>{% endif %}
       </div>

@@ -47,6 +47,10 @@ description: Studio Lab presents selected public-sector operational reform cases
       <span class="finding-kicker">GOLD · 2026H2</span>
       <strong>−1.379 bps</strong>
       <span>mean 15-minute direction-adjusted return</span>
+      <dl class="finding-facts" aria-label="Featured finding evidence">
+        <div><dt>Sample</dt><dd>60 unused sessions</dd></div>
+        <div><dt>95% interval</dt><dd>−1.909 to −0.862 bps</dd></div>
+      </dl>
     </div>
     <div class="finding-copy">
       <p class="finding-conclusion">The preregistered unconditional horizontal-touch hypothesis was not supported.</p>

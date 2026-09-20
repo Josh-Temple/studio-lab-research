@@ -9,15 +9,55 @@ description: Studio Labの公開研究。方法、結果、限界、根拠を分
 <h1>研究と検証</h1>
 <p class="lede">各ページでは、研究の問い、方法、観測結果、解釈、限界、公開可能な根拠を分けて示します。positive resultだけでなく、独立検証で支持されなかった結果や、停止条件に達して主要比較を実行しなかった研究もそのまま残します。</p>
 
+<section class="section compact-section" aria-labelledby="research-lines-title-ja">
+  <div class="section-heading">
+    <div>
+      <p class="eyebrow">研究線</p>
+      <h2 id="research-lines-title-ja">問いから入り、検証の積み重ねを追う</h2>
+    </div>
+  </div>
+  <div class="research-line-list">
+    <a class="research-line" href="{{ '/ja/trading/' | relative_url }}">
+      <span class="research-line-index">01</span>
+      <div>
+        <span class="research-line-kicker">トレード</span>
+        <strong>システマティックなトレード研究</strong>
+        <p>開発検証、未使用データでの検証、期間をまたいだ再現、約定を意識した確認、negative resultまで一続きで残します。</p>
+      </div>
+    </a>
+    <a class="research-line" href="{{ '/ja/research/openalex-bridge-adoption-lag/' | relative_url }}">
+      <span class="research-line-index">02</span>
+      <div>
+        <span class="research-line-kicker">研究方法</span>
+        <strong>妥当性ゲートと主要比較を行わない判断</strong>
+        <p>解釈に必要な根拠が事前基準を満たさない場合、結果を見に行かず主要比較の前で止める研究設計です。</p>
+      </div>
+    </a>
+    <a class="research-line" href="{{ '/ja/research/heckerman-replicability-bounded-replication/' | relative_url }}">
+      <span class="research-line-index">03</span>
+      <div>
+        <span class="research-line-kicker">再現可能性</span>
+        <strong>範囲を限定した再計算</strong>
+        <p>原論文の一つの数値関係だけを事前に固定して再計算し、論文全体の結論へ主張を広げません。</p>
+      </div>
+    </a>
+  </div>
+</section>
+
 <section class="section compact-section">
   <div class="section-heading"><div><p class="eyebrow">現在の方向 · 2026年9月20日確認</p><h2>結果を見る前の判断を終えてから、検証を開く</h2></div><a href="{{ '/ja/trading/' | relative_url }}">現在地の詳細</a></div>
   <p class="lede">GOLDの未使用データ結果以降、それを置き換える新しいconfirmatoryなトレード成績はまだ出ていません。現在は独立したcross-market・中期候補を実行可能な検証へ近づけつつ、一意に決まらない科学条件はAIが補わずHUMAN_BOUNDARYで止めています。</p>
 </section>
 
 <section class="section">
+  <div class="section-heading">
+    <div><p class="eyebrow">全研究</p><h2>公開済み研究</h2></div>
+  </div>
+  <p class="registry-note">上の研究線は入口として選んだものです。以下には、支持されなかった結果や途中で停止した研究も含め、公開記録をまとめて残します。</p>
   <div class="research-list">
     <article class="research-item">
       <div>
+        <p class="research-entry-meta"><span>研究方法 / 再現可能性</span><time datetime="2026-09-20">2026-09-20</time></p>
         <h2><a href="{{ '/ja/research/heckerman-replicability-bounded-replication/' | relative_url }}">Heckerman et al. (2025)：「fully replicable」5/393の限定再計算</a></h2>
         <p>原論文が報告した393件中5件という数値関係を、事前固定した計算で1.27%と再確認しました。論文全体や科学一般の再現可能性へは広げません。</p>
       </div>
@@ -25,6 +65,7 @@ description: Studio Labの公開研究。方法、結果、限界、根拠を分
     </article>
     <article class="research-item">
       <div>
+        <p class="research-entry-meta"><span>トレード / GOLD水平線</span><time datetime="2026-09-15">2026-09-15</time></p>
         <h2><a href="{{ '/ja/research/gold-horizontal-unconditional-touch-2026h2/' | relative_url }}">GOLD水平線：未使用の2026H2検証では「タッチだけ」の効果を確認できなかった</a></h2>
         <p>事前登録した未使用60セッションで、15分の方向調整済み平均リターンは−1.379 bps、95% session-clustered bootstrap区間は−1.909〜−0.862 bpsでした。同じ標本で救済的なparameter調整は行わず、無条件タッチ研究線を閉じています。</p>
       </div>
@@ -32,6 +73,7 @@ description: Studio Labの公開研究。方法、結果、限界、根拠を分
     </article>
     <article class="research-item">
       <div>
+        <p class="research-entry-meta"><span>トレード / GOLD水平線</span><time datetime="2026-09-15">2026-09-15</time></p>
         <h2><a href="{{ '/ja/research/gold-horizontal-replication-execution-evidence/' | relative_url }}">GOLD水平線：方向反応は再現したが、後続の無条件タッチ検証はnegative</a></h2>
         <p>過去4期間の方向反応差と2019年のpositiveなquote-crossing検証を残しつつ、後続の未使用2026H2検証を含めた現在のclaim boundaryをまとめています。</p>
       </div>
@@ -39,13 +81,15 @@ description: Studio Labの公開研究。方法、結果、限界、根拠を分
     </article>
     <article class="research-item">
       <div>
+        <p class="research-entry-meta"><span>トレード / GOLD水平線</span><time datetime="2026-09-14">2026-09-14</time></p>
         <h2><a href="{{ '/ja/research/gold-horizontal-recent-price-control-development/' | relative_url }}">GOLD水平線反応：2024年開発データでは直近価格の対照群を上回った</a></h2>
-        <p>封印済み60セッションで、rolling extrema zoneの15分方向反応率は直近の実測価格を使った対照群を平均26.55ポイント上回りました。これは開発段階の結果で、その後のpositive/negative両方の検証は別ページにまとめています。</p>
+        <p>封印済み60セッションで、rolling extrema zoneの15分方向反応率は直近価格の対照群を平均26.55ポイント上回りました。これは開発段階の結果で、その後のpositive/negative両方の検証は別ページにまとめています。</p>
       </div>
       <span class="status">開発段階 · 後続検証あり</span>
     </article>
     <article class="research-item">
       <div>
+        <p class="research-entry-meta"><span>トレード / GOLD / ボラティリティ</span><time datetime="2026-09-06">2026-09-06</time></p>
         <h2><a href="{{ '/ja/research/gold-session-range-independent-validation/' | relative_url }}">GOLDのセッションレンジ持続性：2024年の強い関係は2021年の独立検証では確認できなかった</a></h2>
         <p>2024年の開発結果を独立した2021年データで検証したところ、推定値は小さく、95% block-bootstrap区間はゼロをまたぎました。</p>
       </div>
@@ -53,6 +97,7 @@ description: Studio Labの公開研究。方法、結果、限界、根拠を分
     </article>
     <article class="research-item">
       <div>
+        <p class="research-entry-meta"><span>トレード / システマティック戦略評価</span><time datetime="2026-08-29">2026-08-29</time></p>
         <h2><a href="{{ '/ja/research/repeat-trading-external-holdout/' | relative_url }}">リピート取引の外部ホールドアウト：リスク低下は収益上の優位性にはつながらなかった</a></h2>
         <p>2つの動的exitを未使用の2020〜2022年で検証し、リスク負担の軽減と収益改善を別々に評価しました。</p>
       </div>
@@ -60,6 +105,7 @@ description: Studio Labの公開研究。方法、結果、限界、根拠を分
     </article>
     <article class="research-item">
       <div>
+        <p class="research-entry-meta"><span>研究方法 / scholarly metadata</span><time datetime="2026-08-20">2026-08-20</time></p>
         <h2><a href="{{ '/ja/research/openalex-bridge-adoption-lag/' | relative_url }}">OpenAlex bridge-work adoption lag pilot</a></h2>
         <p>メタデータで定義したbridge workの妥当性基準を満たさなかったため、主要なadoption-lag比較を行わずに終了しました。</p>
       </div>
