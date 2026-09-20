@@ -10,12 +10,19 @@ description: Studio Labの公開研究。方法、結果、限界、根拠を分
 <p class="lede">各ページでは、研究の問い、方法、観測結果、解釈、限界、公開可能な根拠を分けて示します。positive resultだけでなく、独立検証で支持されなかった結果や、停止条件に達して主要比較を実行しなかった研究もそのまま残します。</p>
 
 <section class="section compact-section">
-  <div class="section-heading"><div><p class="eyebrow">現在の方向 · 2026年9月20日確認</p><h2>追加の救済調整ではなく、独立した検証へ移行する</h2></div><a href="{{ '/ja/trading/' | relative_url }}">現在地の詳細</a></div>
-  <p class="lede">直近のトレード研究では、cross-marketと中期の独立検証を、結果を見る前の条件固定から進めています。ここで新しい性能結果を主張しているわけではありません。金利研究は評価期間の固定前、USD/JPYとEFFRの研究は過去時点値を十分に再構成できないためprospective限定、その他の中期候補も測定前の段階です。</p>
+  <div class="section-heading"><div><p class="eyebrow">現在の方向 · 2026年9月20日確認</p><h2>結果を見る前の判断を終えてから、検証を開く</h2></div><a href="{{ '/ja/trading/' | relative_url }}">現在地の詳細</a></div>
+  <p class="lede">GOLDの未使用データ結果以降、それを置き換える新しいconfirmatoryなトレード成績はまだ出ていません。現在は独立したcross-market・中期候補を実行可能な検証へ近づけつつ、一意に決まらない科学条件はAIが補わずHUMAN_BOUNDARYで止めています。</p>
 </section>
 
 <section class="section">
   <div class="research-list">
+    <article class="research-item">
+      <div>
+        <h2><a href="{{ '/ja/research/heckerman-replicability-bounded-replication/' | relative_url }}">Heckerman et al. (2025)：「fully replicable」5/393の限定再計算</a></h2>
+        <p>原論文が報告した393件中5件という数値関係を、事前固定した計算で1.27%と再確認しました。論文全体や科学一般の再現可能性へは広げません。</p>
+      </div>
+      <span class="status">完了 · 限定再計算PASS</span>
+    </article>
     <article class="research-item">
       <div>
         <h2><a href="{{ '/ja/research/gold-horizontal-unconditional-touch-2026h2/' | relative_url }}">GOLD水平線：未使用の2026H2検証では「タッチだけ」の効果を確認できなかった</a></h2>
