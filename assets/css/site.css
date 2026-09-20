@@ -379,3 +379,82 @@ h3 { margin-top: 2.1em; font-size: 1.25rem; }
   }
   .lineage-index { margin-bottom: 10px; }
 }
+
+
+/* Research discovery: curated lines above a complete public registry */
+.finding-facts {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0;
+  margin: 22px 0 0;
+  border-top: 1px solid var(--line);
+}
+.finding-facts div { padding: 12px 18px 0 0; }
+.finding-facts dt {
+  color: var(--muted);
+  font-size: .7rem;
+  font-weight: 700;
+  letter-spacing: .07em;
+  text-transform: uppercase;
+}
+.finding-facts dd {
+  margin: 3px 0 0;
+  font-size: .86rem;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+.research-line-list { border-top: 1px solid var(--line); }
+.research-line {
+  display: grid;
+  grid-template-columns: 42px minmax(0, 1fr);
+  gap: 18px;
+  padding: 24px 0;
+  border-bottom: 1px solid var(--line);
+  text-decoration: none;
+}
+.research-line-index {
+  color: var(--muted);
+  font-size: .74rem;
+  font-weight: 750;
+  letter-spacing: .1em;
+}
+.research-line > div { display: grid; gap: 6px; max-width: 780px; }
+.research-line-kicker {
+  color: var(--accent);
+  font-size: .75rem;
+  font-weight: 750;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+.research-line strong {
+  font-size: clamp(1.15rem, 2.3vw, 1.45rem);
+  line-height: 1.3;
+  letter-spacing: -.02em;
+}
+.research-line p { margin: 0; color: var(--muted); }
+.research-line:hover strong { text-decoration: underline; text-underline-offset: 4px; }
+
+.registry-note {
+  max-width: var(--measure);
+  margin: -6px 0 24px;
+  color: var(--muted);
+  font-size: .92rem;
+}
+.research-entry-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 14px;
+  margin: 0 0 7px !important;
+  color: var(--accent) !important;
+  font-size: .74rem !important;
+  font-weight: 700;
+  letter-spacing: .03em;
+}
+.research-entry-meta time { color: var(--muted); font-variant-numeric: tabular-nums; }
+
+@media (max-width: 680px) {
+  .finding-facts { grid-template-columns: 1fr; }
+  .finding-facts div { padding-top: 10px; }
+  .research-line { grid-template-columns: 30px minmax(0, 1fr); gap: 12px; padding: 20px 0; }
+}
