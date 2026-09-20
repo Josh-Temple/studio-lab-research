@@ -7,32 +7,11 @@ description: 公共分野の業務改革ケース、研究、ツールを、判�
 
 <section class="hero dashboard-hero">
   <p class="eyebrow">Studio Lab</p>
-  <h1>業務改革、研究、ツールを、判断の根拠まで含めて公開する。</h1>
-  <p class="lede">選定したケーススタディと研究の公開記録です。ポートフォリオでは、制約のある現場で課題をどう整理し、業務をどう組み替えるかを示します。研究では、方法、結果、限界を残し、より厳しい検証で支持されなかった結果も公開します。</p>
+  <h1>研究、業務改革、ツールを、根拠とともに公開する。</h1>
+  <p class="lede">選定した研究とケーススタディの公開記録です。方法、結果、限界を分け、より厳しい検証で支持されなかった結果もそのまま残します。</p>
   <div class="hero-actions">
-    <a class="button primary" href="{{ '/ja/portfolio/' | relative_url }}">ポートフォリオを見る</a>
-    <a class="button secondary" href="{{ '/ja/research/' | relative_url }}">研究を見る</a>
-  </div>
-</section>
-
-<section class="section compact-section" aria-labelledby="featured-case-title-ja">
-  <div class="section-heading">
-    <div>
-      <p class="eyebrow">Featured case</p>
-      <h2 id="featured-case-title-ja">制約の強い組織でDXを横展開する業務改革</h2>
-    </div>
-    <a href="{{ '/ja/portfolio/' | relative_url }}">ケース全体を見る →</a>
-  </div>
-  <div class="editorial-feature">
-    <div class="editorial-feature-main">
-      <p class="feature-deck">個別のDX事例を、一部の成功例で終わらせず、組織の改善能力へつなげられるかを扱うケースです。</p>
-      <p>事例共有、照会業務の再設計、相談・伴走支援、小規模実験、評価、横展開までを一続きで考えます。AIは目的にせず、使える工程で使う手段として位置付けます。</p>
-    </div>
-    <dl class="evidence-note" aria-label="ケーススタディの構成">
-      <div><dt>01</dt><dd><strong>課題設定</strong><span>技術を選ぶ前に、業務上の制約と改善対象を定める。</span></dd></div>
-      <div><dt>02</dt><dd><strong>業務設計</strong><span>工程、引継ぎ、統制、実装までの流れを示す。</span></dd></div>
-      <div><dt>03</dt><dd><strong>根拠と限界</strong><span>実測、試算、仮定、未解決事項を分けて示す。</span></dd></div>
-    </dl>
+    <a class="button primary" href="{{ '/ja/research/' | relative_url }}">研究を見る</a>
+    <a class="button secondary" href="{{ '/ja/portfolio/' | relative_url }}">ポートフォリオを見る</a>
   </div>
 </section>
 
@@ -93,6 +72,27 @@ description: 公共分野の業務改革ケース、研究、ツールを、判�
       <div><strong>未使用データでは無条件タッチ仮説を支持せず</strong><span>2026H2 · 事前登録 · 60セッション</span><p>無条件タッチの平均は−1.379 bpsでした。結果を見た後に使用済み標本を調整して救済せず、この研究線を終了しています。</p></div>
     </li>
   </ol>
+</section>
+
+<section class="section compact-section" aria-labelledby="featured-case-title-ja">
+  <div class="section-heading">
+    <div>
+      <p class="eyebrow">Featured case</p>
+      <h2 id="featured-case-title-ja">制約の強い組織でDXを横展開する業務改革</h2>
+    </div>
+    <a href="{{ '/ja/portfolio/' | relative_url }}">ケース全体を見る →</a>
+  </div>
+  <div class="editorial-feature">
+    <div class="editorial-feature-main">
+      <p class="feature-deck">個別のDX事例を、一部の成功例で終わらせず、組織の改善能力へつなげられるかを扱うケースです。</p>
+      <p>事例共有、照会業務の再設計、相談・伴走支援、小規模実験、評価、横展開までを一続きで考えます。AIは目的にせず、使える工程で使う手段として位置付けます。</p>
+    </div>
+    <dl class="evidence-note" aria-label="ケーススタディの構成">
+      <div><dt>01</dt><dd><strong>課題設定</strong><span>技術を選ぶ前に、業務上の制約と改善対象を定める。</span></dd></div>
+      <div><dt>02</dt><dd><strong>業務設計</strong><span>工程、引継ぎ、統制、実装までの流れを示す。</span></dd></div>
+      <div><dt>03</dt><dd><strong>根拠と限界</strong><span>実測、試算、仮定、未解決事項を分けて示す。</span></dd></div>
+    </dl>
+  </div>
 </section>
 
 <section class="section">
