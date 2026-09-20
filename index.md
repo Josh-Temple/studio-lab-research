@@ -1,15 +1,37 @@
 ---
 title: Home
-description: Studio Lab is a public index of selected research, projects, writing, and methods.
+description: Studio Lab is a public index of selected case studies, research, projects, writing, and methods.
 ---
 
 <section class="hero dashboard-hero">
   <p class="eyebrow">Studio Lab</p>
   <h1>Research, experiments, and tools—with evidence attached.</h1>
-  <p class="lede">A public index of selected work. Research pages show methods and limits; projects link to working tools; writing turns the work into readable explanations. Internal operational state stays separate.</p>
+  <p class="lede">A public index of selected work. Portfolio cases show problem framing and implementation paths; research pages show methods and limits; projects link to working tools. Internal operational state stays separate.</p>
   <div class="hero-actions">
-    <a class="button primary" href="{{ '/research/' | relative_url }}">Explore research</a>
-    <a class="button secondary" href="{{ '/projects/' | relative_url }}">See projects</a>
+    <a class="button primary" href="{{ '/portfolio/' | relative_url }}">View portfolio</a>
+    <a class="button secondary" href="{{ '/research/' | relative_url }}">Explore research</a>
+  </div>
+</section>
+
+<section class="section compact-section" aria-labelledby="portfolio-title">
+  <div class="section-heading">
+    <div>
+      <p class="eyebrow">Portfolio</p>
+      <h2 id="portfolio-title">Consulting-style case studies</h2>
+    </div>
+    <a href="{{ '/portfolio/' | relative_url }}">View portfolio</a>
+  </div>
+  <div class="feature-grid feature-grid-wide">
+    <article class="feature-card">
+      <p class="feature-meta">In progress</p>
+      <h3><a href="{{ '/portfolio/' | relative_url }}">Public-sector AI workflow redesign</a></h3>
+      <p>A self-initiated case study that moves from current-process analysis to a human-in-the-loop target workflow, governance, prototype, KPIs, and a phased proof-of-concept plan.</p>
+    </article>
+    <article class="feature-card">
+      <p class="feature-meta">Evidence base</p>
+      <h3><a href="{{ '/methods/' | relative_url }}">Methods that keep assumptions and limits visible</a></h3>
+      <p>The portfolio builds on the same operating discipline used across Studio Lab: explicit evidence boundaries, stop conditions, reproducible checks, and publication of negative results.</p>
+    </article>
   </div>
 </section>
 
