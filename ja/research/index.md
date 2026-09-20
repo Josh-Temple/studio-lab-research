@@ -9,6 +9,11 @@ description: Studio Labの公開研究。方法、結果、限界、根拠を分
 <h1>研究と検証</h1>
 <p class="lede">各ページでは、研究の問い、方法、観測結果、解釈、限界、公開可能な根拠を分けて示します。positive resultだけでなく、独立検証で支持されなかった結果や、停止条件に達して主要比較を実行しなかった研究もそのまま残します。</p>
 
+<section class="section compact-section">
+  <div class="section-heading"><div><p class="eyebrow">現在の方向 · 2026年9月20日確認</p><h2>追加の救済調整ではなく、独立した検証へ移行する</h2></div><a href="{{ '/ja/trading/' | relative_url }}">現在地の詳細</a></div>
+  <p class="lede">直近のトレード研究では、cross-marketと中期の独立検証を、結果を見る前の条件固定から進めています。ここで新しい性能結果を主張しているわけではありません。金利研究は評価期間の固定前、USD/JPYとEFFRの研究は過去時点値を十分に再構成できないためprospective限定、その他の中期候補も測定前の段階です。</p>
+</section>
+
 <section class="section">
   <div class="research-list">
     <article class="research-item">
@@ -57,8 +62,8 @@ description: Studio Labの公開研究。方法、結果、限界、根拠を分
 </section>
 
 <section class="section public-boundary">
-  <p class="eyebrow">現在の研究</p>
-  <h2>変化の速い進捗はTradingページに集約する</h2>
-  <p>未使用データ確認protocol、prospectiveな別メカニズム検証、data pathの実行条件などは短い周期で状態が変わるため、研究一覧にはレビュー済みの耐久性ある結果を残し、現在地はTradingページで更新します。</p>
+  <p class="eyebrow">公開範囲</p>
+  <h2>研究一覧には耐久性のある結果を残す</h2>
+  <p>短い周期で変わるprotocolや実行準備はTradingページで現在地を示し、この一覧ではレビュー済みの結果を中心に残します。未観測の研究線、内部の作業キュー、運用ログは公開結果と混ぜません。</p>
   <a href="{{ '/ja/trading/' | relative_url }}">トレード研究の現在地を見る</a>
 </section>
