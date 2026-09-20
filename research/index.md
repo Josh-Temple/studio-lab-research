@@ -26,15 +26,20 @@ description: Public Studio Lab research, with methods, findings, limits, and evi
       <h3><a href="{{ '/research/openalex-bridge-adoption-lag/' | relative_url }}">Validity gates and methodological non-results</a></h3>
       <p>Research designs that stop before the primary comparison when the evidence needed for interpretation does not meet a pre-set threshold.</p>
     </article>
+    <article class="feature-card">
+      <p class="feature-meta">Reproducibility checks</p>
+      <h3><a href="{{ '/research/heckerman-replicability-bounded-replication/' | relative_url }}">Bounded replication checks</a></h3>
+      <p>Small, pre-specified recomputations that verify one reported numeric relation without expanding the claim to the source paper's full conclusions.</p>
+    </article>
   </div>
 </section>
 
 <section class="section compact-section">
   <div class="section-heading">
-    <div><p class="eyebrow">Current direction · reviewed 2026-09-20</p><h2>Independent tests are replacing additional rescue tuning</h2></div>
+    <div><p class="eyebrow">Current direction · reviewed 2026-09-20</p><h2>Finish pre-outcome decisions, then open the test</h2></div>
     <a href="{{ '/trading/' | relative_url }}">Full trading status</a>
   </div>
-  <p class="lede">The latest trading work is preparing independent cross-market and medium-horizon tests while preserving pre-outcome boundaries. No new performance result is claimed here: one rates test still needs its evaluation period fixed, a USD/JPY–EFFR line is prospective-only because historical point-in-time inputs cannot be reconstructed reliably, and other medium-horizon candidates remain before measurement.</p>
+  <p class="lede">No newer confirmatory trading-performance result has replaced the unused-data GOLD result above. Current work is moving independent cross-market and medium-horizon candidates toward executable tests while keeping outcomes closed. When a scientific condition has no unique pre-outcome default, the line now stops at a human boundary rather than letting automation choose from performance.</p>
 </section>
 
 <section class="section">

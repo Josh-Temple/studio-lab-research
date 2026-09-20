@@ -59,39 +59,29 @@ description: Reviewed Studio Lab trading research, including development tests, 
   <div class="section-heading">
     <div>
       <p class="eyebrow">Current research · reviewed 2026-09-20</p>
-      <h2>Shift from rescue tuning to independent, pre-outcome tests</h2>
+      <h2>The bottleneck is now executable, outcome-blind testing</h2>
     </div>
   </div>
   <div class="feature-grid">
     <article class="feature-card">
-      <p class="feature-meta">Cross-market rates · conditions partly fixed</p>
-      <h3>A five-day U.S. 10-year to JGB 10-year spillover test is being prepared without opening outcomes</h3>
-      <p>The market, five-business-day horizon, directional rule, official source identities, and null interpretation are fixed. The remaining scientific choice is the continuous evaluation period. Historical outcome values are not being opened before that period is fixed.</p>
-      <p class="card-links">This is a test specification, not evidence that the relationship exists.</p>
+      <p class="feature-meta">Independent cross-market pipeline · no outcome claim</p>
+      <h3>New candidates are being specified before historical outcomes are opened</h3>
+      <p>Recent bounded screens selected distinct questions including WTI around scheduled EIA commercial-crude inventory releases, AUD/USD after changes in the RBA commodity-price index, and the S&amp;P 500 30-day variance-risk premium. Each remains a pre-outcome research candidate or input-path check, not a published trading result.</p>
+      <p class="card-links">The program is deliberately expanding across market × horizon × mechanism rather than creating more variants of the consumed GOLD horizontal sample.</p>
     </article>
     <article class="feature-card">
-      <p class="feature-meta">USD/JPY × EFFR · prospective only</p>
-      <h3>The retrospective test is on hold because point-in-time policy-rate inputs cannot be reconstructed reliably</h3>
-      <p>The official documentation is sufficient to identify the intended series and publication timing, but not to reconstruct the exact value that would have been available at each historical decision time. Rather than substitute revised history, the line is limited to future point-in-time snapshots.</p>
-      <p class="card-links">A data-availability limit is not being converted into a negative market result.</p>
+      <p class="feature-meta">Human boundary · scientific choices remain</p>
+      <h3>Automation now stops when the remaining condition has no safe default</h3>
+      <p>Several surviving lines—including regime, session-transition, fundamentals-first, multi-timeframe, simple-trend, FOMC event-risk, and the exact S&amp;P 500 variance-risk-premium period—still require a pre-outcome scientific choice. Those choices are being returned to a human decision surface rather than selected from performance.</p>
+      <p class="card-links">Unused outcomes remain unopened while those conditions are unresolved.</p>
     </article>
     <article class="feature-card">
-      <p class="feature-meta">Medium horizon · preregistration before measurement</p>
-      <h3>Variance-risk and 4H-to-daily GOLD candidates remain before the outcome stage</h3>
-      <p>Candidate definitions have progressed, but important scientific conditions such as the exact evaluation window or the single mechanism, horizon, and comparator are not yet uniquely fixed. Those choices must be settled before results are inspected; otherwise the research line stays on hold.</p>
-      <p class="card-links">The priority is to complete independent empirical tests, including null or negative results, rather than maximize the number of positive findings.</p>
+      <p class="feature-meta">Execution capability · separate from hypothesis evidence</p>
+      <h3>A defined data request is not the same as an executable test</h3>
+      <p>For one prospective time/session path, the XAU/USD request shape and required 1-minute windows were verified without retrieving prices, but authenticated execution and observation-time persistence were not available on the Worker surface. That path therefore stops at a human credential/execution boundary rather than generating a substitute result.</p>
+      <p class="card-links">The current priority is completed independent empirical tests—including null and negative results—not the number of prepared hypotheses.</p>
     </article>
   </div>
-</section>
-
-<section class="section">
-  <div class="section-heading">
-    <div>
-      <p class="eyebrow">Open execution question</p>
-      <h2>The frozen 2018 replication remains untouched, but the manual route is parked</h2>
-    </div>
-  </div>
-  <p>The separate 2018 execution-aware replication still has 60 frozen sessions and an untouched outcome. Only 23 of 2,066 required quote units were preserved before the one-hour/one-side browser acquisition route was deprioritized as too mechanically expensive. This is an operational hold, not negative evidence about the 2018 hypothesis.</p>
 </section>
 
 <section class="section">
