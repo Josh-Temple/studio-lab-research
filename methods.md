@@ -25,6 +25,10 @@ Stopping is not the same as finding no effect. If a study ends before its primar
 
 If the value that would have been available at a historical decision time cannot be reconstructed reliably, a retrospective test should remain unobserved or move to a prospective design. Revised history, a convenient substitute series, or a later snapshot should not be used to manufacture a result that the original information boundary cannot support.
 
+## Do not let automation fill unresolved scientific conditions
+
+A candidate can remain scientifically interesting without being ready to test. If an evaluation window, threshold, baseline, feed, cost rule, or candidate choice still has no unique pre-outcome rule, automation stops at a human boundary rather than inventing a convenient default. The choice must be fixed before unused or prospective outcomes are opened; if there is no safe default, the correct state is HOLD.
+
 ## Keep claims inside the measured scope
 
 A proxy should remain a proxy. A metadata classification does not become a direct measure of scientific value, organizational maturity, adoption, or causality simply because it is convenient to compute.
