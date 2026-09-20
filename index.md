@@ -1,59 +1,69 @@
 ---
 title: Home
-description: Studio Lab is a public index of selected case studies, research, projects, writing, and methods.
+description: Studio Lab presents selected public-sector operational reform cases, research, tools, and the evidence behind them.
 ---
 
 <section class="hero dashboard-hero">
   <p class="eyebrow">Studio Lab</p>
-  <h1>Research, experiments, and tools—with evidence attached.</h1>
-  <p class="lede">A public index of selected work. Portfolio cases show problem framing and implementation paths; research pages show methods and limits; projects link to working tools. Internal operational state stays separate.</p>
+  <h1>Operational reform, research, and tools—with the evidence behind the work.</h1>
+  <p class="lede">A public record of selected case studies and research. The portfolio shows how problems are framed and redesigned under real constraints; the research pages show methods, results, and limits—including findings that did not survive stricter tests.</p>
   <div class="hero-actions">
     <a class="button primary" href="{{ '/portfolio/' | relative_url }}">View portfolio</a>
     <a class="button secondary" href="{{ '/research/' | relative_url }}">Explore research</a>
   </div>
 </section>
 
-<section class="section compact-section" aria-labelledby="portfolio-title">
+<section class="section compact-section" aria-labelledby="featured-case-title">
   <div class="section-heading">
     <div>
-      <p class="eyebrow">Portfolio</p>
-      <h2 id="portfolio-title">Consulting-style case studies</h2>
+      <p class="eyebrow">Featured case</p>
+      <h2 id="featured-case-title">Scaling digital improvement across a constrained organization</h2>
     </div>
-    <a href="{{ '/portfolio/' | relative_url }}">View portfolio</a>
+    <a href="{{ '/portfolio/' | relative_url }}">Full case →</a>
   </div>
-  <div class="feature-grid feature-grid-wide">
-    <article class="feature-card">
-      <p class="feature-meta">In progress</p>
-      <h3><a href="{{ '/portfolio/' | relative_url }}">Public-sector AI workflow redesign</a></h3>
-      <p>A self-initiated case study that moves from current-process analysis to a human-in-the-loop target workflow, governance, prototype, KPIs, and a phased proof-of-concept plan.</p>
-    </article>
-    <article class="feature-card">
-      <p class="feature-meta">Evidence base</p>
-      <h3><a href="{{ '/methods/' | relative_url }}">Methods that keep assumptions and limits visible</a></h3>
-      <p>The portfolio builds on the same operating discipline used across Studio Lab: explicit evidence boundaries, stop conditions, reproducible checks, and publication of negative results.</p>
-    </article>
+  <div class="editorial-feature">
+    <div class="editorial-feature-main">
+      <p class="feature-deck">A public-sector operational reform case built around a practical question: how can useful DX examples move from isolated successes to repeatable organizational capability?</p>
+      <p>The work connects case sharing, inquiry redesign, consultation, small experiments, evaluation, and wider adoption. AI is treated as one enabling tool rather than the objective.</p>
+    </div>
+    <dl class="evidence-note" aria-label="Case study structure">
+      <div><dt>01</dt><dd><strong>Problem framing</strong><span>Define the operational constraint before choosing technology.</span></dd></div>
+      <div><dt>02</dt><dd><strong>Operating design</strong><span>Show the process, handoffs, controls, and implementation path.</span></dd></div>
+      <div><dt>03</dt><dd><strong>Evidence and limits</strong><span>Separate observed results, estimates, assumptions, and unresolved questions.</span></dd></div>
+    </dl>
   </div>
 </section>
 
-<section class="section compact-section" aria-labelledby="areas-title">
+<section class="section" aria-labelledby="featured-finding-title">
   <div class="section-heading">
     <div>
-      <p class="eyebrow">Public dashboard</p>
-      <h2 id="areas-title">Four ways into the work</h2>
+      <p class="eyebrow">Featured finding</p>
+      <h2 id="featured-finding-title">A repeated-looking market story failed a stricter unused-data test</h2>
     </div>
+    <a href="{{ '/research/gold-horizontal-unconditional-touch-2026h2/' | relative_url }}">Read study →</a>
   </div>
-  <div class="area-grid">
-    <a class="area-card" href="{{ '/research/' | relative_url }}"><span class="area-kicker">01</span><h3>Research</h3><p>Questions, methods, observations, limits, and public evidence.</p></a>
-    <a class="area-card" href="{{ '/projects/' | relative_url }}"><span class="area-kicker">02</span><h3>Projects</h3><p>Selected tools and learning systems that can be tried directly.</p></a>
-    <a class="area-card" href="{{ '/writing/' | relative_url }}"><span class="area-kicker">03</span><h3>Writing</h3><p>Readable articles that explain findings, design choices, and lessons.</p></a>
-    <a class="area-card" href="{{ '/methods/' | relative_url }}"><span class="area-kicker">04</span><h3>Methods</h3><p>How claims are bounded, checked, stopped, and prepared for publication.</p></a>
+  <div class="finding-feature">
+    <div class="finding-number">
+      <span class="finding-kicker">GOLD · 2026H2</span>
+      <strong>−1.379 bps</strong>
+      <span>mean 15-minute direction-adjusted return</span>
+    </div>
+    <div class="finding-copy">
+      <p class="finding-conclusion">The preregistered unconditional horizontal-touch hypothesis was not supported.</p>
+      <p>Across 60 unused sessions, the session-clustered 95% interval was −1.909 to −0.862 bps. Earlier positive reaction evidence remains in the record, but the later result narrows what it can support. The line was closed without tuning the consumed sample to rescue the result.</p>
+      <div class="inline-links">
+        <a href="{{ '/research/gold-horizontal-unconditional-touch-2026h2/' | relative_url }}">Result and limits</a>
+        <a href="{{ '/research/gold-horizontal-replication-execution-evidence/' | relative_url }}">Evidence lineage</a>
+        <a href="{{ '/methods/' | relative_url }}">Methods</a>
+      </div>
+    </div>
   </div>
 </section>
 
 <section class="section">
   <div class="section-heading">
-    <div><p class="eyebrow">Latest research</p><h2>Published studies</h2></div>
-    <a href="{{ '/research/' | relative_url }}">View all</a>
+    <div><p class="eyebrow">Latest research</p><h2>Recent published studies</h2></div>
+    <a href="{{ '/research/' | relative_url }}">View all →</a>
   </div>
   {% assign items = site.research | sort: 'updated' | reverse %}
   {% if items.size > 0 %}
@@ -68,46 +78,21 @@ description: Studio Lab is a public index of selected case studies, research, pr
   {% else %}<p class="empty-state">No public research pages yet.</p>{% endif %}
 </section>
 
-<section class="section">
+<section class="section compact-section" aria-labelledby="explore-title">
   <div class="section-heading">
-    <div><p class="eyebrow">Trading research</p><h2>A replicated story met a stricter unused-data test</h2></div>
-    <a href="{{ '/trading/' | relative_url }}">Trading research</a>
+    <div><p class="eyebrow">Explore</p><h2 id="explore-title">Other ways into the work</h2></div>
   </div>
-  <div class="feature-grid feature-grid-wide">
-    <article class="feature-card">
-      <p class="feature-meta">Latest public result</p>
-      <h3><a href="{{ '/research/gold-horizontal-unconditional-touch-2026h2/' | relative_url }}">Untouched 2026H2 data did not support the unconditional horizontal-touch hypothesis</a></h3>
-      <p>The preregistered 60-session test produced a mean 15-minute direction-adjusted return of −1.379 bps, with a 95% session-clustered interval of −1.909 to −0.862 bps. The research line was closed without rescue tuning on the consumed samples.</p>
-    </article>
-    <article class="feature-card">
-      <p class="feature-meta">Evidence context</p>
-      <h3><a href="{{ '/research/gold-horizontal-replication-execution-evidence/' | relative_url }}">Earlier reaction evidence remains part of the record</a></h3>
-      <p>Reaction-rate differences had replicated across four historical periods and a 2019 quote-crossing specification was positive. The later H2 result narrows what those findings can support: repeatable reaction statistics are not the same as an unconditional tradable edge.</p>
-    </article>
-  </div>
-</section>
-
-<section class="section">
-  <div class="section-heading"><div><p class="eyebrow">Featured projects</p><h2>Tools in use</h2></div><a href="{{ '/projects/' | relative_url }}">Project index</a></div>
-  <div class="feature-grid">
-    <article class="feature-card"><p class="feature-meta">Daily use</p><h3><a href="https://circuit-gold.vercel.app/">CIRCUIT</a></h3><p>Two-digit multiplication practice with problem-level review of speed and accuracy.</p></article>
-    <article class="feature-card"><p class="feature-meta">Learning system</p><h3><a href="https://world-history-lab.vercel.app/">World History Lab</a></h3><p>World history through chronology, causality, comparison, sources, and argument.</p></article>
-    <article class="feature-card"><p class="feature-meta">Knowledge infrastructure</p><h3><a href="https://commonplace-sable.vercel.app/">Lumen / Commonplace</a></h3><p>A connected, source-aware knowledge base for reading, research, and publishing.</p></article>
-  </div>
-</section>
-
-<section class="section">
-  <div class="section-heading"><div><p class="eyebrow">Recent writing</p><h2>From the notebook</h2></div><a href="{{ '/writing/' | relative_url }}">View writing</a></div>
-  <div class="writing-list">
-    <a class="writing-item" href="https://note.com/joshuajosh/n/nc84e060cf7eb"><span>2026-08-29</span><strong>公開AI一覧は「件数」だけで比べない</strong></a>
-    <a class="writing-item" href="https://note.com/joshuajosh/n/nc074fbf930f1"><span>2026-08-27</span><strong>AIに「最新版」を一つにそろえさせる――検索・編集・レビュー・提出の版ずれを防ぐ実務設計</strong></a>
-    <a class="writing-item" href="https://note.com/joshuajosh/n/ned9be54efabf"><span>2026-08-27</span><strong>AIと研究して見えた「確認しすぎる」という問題</strong></a>
+  <div class="link-grid">
+    <a class="link-panel" href="{{ '/projects/' | relative_url }}"><span>Projects</span><strong>Working tools and learning systems</strong><small>Things that can be tried directly.</small></a>
+    <a class="link-panel" href="{{ '/writing/' | relative_url }}"><span>Writing</span><strong>Readable notes and articles</strong><small>Findings and design decisions in plain language.</small></a>
+    <a class="link-panel" href="{{ '/methods/' | relative_url }}"><span>Methods</span><strong>How claims are bounded and checked</strong><small>Methods, stop conditions, and publication discipline.</small></a>
+    <a class="link-panel" href="{{ '/market/' | relative_url }}"><span>Market</span><strong>Public market observation</strong><small>Descriptive data only, separated from trading decisions.</small></a>
   </div>
 </section>
 
 <section class="section public-boundary">
   <p class="eyebrow">Boundary</p>
   <h2>Public outputs, not internal telemetry.</h2>
-  <p>The public site shows reviewed outputs and their evidence boundaries. Work queues, private data, operational logs, unpublished claims, and live control state belong in the internal dashboard instead.</p>
+  <p>The site publishes reviewed outputs and their evidence boundaries. Work queues, private data, operational logs, unpublished claims, live positions, and current trading decisions remain outside the public layer.</p>
   <a href="{{ '/about/' | relative_url }}">Read the publishing principles</a>
 </section>
