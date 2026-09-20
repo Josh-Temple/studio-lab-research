@@ -21,6 +21,10 @@ When a validity condition can determine whether a comparison is interpretable, t
 
 Stopping is not the same as finding no effect. If a study ends before its primary comparison, the public record should say that the outcome is unobserved rather than silently converting the stop into a null result.
 
+## Keep data-availability failures separate from hypothesis results
+
+If the value that would have been available at a historical decision time cannot be reconstructed reliably, a retrospective test should remain unobserved or move to a prospective design. Revised history, a convenient substitute series, or a later snapshot should not be used to manufacture a result that the original information boundary cannot support.
+
 ## Keep claims inside the measured scope
 
 A proxy should remain a proxy. A metadata classification does not become a direct measure of scientific value, organizational maturity, adoption, or causality simply because it is convenient to compute.
