@@ -24,7 +24,7 @@
   <header class="site-header">
     <div class="shell header-inner">
       <a class="brand" href="{% if current_lang == 'ja' %}{{ '/ja/' | relative_url }}{% else %}{{ '/' | relative_url }}{% endif %}">Studio Lab</a>
-      <nav class="site-nav" aria-label="{% if current_lang == 'ja' %}メインナビゲーション{% else %}Primary navigation{% endif %}">
+      <nav class="site-nav site-nav-desktop" aria-label="{% if current_lang == 'ja' %}メインナビゲーション{% else %}Primary navigation{% endif %}">
         {% if current_lang == 'ja' %}
         <a href="{{ '/ja/portfolio/' | relative_url }}">ポートフォリオ</a>
         <a href="{{ '/ja/research/' | relative_url }}">研究</a>
@@ -45,6 +45,39 @@
         <a href="{{ '/methods/' | relative_url }}">Methods</a>
         <a href="{{ '/about/' | relative_url }}">About</a>
         <a href="{{ alternate_path | relative_url }}" lang="ja" hreflang="ja">日本語</a>
+        {% endif %}
+      </nav>
+      <nav class="site-nav site-nav-mobile" aria-label="{% if current_lang == 'ja' %}モバイルナビゲーション{% else %}Mobile navigation{% endif %}">
+        {% if current_lang == 'ja' %}
+        <a href="{{ '/ja/research/' | relative_url }}">研究</a>
+        <a href="{{ '/ja/portfolio/' | relative_url }}">ポートフォリオ</a>
+        <a href="{{ '/ja/projects/' | relative_url }}">プロジェクト</a>
+        <details class="nav-more">
+          <summary>その他</summary>
+          <div class="nav-more-menu">
+            <a href="{{ '/ja/trading/' | relative_url }}">トレード</a>
+            <a href="{{ '/ja/market/' | relative_url }}">市場</a>
+            <a href="{{ '/ja/writing/' | relative_url }}">記事</a>
+            <a href="{{ '/ja/methods/' | relative_url }}">方法</a>
+            <a href="{{ '/ja/about/' | relative_url }}">このサイトについて</a>
+            <a href="{{ alternate_path | relative_url }}" lang="en" hreflang="en">English</a>
+          </div>
+        </details>
+        {% else %}
+        <a href="{{ '/research/' | relative_url }}">Research</a>
+        <a href="{{ '/portfolio/' | relative_url }}">Portfolio</a>
+        <a href="{{ '/projects/' | relative_url }}">Projects</a>
+        <details class="nav-more">
+          <summary>More</summary>
+          <div class="nav-more-menu">
+            <a href="{{ '/trading/' | relative_url }}">Trading</a>
+            <a href="{{ '/market/' | relative_url }}">Market</a>
+            <a href="{{ '/writing/' | relative_url }}">Writing</a>
+            <a href="{{ '/methods/' | relative_url }}">Methods</a>
+            <a href="{{ '/about/' | relative_url }}">About</a>
+            <a href="{{ alternate_path | relative_url }}" lang="ja" hreflang="ja">日本語</a>
+          </div>
+        </details>
         {% endif %}
       </nav>
     </div>
