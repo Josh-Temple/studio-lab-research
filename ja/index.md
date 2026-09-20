@@ -62,6 +62,35 @@ description: 公共分野の業務改革ケース、研究、ツールを、判�
   </div>
 </section>
 
+<section class="section compact-section evidence-lineage-section" aria-labelledby="evidence-lineage-title-ja">
+  <div class="section-heading lineage-heading">
+    <div>
+      <p class="eyebrow">Evidence lineage</p>
+      <h2 id="evidence-lineage-title-ja">一つの研究線で、主張の範囲を段階的に狭める</h2>
+    </div>
+    <a href="{{ '/ja/research/gold-horizontal-replication-execution-evidence/' | relative_url }}">研究記録全体を見る →</a>
+  </div>
+  <p class="lineage-intro">以下の検証は、まったく同じ量を測っているわけではありません。反応率として繰り返し観測されたパターンを、約定を意識した条件や未使用データへ移しながら、どこまで主張できるかを絞っていった経緯を示しています。</p>
+  <ol class="lineage-track">
+    <li class="lineage-step">
+      <span class="lineage-index">01</span>
+      <div><strong>反応率の差を4期間で再現</strong><span>2024 · 2022 · 2020 · 2025年前半</span><p>直近価格の対照と比べ、水平線ゾーンで定義した15分反応率が高いという差が、複数の過去標本で繰り返し観測されました。</p></div>
+    </li>
+    <li class="lineage-step">
+      <span class="lineage-index">02</span>
+      <div><strong>約定を意識した過去検証</strong><span>2019 · 固定条件ではpositive</span><p>実際のBID/ASKを使ったquote-crossing検証でもpositiveでした。ただし、実ブローカーでの約定そのものを再現した検証ではありません。</p></div>
+    </li>
+    <li class="lineage-step">
+      <span class="lineage-index">03</span>
+      <div><strong>エントリー条件に論点を絞る</strong><span>2026H1 · 探索的診断</span><p>タッチから確認後エントリーまでの値動きは平均的に有利でしたが、エントリー後は不利でした。確認条件によるイベント選択が論点になりました。</p></div>
+    </li>
+    <li class="lineage-step lineage-step-terminal">
+      <span class="lineage-index">04</span>
+      <div><strong>未使用データでは無条件タッチ仮説を支持せず</strong><span>2026H2 · 事前登録 · 60セッション</span><p>無条件タッチの平均は−1.379 bpsでした。結果を見た後に使用済み標本を調整して救済せず、この研究線を終了しています。</p></div>
+    </li>
+  </ol>
+</section>
+
 <section class="section">
   <div class="section-heading"><div><p class="eyebrow">最新の研究</p><h2>最近公開した研究</h2></div><a href="{{ '/ja/research/' | relative_url }}">一覧を見る →</a></div>
   <div class="research-list">
