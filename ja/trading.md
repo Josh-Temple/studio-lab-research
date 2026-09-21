@@ -2,7 +2,7 @@
 title: トレード
 lang: ja
 permalink: /ja/trading/
-updated: "2026-09-20"
+updated: "2026-09-21"
 description: Studio Labのレビュー済みトレード研究。開発テスト、ホールドアウト、未使用データ検証、execution-aware検証、prospective protocol、negative resultを含みます。
 ---
 
@@ -47,25 +47,25 @@ description: Studio Labのレビュー済みトレード研究。開発テスト
 </section>
 
 <section class="section">
-  <div class="section-heading"><div><p class="eyebrow">現在の研究 · 2026年9月20日確認</p><h2>現在の制約は、結果を見ずに実行可能な検証まで進めること</h2></div></div>
+  <div class="section-heading"><div><p class="eyebrow">現在の研究 · 2026年9月21日確認</p><h2>候補選定と、実際にデータを取得できるかの確認を分ける</h2></div></div>
   <div class="feature-grid">
     <article class="feature-card">
-      <p class="feature-meta">独立cross-market研究 · 結果は未観測</p>
-      <h3>履歴結果を開く前に、異なる市場・時間軸・機序の候補を固定する</h3>
-      <p>直近のbounded screenでは、EIAの商業原油在庫公表とWTI、RBAの商品価格指数とAUD/USD、S&amp;P 500の30日variance risk premiumなど、互いに異なる問いを候補として整理しています。いずれも現時点では研究候補または入力経路の確認段階で、売買成績の結果ではありません。</p>
-      <p class="card-links">使用済みGOLD水平線標本のvariantを増やすのではなく、market × horizon × mechanismが独立する問いへ広げています。</p>
+      <p class="feature-meta">取得経路の事前確認 · 結果は未観測</p>
+      <h3>公式データを特定できても、そのまま検証を実行できるとは限らない</h3>
+      <p>直近では、CFTCの米10年債先物ポジションは公式の照会・export経路を確認できましたが、対応するZN価格の公式machine-readable履歴取得をWorker上で固定できずHOLDになりました。CME Gold CVOLとGC先物も対象系列は特定できましたが、DataMineの認証・利用資格を含む履歴取得経路を実行環境で確認できず、結果を見る前に停止しています。</p>
+      <p class="card-links">取得経路のHOLDは、市場仮説に対するnegative resultではありません。</p>
     </article>
     <article class="feature-card">
-      <p class="feature-meta">人間判断の境界 · 科学条件が未固定</p>
-      <h3>安全な既定値がない条件は、AIが選ばず人間へ返す</h3>
-      <p>regime、session transition、fundamentals-first、multi-timeframe、simple trend、FOMC event-risk、S&amp;P 500 variance risk premiumの具体的評価期間など、結果前に人間が固定すべき条件が残る研究線があります。性能を比較してAIが都合のよい条件を選ぶことはせず、HUMAN_BOUNDARYで停止します。</p>
-      <p class="card-links">条件が決まるまで未使用データの結果は開きません。</p>
+      <p class="feature-meta">独立候補の探索 · 本実行前にpreflight</p>
+      <h3>新しい仮説も、取得確認を飛ばして結果を見に行かない</h3>
+      <p>結果を使わない候補探索では、Gold CVOL、EUR/USD CVOL、FedWatch由来の政策金利期待とS&amp;P 500先物など、異なる機序まで広がっています。各候補では、観測量、horizon、支持されない場合の解釈、経済的な停止条件を先に固定し、その後に取得互換性を確認します。</p>
+      <p class="card-links">現段階はいずれも研究候補であり、関係の存在や売買上の優位性を示す結果ではありません。</p>
     </article>
     <article class="feature-card">
-      <p class="feature-meta">実行能力 · 仮説の成否とは分離</p>
-      <h3>取得方法が決まっても、そのまま検証を実行できるとは限らない</h3>
-      <p>prospectiveなtime/session研究の一例では、XAU/USDの1分足を取得するrequest形と必要時間帯は価格を取らずに確認できました。一方、Workerが認証付きで取得し、観測時点のraw dataを保存する経路は確認できていないため、人間のcredential・execution境界で停止しています。</p>
-      <p class="card-links">現在の優先対象は、positive resultの数ではなく、nullやnegativeを含む独立empirical testの完了です。</p>
+      <p class="feature-meta">現在の制約 · 実行の忠実性</p>
+      <h3>固定した検証を、別データへ置き換えずに実行できるかを確認する</h3>
+      <p>source identityだけでなく、銘柄・項目の識別、machine-readableな取得形式、認証・利用資格、観測時点での保存までを別々に確認しています。必要な経路の一部が未確定なら、都合のよいprovider、銘柄、項目、後から改定された値へ置き換えずHOLDします。</p>
+      <p class="card-links">最新のconfirmatoryなトレード結果は、引き続き上記の未使用2026H2 GOLD検証です。</p>
     </article>
   </div>
 </section>
