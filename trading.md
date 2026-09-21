@@ -1,7 +1,7 @@
 ---
 title: Trading
 permalink: /trading/
-updated: "2026-09-20"
+updated: "2026-09-21"
 description: Reviewed Studio Lab trading research, including development tests, holdouts, unused-data replications, execution-aware checks, prospective protocols, and negative results.
 ---
 
@@ -58,28 +58,28 @@ description: Reviewed Studio Lab trading research, including development tests, 
 <section class="section">
   <div class="section-heading">
     <div>
-      <p class="eyebrow">Current research · reviewed 2026-09-20</p>
-      <h2>The bottleneck is now executable, outcome-blind testing</h2>
+      <p class="eyebrow">Current research · reviewed 2026-09-21</p>
+      <h2>Candidate selection is now separated from data-path verification</h2>
     </div>
   </div>
   <div class="feature-grid">
     <article class="feature-card">
-      <p class="feature-meta">Independent cross-market pipeline · no outcome claim</p>
-      <h3>New candidates are being specified before historical outcomes are opened</h3>
-      <p>Recent bounded screens selected distinct questions including WTI around scheduled EIA commercial-crude inventory releases, AUD/USD after changes in the RBA commodity-price index, and the S&amp;P 500 30-day variance-risk premium. Each remains a pre-outcome research candidate or input-path check, not a published trading result.</p>
-      <p class="card-links">The program is deliberately expanding across market × horizon × mechanism rather than creating more variants of the consumed GOLD horizontal sample.</p>
+      <p class="feature-meta">Source preflight · no outcome claim</p>
+      <h3>An official source can be identified before the full test is executable</h3>
+      <p>Recent fixed candidates exposed the same boundary in different forms. CFTC positioning could be identified and exported, while the paired official historical ZN price path was not fixed on the Worker surface. CME Gold CVOL and GC futures could also be identified, but authenticated machine-readable historical access required DataMine entitlement that was not available in the execution path.</p>
+      <p class="card-links">Both lines stopped before outcomes were opened. A retrieval HOLD is not evidence for or against the market hypothesis.</p>
     </article>
     <article class="feature-card">
-      <p class="feature-meta">Human boundary · scientific choices remain</p>
-      <h3>Automation now stops when the remaining condition has no safe default</h3>
-      <p>Several surviving lines—including regime, session-transition, fundamentals-first, multi-timeframe, simple-trend, FOMC event-risk, and the exact S&amp;P 500 variance-risk-premium period—still require a pre-outcome scientific choice. Those choices are being returned to a human decision surface rather than selected from performance.</p>
-      <p class="card-links">Unused outcomes remain unopened while those conditions are unresolved.</p>
+      <p class="feature-meta">Independent discovery · preflight required</p>
+      <h3>New hypotheses are not allowed to skip the retrieval gate</h3>
+      <p>Outcome-blind screens have continued into distinct mechanisms such as Gold CVOL, EUR/USD CVOL, and FedWatch-derived policy expectations versus S&amp;P 500 futures. Each candidate fixes its measure, horizon, null interpretation, and economic kill condition first, then requires source-retrieval preflight before any result-bearing execution.</p>
+      <p class="card-links">These are research candidates, not evidence that the relationships exist or are tradable.</p>
     </article>
     <article class="feature-card">
-      <p class="feature-meta">Execution capability · separate from hypothesis evidence</p>
-      <h3>A defined data request is not the same as an executable test</h3>
-      <p>For one prospective time/session path, the XAU/USD request shape and required 1-minute windows were verified without retrieving prices, but authenticated execution and observation-time persistence were not available on the Worker surface. That path therefore stops at a human credential/execution boundary rather than generating a substitute result.</p>
-      <p class="card-links">The current priority is completed independent empirical tests—including null and negative results—not the number of prepared hypotheses.</p>
+      <p class="feature-meta">Current constraint · execution fidelity</p>
+      <h3>The useful question is increasingly whether the frozen test can be run without substitution</h3>
+      <p>Source identity, contract or field identity, machine-readable representation, authentication or entitlement, and observation-time persistence now matter as separate checks. If one required leg is unresolved, the test remains on hold rather than switching to a convenient provider, instrument, field, or later-revised value.</p>
+      <p class="card-links">The latest confirmatory trading result remains the unused-data 2026H2 GOLD result above.</p>
     </article>
   </div>
 </section>
