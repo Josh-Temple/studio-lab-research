@@ -45,8 +45,8 @@ description: Studio Labの公開研究。方法、結果、限界、根拠を分
 </section>
 
 <section class="section compact-section">
-  <div class="section-heading"><div><p class="eyebrow">現在の方向 · 2026年9月20日確認</p><h2>結果を見る前の判断を終えてから、検証を開く</h2></div><a href="{{ '/ja/trading/' | relative_url }}">現在地の詳細</a></div>
-  <p class="lede">GOLDの未使用データ結果以降、それを置き換える新しいconfirmatoryなトレード成績はまだ出ていません。現在は独立したcross-market・中期候補を実行可能な検証へ近づけつつ、一意に決まらない科学条件はAIが補わずHUMAN_BOUNDARYで止めています。</p>
+  <div class="section-heading"><div><p class="eyebrow">現在の方向 · 2026年9月21日確認</p><h2>結果を見る前に、実際の取得経路まで確認する</h2></div><a href="{{ '/ja/trading/' | relative_url }}">現在地の詳細</a></div>
+  <p class="lede">GOLDの未使用データ結果以降、それを置き換える新しいconfirmatoryなトレード成績はまだ出ていません。Tradingとoriginal researchでは、候補選定と取得互換性の確認を分ける運用が明確になっています。公式データの所在だけでなく、実行環境から同じ系列・項目を再現可能な形で取得し、必要なら観測時点で保存できることまで確認してから検証を開きます。</p>
 </section>
 
 <section class="section">
