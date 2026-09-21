@@ -25,6 +25,12 @@ Stopping is not the same as finding no effect. If a study ends before its primar
 
 If the value that would have been available at a historical decision time cannot be reconstructed reliably, a retrospective test should remain unobserved or move to a prospective design. Revised history, a convenient substitute series, or a later snapshot should not be used to manufacture a result that the original information boundary cannot support.
 
+## Verify the retrieval path, not only the source name
+
+An official page can establish that a dataset or instrument exists without proving that the assigned execution environment can retrieve the required historical observations reproducibly. Before a result-bearing test, Studio Lab separately checks the machine-readable representation, exact instrument or field identity, request shape, authentication or entitlement requirements, and any observation-time persistence requirement. If one required input path remains unresolved, the test stays on hold rather than substituting a convenient provider, series, contract, or later-revised value.
+
+A failed retrieval path is treated as local evidence about that path, not as proof that the scientific hypothesis failed or that the entire provider is unavailable. The same unresolved representation is not silently reused until there is evidence that the access condition changed.
+
 ## Do not let automation fill unresolved scientific conditions
 
 A candidate can remain scientifically interesting without being ready to test. If an evaluation window, threshold, baseline, feed, cost rule, or candidate choice still has no unique pre-outcome rule, automation stops at a human boundary rather than inventing a convenient default. The choice must be fixed before unused or prospective outcomes are opened; if there is no safe default, the correct state is HOLD.
