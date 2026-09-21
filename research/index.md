@@ -45,10 +45,10 @@ description: Public Studio Lab research, with methods, findings, limits, and evi
 
 <section class="section compact-section">
   <div class="section-heading">
-    <div><p class="eyebrow">Current direction · reviewed 2026-09-20</p><h2>Finish pre-outcome decisions, then open the test</h2></div>
+    <div><p class="eyebrow">Current direction · reviewed 2026-09-21</p><h2>Verify the actual retrieval path before opening the result</h2></div>
     <a href="{{ '/trading/' | relative_url }}">Full trading status</a>
   </div>
-  <p class="lede">No newer confirmatory trading-performance result has replaced the unused-data GOLD result above. Current work is moving independent cross-market and medium-horizon candidates toward executable tests while keeping outcomes closed. When a scientific condition has no unique pre-outcome default, the line stops at a human boundary rather than letting automation choose from performance.</p>
+  <p class="lede">No newer confirmatory trading-performance result has replaced the unused-data GOLD result. Across trading and original research, candidate selection is increasingly separated from source-retrieval preflight: identifying an official source is not enough. The assigned environment must also verify the exact representation, instrument or field identity, access conditions, and persistence path before a fixed test is allowed to run.</p>
 </section>
 
 <section class="section">
