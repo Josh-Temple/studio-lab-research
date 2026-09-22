@@ -107,8 +107,8 @@ benchmarkは±5円の有限grid、step 0.50円、take-profit 0.20円、1注文�
 
 ライブposition、account information、現在のtrade decisionも公開しません。
 
-## 実務上の現在位置
+## この結果を受けた判断
 
-この結果は、実運用数量を増やす根拠にはなりません。次の研究では、すでに開封したholdout ruleを遡って変更せずに、trend/regime情報がP/Lやrisk variationの一部を説明できるかを検証します。
+今回検証したdynamic-exit ruleを、実運用数量を増やす根拠や「収益を改善するrule」として扱いません。リスク負担を下げたという観測は分けて残しますが、trend/regimeなど別の説明を検証する場合は、すでに開封した2020〜2022年で遡ってruleを調整せず、新しい仮説として扱います。
 
 *これは研究記録であり、投資助言ではありません。過去データやシミュレーションの結果は将来のperformanceを保証しません。*

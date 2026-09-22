@@ -73,7 +73,7 @@ First, it weakens the idea that the earlier positive horizontal-level observatio
 
 Second, this is not evidence that every horizontal-level mechanism is ineffective. The older studies tested different constructs and comparisons, and one historical execution-aware specification was positive. The new result is narrower and more useful: **the preregistered unconditional-touch claim failed on its unused sample**.
 
-## Research decision
+## Decision implication
 
 The unconditional-touch replication line is now closed as **not supported**.
 

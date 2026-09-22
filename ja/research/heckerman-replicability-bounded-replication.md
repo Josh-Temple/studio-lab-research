@@ -53,6 +53,10 @@ Heckerman et al. (2025) では、評価対象となった **393件のempirical r
 
 単純な計算でも、分子、分母、丸め方、主張できる範囲を固定して再確認しておくと、「再現したもの」と「まだ確認していないもの」を分けて記録できます。
 
+## この結果を受けた判断
+
+**1.27%**は、原論文が報告した**5件 / 393件**という件数から得られる限定的な再計算結果として扱います。心血管研究、医学研究、科学全体の再現率として引用・一般化するには別の検証が必要であり、今回の結果からはそこまで広げません。
+
 ## 出典
 
 Heckerman GO, Tzng E, Campos-Melendez A, et al. *Transparency of research practices in cardiovascular literature*. eLife. 2025;14:e81051.

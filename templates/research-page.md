@@ -27,6 +27,10 @@ Use a chart only when it makes the comparison easier to understand. Keep the exa
 
 Explain what the observations support and how strongly they support it.
 
+## Decision implication
+
+State what changes because of the result: continue, stop, deprioritize, narrow the claim, or open a separate test. Keep this as a research or implementation decision, not a generic management recommendation.
+
 ## Limitations and uncertainty
 
 State missing observations, unresolved validity concerns, scope limits, and plausible alternative explanations.

@@ -94,6 +94,10 @@ summary: "封印済みの2024年60セッション開発データで、60分rolli
 
 これらは研究上の根拠を大きく強めましたが、継続的なlive trading edgeが確認されたわけではありません。現在の解釈は、[GOLD水平線の再現・execution-aware検証まとめ]({{ '/ja/research/gold-horizontal-replication-execution-evidence/' | relative_url }})を参照してください。
 
+## この結果を受けた判断
+
+開発段階では、この結果は**独立検証へ進む理由**にはなりましたが、実運用やposition sizeを変える根拠ではありませんでした。その後の独立・robustness検証まで進んでいるため、現在の判断では+26.55ポイントという開発結果だけを単独で使わず、後続のpositive / negative evidenceを含む研究記録全体を参照します。後の結果に合わせて2024年開発標本を調整し、より強い主張を作り直すこともしません。
+
 ## 公開範囲
 
 このページでは、レビュー済みの要約統計だけを公開しています。raw data、詳細な実行成果物、乱数stream、manifest、内部運用ログ、現在ポジション、売買判断は公開サイトには載せません。

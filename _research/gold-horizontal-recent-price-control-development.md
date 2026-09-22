@@ -92,6 +92,10 @@ The frozen 2018 execution-aware hypothesis remains untested. Its sample is prese
 
 These later results materially strengthen the research case, but they still do not establish a durable live trading edge. See the [current replication and execution evidence summary]({{ '/research/gold-horizontal-replication-execution-evidence/' | relative_url }}) for the current interpretation.
 
+## Decision implication
+
+At the development stage, this result justified **independent replication**, not deployment or position-size changes. That replication work has since been completed, so current decisions should use the later evidence record rather than the +26.55 pp development estimate in isolation. The development sample should not be retuned to restore a stronger trading claim after later evidence narrowed it.
+
 ## Evidence boundary
 
 This page reports reviewed public summary statistics. Raw files, detailed execution artifacts, control streams, manifests, internal operational records, positions, and current trading decisions remain outside the public site.
