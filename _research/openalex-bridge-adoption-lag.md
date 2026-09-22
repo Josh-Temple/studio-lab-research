@@ -41,6 +41,10 @@ The strongest supported conclusion is therefore: **do not use the saved event ro
 
 Stopping before the outcome comparison matters because it prevents a weak operational definition from being rescued after the fact by an interesting-looking result.
 
+## Decision implication
+
+Do not run or interpret the adoption-lag comparison under this bridge taxonomy. A future attempt would need a materially revised and independently credible classification rule, fixed before the primary outcome is opened; it should be treated as a new study rather than a continuation that rescues this pilot.
+
 ## Limitations and uncertainty
 
 - The failed gate applies to this operational definition, field pair, audit procedure, and sample. It is not a general evaluation of OpenAlex metadata quality.
