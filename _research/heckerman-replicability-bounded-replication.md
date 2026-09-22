@@ -50,6 +50,10 @@ Percentages can look more general than the counts and definitions underneath the
 
 This is useful even when the arithmetic is simple: it records exactly what was reproduced and, just as importantly, what was not.
 
+## Decision implication
+
+Use **1.27%** only as the arithmetic implication of the paper's reported **5 / 393** counts under this bounded check. Do not cite it as an independently established replicability rate for cardiovascular research, medicine, or science as a whole without a separate study that supports that broader claim.
+
 ## Source
 
 Primary source: Heckerman GO, Tzng E, Campos-Melendez A, et al. *Transparency of research practices in cardiovascular literature*. eLife. 2025;14:e81051.
