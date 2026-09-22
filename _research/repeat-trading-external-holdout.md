@@ -140,8 +140,8 @@ The public claim is limited to the reviewed summary statistics above. Reproducti
 
 This page does not publish live positions, account information, or current trade decisions.
 
-## Practical status
+## Decision implication
 
-The result does **not** provide a basis for increasing live trading size. Further work is aimed at determining whether trend/regime information can explain part of the observed risk and P/L variation without retroactively changing the already-opened holdout rules.
+Do not use the tested dynamic-exit rules as a reason to increase live position size or describe them as profit-improving rules. Their risk-control effect can remain a separate observation, but any new trend/regime idea must be framed as a new hypothesis rather than retuned on the already-opened 2020–2022 holdout.
 
 *This is a research record, not investment advice. Historical and simulated results do not establish future performance.*
