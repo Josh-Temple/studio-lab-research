@@ -73,19 +73,13 @@ Taken together, the current research decision is to **deprioritize previous-sess
 
 The broader idea that volatility can persist remains plausible. What is not supported here is treating raw previous-session range itself as a demonstrated standalone trading edge.
 
-## Research governance after the result
+## Decision implication
 
 The 2021 period is now consumed for this mechanism. It must not be used to retune thresholds, session rules, block length, or metrics and then later be described as an untouched holdout for the retuned version.
 
-No automatic new range-persistence holdout is currently recommended.
+No automatic new range-persistence holdout is currently recommended. The practical decision is to **deprioritize raw previous-session high-low range as a standalone forecasting mechanism** rather than spend additional unused-data capacity trying to rescue it.
 
-## Current research direction
-
-The next higher-priority GOLD line is a **horizontal-level reaction development falsification**: testing whether price reactions around pre-specified rolling-window support/resistance zones differ from matched pseudo/non-level controls.
-
-That work is still in preregistration and design closure. The current design includes a 60-minute rolling-extrema level family, a 15-minute reaction horizon, and 2024 as development-only data.
-
-**No horizontal-level outcome has been opened or reported on this site yet.** The hypothesis remains unexecuted until the remaining deterministic design gates are closed.
+Later GOLD research moved to a different horizontal-level mechanism and produced both positive historical reaction evidence and a negative unused-data unconditional-touch result. Those later studies are separate hypotheses and do not retroactively rescue the session-range claim. See the [current GOLD horizontal evidence summary]({{ '/research/gold-horizontal-replication-execution-evidence/' | relative_url }}).
 
 ## Limitations and uncertainty
 
