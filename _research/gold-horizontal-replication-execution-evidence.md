@@ -96,6 +96,10 @@ A separate 2018 execution-aware replication was frozen before outcome inspection
 
 No 2018 return has been opened. The route was parked because completing roughly two thousand further one-hour/one-side manual acquisitions would make data collection dominate the research value. This is an operational decision, not evidence for or against the 2018 hypothesis.
 
+## Decision implication
+
+Do not treat the replicated historical reaction-rate pattern as a ready trading rule, and do not rescue the failed unconditional-touch claim by tuning the consumed H1/H2 samples. The next research budget should go to materially distinct, pre-outcome hypotheses or to better execution/data-path questions that can be tested independently. The parked 2018 acquisition route remains optional rather than a requirement to keep this line alive.
+
 ## What is not established
 
 The combined research record does not establish:
