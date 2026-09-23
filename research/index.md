@@ -45,10 +45,10 @@ description: Public Studio Lab research, with methods, findings, limits, and evi
 
 <section class="section compact-section">
   <div class="section-heading">
-    <div><p class="eyebrow">Current direction · reviewed 2026-09-21</p><h2>Verify the actual retrieval path before opening the result</h2></div>
+    <div><p class="eyebrow">Current direction · reviewed 2026-09-24</p><h2>Reproduction, selection coverage, and retrieval are separate claims</h2></div>
     <a href="{{ '/trading/' | relative_url }}">Full trading status</a>
   </div>
-  <p class="lede">No newer confirmatory trading-performance result has replaced the unused-data GOLD result. Across trading and original research, candidate selection is increasingly separated from source-retrieval preflight: identifying an official source is not enough. The assigned environment must also verify the exact representation, instrument or field identity, access conditions, and persistence path before a fixed test is allowed to run.</p>
+  <p class="lede">No newer confirmatory trading-performance result has replaced the unused-data GOLD result. The latest work sharpened the boundary around what a successful replay proves: the saved 2026H1 ticks reproduced all 2,685 recorded trades and headline metrics, but 36 hours of missing tick coverage mean the audit cannot certify that no additional candidates were lost in unobserved intervals. Retrieval preflight is also kept inside the study's information boundary; when a safe non-target probe cannot be constructed, the path remains unverified rather than being mislabeled as unavailable.</p>
 </section>
 
 <section class="section">
