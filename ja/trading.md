@@ -2,7 +2,7 @@
 title: トレード
 lang: ja
 permalink: /ja/trading/
-updated: "2026-09-21"
+updated: "2026-09-24"
 description: Studio Labのレビュー済みトレード研究。開発テスト、ホールドアウト、未使用データ検証、execution-aware検証、prospective protocol、negative resultを含みます。
 ---
 
@@ -47,25 +47,25 @@ description: Studio Labのレビュー済みトレード研究。開発テスト
 </section>
 
 <section class="section">
-  <div class="section-heading"><div><p class="eyebrow">現在の研究 · 2026年9月21日確認</p><h2>候補選定と、実際にデータを取得できるかの確認を分ける</h2></div></div>
+  <div class="section-heading"><div><p class="eyebrow">現在の研究 · 2026年9月24日確認</p><h2>いま確認しているのは、新しい成績よりもデータの網羅性と取得経路</h2></div></div>
   <div class="feature-grid">
     <article class="feature-card">
-      <p class="feature-meta">取得経路の事前確認 · 結果は未観測</p>
-      <h3>公式データを特定できても、そのまま検証を実行できるとは限らない</h3>
-      <p>直近では、CFTCの米10年債先物ポジションは公式の照会・export経路を確認できましたが、対応するZN価格の公式machine-readable履歴取得をWorker上で固定できずHOLDになりました。CME Gold CVOLとGC先物も対象系列は特定できましたが、DataMineの認証・利用資格を含む履歴取得経路を実行環境で確認できず、結果を見る前に停止しています。</p>
-      <p class="card-links">取得経路のHOLDは、市場仮説に対するnegative resultではありません。</p>
+      <p class="feature-meta">2026H1 データ網羅性の監査 · 新しい成績ではない</p>
+      <h3>記録済み2,685取引は再現できたが、候補選択の完全性までは確認できなかった</h3>
+      <p>保存済みraw Tickは、Signal M1の81,720分のうち79,560分（97.36%）をカバーし、2,160分、つまり36時間が欠けていました。確認できるTickからは既存2,685取引と主要指標を再現できました。一方、欠測区間に追加のtouch、setup、entry候補がなかったことや、entry eligibilityが変わらなかったことまでは現在の根拠だけでは証明できません。</p>
+      <p class="card-links">記録済み取引の再現はPASSですが、シグナル候補の選択とエントリー判定の網羅性はHOLDです。これはH1診断から言える範囲を狭めるもので、未使用2026H2の結果を変更するものではありません。</p>
     </article>
     <article class="feature-card">
-      <p class="feature-meta">独立候補の探索 · 本実行前にpreflight</p>
-      <h3>新しい仮説も、取得確認を飛ばして結果を見に行かない</h3>
-      <p>結果を使わない候補探索では、Gold CVOL、EUR/USD CVOL、FedWatch由来の政策金利期待とS&amp;P 500先物など、異なる機序まで広がっています。各候補では、観測量、horizon、支持されない場合の解釈、経済的な停止条件を先に固定し、その後に取得互換性を確認します。</p>
-      <p class="card-links">現段階はいずれも研究候補であり、関係の存在や売買上の優位性を示す結果ではありません。</p>
+      <p class="feature-meta">Post-H2確認研究 · 結果は未観測</p>
+      <h3>確認条件による選択効果は、固定した境界を守ったまま待機している</h3>
+      <p>次の検証では、事前登録した60セッションの規則を維持し、支持されなかった無条件タッチ仮説を作り直しません。標本はまだ成熟しておらず、結果も開いていません。さらに、代替データへ置き換えずに同じXAU/USDの一次取得経路を再現できるまで、データ取得準備をHOLDしています。</p>
+      <p class="card-links">パラメータ探索、標本の選び直し、別のデータ提供元への置換をせず、実行できる条件がそろうまで待ちます。</p>
     </article>
     <article class="feature-card">
-      <p class="feature-meta">現在の制約 · 実行の忠実性</p>
-      <h3>固定した検証を、別データへ置き換えずに実行できるかを確認する</h3>
-      <p>source identityだけでなく、銘柄・項目の識別、machine-readableな取得形式、認証・利用資格、観測時点での保存までを別々に確認しています。必要な経路の一部が未確定なら、都合のよいprovider、銘柄、項目、後から改定された値へ置き換えずHOLDします。</p>
-      <p class="card-links">最新のconfirmatoryなトレード結果は、引き続き上記の未使用2026H2 GOLD検証です。</p>
+      <p class="feature-meta">独立候補 · 本実行前に取得経路を確認</p>
+      <h3>次の候補は、米10年国債入札の需要とその後5営業日の金利変動</h3>
+      <p>結果を見ない候補探索では、10年国債入札の応札倍率（bid-to-cover ratio）が直前の同種入札からどれだけ変化したかと、その後5営業日の米10年国債パー・イールドの日次変化のばらつきとの関係を、1回のSpearman相関で確認する案を選びました。データ源はTreasuryの公式入札結果と金利系列です。</p>
+      <p class="card-links">現在値や結果値は使っていません。取得経路の事前確認も未完了であり、関係の存在や売買上の優位性を示す結果ではありません。</p>
     </article>
   </div>
 </section>

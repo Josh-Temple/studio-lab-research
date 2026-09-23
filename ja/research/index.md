@@ -45,8 +45,8 @@ description: Studio Labの公開研究。方法、結果、限界、根拠を分
 </section>
 
 <section class="section compact-section">
-  <div class="section-heading"><div><p class="eyebrow">現在の方向 · 2026年9月21日確認</p><h2>結果を見る前に、実際の取得経路まで確認する</h2></div><a href="{{ '/ja/trading/' | relative_url }}">現在地の詳細</a></div>
-  <p class="lede">GOLDの未使用データ結果以降、それを置き換える新しいconfirmatoryなトレード成績はまだ出ていません。Tradingとoriginal researchでは、候補選定と取得互換性の確認を分ける運用が明確になっています。公式データの所在だけでなく、実行環境から同じ系列・項目を再現可能な形で取得し、必要なら観測時点で保存できることまで確認してから検証を開きます。</p>
+  <div class="section-heading"><div><p class="eyebrow">現在の方向 · 2026年9月24日確認</p><h2>取引の再現、候補選択の網羅性、取得経路を分けて確認する</h2></div><a href="{{ '/ja/trading/' | relative_url }}">現在地の詳細</a></div>
+  <p class="lede">GOLDの未使用データ検証以降、新しい確認検証のトレード成績はまだ出ていません。直近では、2026H1の保存Tickから既存2,685取引と主要指標を再現できました。ただし36時間分のTick欠測があり、その区間で新しいタッチ、セットアップ、エントリー候補が失われていないことまでは証明できません。そのため、記録済み取引の再現と候補選択の網羅性を別の判定として扱っています。また、取得経路の事前確認そのものも未使用結果を開かない条件に従わせ、対象値に触れず安全に確認できない場合は「取得不能」と断定せずHOLDにします。</p>
 </section>
 
 <section class="section">
@@ -55,6 +55,14 @@ description: Studio Labの公開研究。方法、結果、限界、根拠を分
   </div>
   <p class="registry-note">上の研究線は入口として選んだものです。以下には、支持されなかった結果や途中で停止した研究も含め、公開記録をまとめて残します。</p>
   <div class="research-list">
+    <article class="research-item">
+      <div>
+        <p class="research-entry-meta"><span>トレード / GOLD水平線</span><time datetime="2026-09-24">2026-09-24</time></p>
+        <h2><a href="{{ '/ja/research/gold-horizontal-replication-execution-evidence/' | relative_url }}">GOLD水平線：方向反応は再現したが、後続の無条件タッチ検証はnegative</a></h2>
+        <p>過去4期間の方向反応差と2019年のquote-crossing検証を残しつつ、未使用2026H2のnegative resultと、2026H1で確認した36時間のTick欠測による網羅性の限界まで含めて現在の主張範囲を更新しました。</p>
+      </div>
+      <span class="status">混合した根拠</span>
+    </article>
     <article class="research-item">
       <div>
         <p class="research-entry-meta"><span>研究方法 / 再現可能性</span><time datetime="2026-09-20">2026-09-20</time></p>
@@ -71,14 +79,7 @@ description: Studio Labの公開研究。方法、結果、限界、根拠を分
       </div>
       <span class="status">完了 · 無条件タッチは支持されず</span>
     </article>
-    <article class="research-item">
-      <div>
-        <p class="research-entry-meta"><span>トレード / GOLD水平線</span><time datetime="2026-09-15">2026-09-15</time></p>
-        <h2><a href="{{ '/ja/research/gold-horizontal-replication-execution-evidence/' | relative_url }}">GOLD水平線：方向反応は再現したが、後続の無条件タッチ検証はnegative</a></h2>
-        <p>過去4期間の方向反応差と2019年のpositiveなquote-crossing検証を残しつつ、後続の未使用2026H2検証を含めた現在のclaim boundaryをまとめています。</p>
-      </div>
-      <span class="status">混合した根拠</span>
-    </article>
+
     <article class="research-item">
       <div>
         <p class="research-entry-meta"><span>トレード / GOLD水平線</span><time datetime="2026-09-14">2026-09-14</time></p>

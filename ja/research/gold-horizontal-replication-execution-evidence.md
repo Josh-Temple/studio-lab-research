@@ -5,9 +5,9 @@ lang: ja
 permalink: /ja/research/gold-horizontal-replication-execution-evidence/
 research_id: "PILOT-TRADING-001 / GOLD horizontal replication and execution"
 status: "混合した根拠 — 反応差は再現、無条件タッチは支持されず"
-updated: "2026-09-15"
+updated: "2026-09-24"
 topic: "トレード / GOLD水平線"
-summary: "水平線の方向反応率差は4つの履歴期間で正となり、2019年のquote-crossing検証も固定条件では正でした。一方、後続の事前登録済み未使用2026H2検証では無条件タッチの効果は支持されず、公開上の主張範囲を狭めました。"
+summary: "水平線の方向反応率差は4つの履歴期間で正となり、2019年のquote-crossing検証も固定条件では正でした。一方、後続の未使用2026H2検証では無条件タッチの効果は支持されませんでした。2026H1のTick coverage監査では記録済み取引を再現できましたが、候補選択の完全性までは確認できていません。"
 ---
 
 ## 現在の結論
@@ -65,6 +65,8 @@ GOLD水平線研究には、現在 **再現したpositiveなsignal-level evidenc
 その後は、見えていた差がどこで失われるかを調べました。
 
 使用済み2026H1戦略標本では、タッチから後のconfirmation entryまでの平均価格経路は有利だった一方、entry後の平均価格経路は不利でした。この診断は、confirmationを満たすeventだけが選ばれる過程に意味がある可能性を示しました。ただし、H1は使用済み標本なので探索的な診断です。
+
+その後、**記録済み取引を再現できるか**と、**候補選択を漏れなく再現できるか**を分けて監査しました。固定60セッションでは、Signal M1の81,720分のうちraw Tickを確認できたのは79,560分（**97.36%**）で、2,160分、つまり**36時間**が欠けています。確認できるTickからは既存**2,685取引**、記録済み台帳、主要指標を再現できました。一方、欠測区間に本来なら追加のtouch、setup、entry候補が存在したか、entry eligibilityが変わり得たかは現在の根拠だけでは確定できません。したがって、記録済み取引の再現はPASSですが、signal selectionとentry eligibilityのcoverageは**HOLD**です。これは未使用2026H2の結果を変更するものではなく、H1診断から言える範囲を狭めるものです。
 
 そこで同じH1をさらに調整するのではなく、無条件タッチ仮説を事前登録して未使用2026H2へ移しました。固定した60セッション・評価可能 **4,786 event**で、15分の方向調整済み平均リターンは **−1.379 bps**、95%区間はすべて0を下回り、判定は **NO_UNCONDITIONAL_TOUCH_SUPPORT** でした。
 

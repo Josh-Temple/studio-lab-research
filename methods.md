@@ -31,6 +31,8 @@ An official page can establish that a dataset or instrument exists without provi
 
 A failed retrieval path is treated as local evidence about that path, not as proof that the scientific hypothesis failed or that the entire provider is unavailable. The same unresolved representation is not silently reused until there is evidence that the access condition changed.
 
+Recent three-case review added a provisional constraint to this preflight logic: the preflight itself must respect the study's information boundary. If outcome blinding forbids reading target values and a safe non-target probe cannot be constructed, the path remains **unverified / HOLD** rather than being labeled unavailable. A probe that breaks the frozen outcome boundary is not valid evidence of retrievability. This boundary remains provisional rather than a generalized rule about providers.
+
 ## Do not let automation fill unresolved scientific conditions
 
 A candidate can remain scientifically interesting without being ready to test. If an evaluation window, threshold, baseline, feed, cost rule, or candidate choice still has no unique pre-outcome rule, automation stops at a human boundary rather than inventing a convenient default. The choice must be fixed before unused or prospective outcomes are opened; if there is no safe default, the correct state is HOLD.
