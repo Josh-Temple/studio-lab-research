@@ -26,8 +26,8 @@
       <a class="brand" href="{% if current_lang == 'ja' %}{{ '/ja/' | relative_url }}{% else %}{{ '/' | relative_url }}{% endif %}">Studio Lab</a>
       <nav class="site-nav site-nav-desktop" aria-label="{% if current_lang == 'ja' %}メインナビゲーション{% else %}Primary navigation{% endif %}">
         {% if current_lang == 'ja' %}
-        <a href="{{ '/ja/portfolio/' | relative_url }}">ポートフォリオ</a>
         <a href="{{ '/ja/research/' | relative_url }}">研究</a>
+        <a href="{{ '/ja/portfolio/' | relative_url }}">ポートフォリオ</a>
         <a href="{{ '/ja/trading/' | relative_url }}">トレード</a>
         <a href="{{ '/ja/market/' | relative_url }}">市場</a>
         <a href="{{ '/ja/projects/' | relative_url }}">プロジェクト</a>
@@ -36,8 +36,8 @@
         <a href="{{ '/ja/about/' | relative_url }}">このサイトについて</a>
         <a href="{{ alternate_path | relative_url }}" lang="en" hreflang="en">English</a>
         {% else %}
-        <a href="{{ '/portfolio/' | relative_url }}">Portfolio</a>
         <a href="{{ '/research/' | relative_url }}">Research</a>
+        <a href="{{ '/portfolio/' | relative_url }}">Portfolio</a>
         <a href="{{ '/trading/' | relative_url }}">Trading</a>
         <a href="{{ '/market/' | relative_url }}">Market</a>
         <a href="{{ '/projects/' | relative_url }}">Projects</a>
