@@ -95,7 +95,7 @@ description: Studio Lab presents selected public-sector operational reform cases
 
 <section class="section">
   <div class="section-heading">
-    <div><p class="eyebrow">Latest research</p><h2>Recent published studies</h2></div>
+    <div><p class="eyebrow">Latest research</p><h2>Recently updated studies</h2></div>
     <a href="{{ '/research/' | relative_url }}">View all →</a>
   </div>
   {% assign items = site.research | sort: 'updated' | reverse %}
