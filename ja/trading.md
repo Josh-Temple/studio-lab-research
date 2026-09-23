@@ -47,25 +47,25 @@ description: Studio Labのレビュー済みトレード研究。開発テスト
 </section>
 
 <section class="section">
-  <div class="section-heading"><div><p class="eyebrow">現在の研究 · 2026年9月24日確認</p><h2>いま確認しているのは、成績よりもcoverageと取得経路</h2></div></div>
+  <div class="section-heading"><div><p class="eyebrow">現在の研究 · 2026年9月24日確認</p><h2>いま確認しているのは、新しい成績よりもデータの網羅性と取得経路</h2></div></div>
   <div class="feature-grid">
     <article class="feature-card">
-      <p class="feature-meta">2026H1 coverage監査 · 新しい成績ではない</p>
+      <p class="feature-meta">2026H1 データ網羅性の監査 · 新しい成績ではない</p>
       <h3>記録済み2,685取引は再現できたが、候補選択の完全性までは確認できなかった</h3>
       <p>保存済みraw Tickは、Signal M1の81,720分のうち79,560分（97.36%）をカバーし、2,160分、つまり36時間が欠けていました。確認できるTickからは既存2,685取引と主要指標を再現できました。一方、欠測区間に追加のtouch、setup、entry候補がなかったことや、entry eligibilityが変わらなかったことまでは現在の根拠だけでは証明できません。</p>
-      <p class="card-links">記録済み取引の再現はPASSですが、signal selectionとentry eligibilityのcoverageはHOLDです。これはH1診断から言える範囲を狭めるもので、未使用2026H2の結果を変更するものではありません。</p>
+      <p class="card-links">記録済み取引の再現はPASSですが、シグナル候補の選択とエントリー判定の網羅性はHOLDです。これはH1診断から言える範囲を狭めるもので、未使用2026H2の結果を変更するものではありません。</p>
     </article>
     <article class="feature-card">
       <p class="feature-meta">Post-H2確認研究 · 結果は未観測</p>
-      <h3>confirmationによる選択効果は、固定した境界を守ったまま待機している</h3>
-      <p>次の検証では、事前登録した60セッションの規則を維持し、支持されなかった無条件タッチ仮説を作り直しません。標本はまだ成熟しておらず、結果も開いていません。さらに、代替データへ置き換えずに同じXAU/USDの一次取得経路を再現できるまで、source準備をHOLDしています。</p>
-      <p class="card-links">parameter探索、標本の選び直し、別providerへの置換をせず、実行できる条件がそろうまで待ちます。</p>
+      <h3>確認条件による選択効果は、固定した境界を守ったまま待機している</h3>
+      <p>次の検証では、事前登録した60セッションの規則を維持し、支持されなかった無条件タッチ仮説を作り直しません。標本はまだ成熟しておらず、結果も開いていません。さらに、代替データへ置き換えずに同じXAU/USDの一次取得経路を再現できるまで、データ取得準備をHOLDしています。</p>
+      <p class="card-links">パラメータ探索、標本の選び直し、別のデータ提供元への置換をせず、実行できる条件がそろうまで待ちます。</p>
     </article>
     <article class="feature-card">
-      <p class="feature-meta">独立候補 · 本実行前にpreflight</p>
+      <p class="feature-meta">独立候補 · 本実行前に取得経路を確認</p>
       <h3>次の候補は、米10年国債入札の需要とその後5営業日の金利変動</h3>
-      <p>結果を見ない候補探索では、10年国債入札のbid-to-cover ratioが直前の同種入札からどれだけ変化したかと、その後5営業日の10年Treasury par yieldの日次変化のばらつきとの関係を、1回のSpearman相関で確認する案を選びました。データ源はTreasuryの公式入札結果と金利系列です。</p>
-      <p class="card-links">現在値や結果値は使っていません。取得経路のpreflightも未完了であり、関係の存在や売買上の優位性を示す結果ではありません。</p>
+      <p>結果を見ない候補探索では、10年国債入札の応札倍率（bid-to-cover ratio）が直前の同種入札からどれだけ変化したかと、その後5営業日の米10年国債パー・イールドの日次変化のばらつきとの関係を、1回のSpearman相関で確認する案を選びました。データ源はTreasuryの公式入札結果と金利系列です。</p>
+      <p class="card-links">現在値や結果値は使っていません。取得経路の事前確認も未完了であり、関係の存在や売買上の優位性を示す結果ではありません。</p>
     </article>
   </div>
 </section>
