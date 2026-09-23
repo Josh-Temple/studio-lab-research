@@ -1,7 +1,7 @@
 ---
 title: Trading
 permalink: /trading/
-updated: "2026-09-21"
+updated: "2026-09-24"
 description: Reviewed Studio Lab trading research, including development tests, holdouts, unused-data replications, execution-aware checks, prospective protocols, and negative results.
 ---
 
@@ -58,28 +58,28 @@ description: Reviewed Studio Lab trading research, including development tests, 
 <section class="section">
   <div class="section-heading">
     <div>
-      <p class="eyebrow">Current research · reviewed 2026-09-21</p>
-      <h2>Candidate selection is now separated from data-path verification</h2>
+      <p class="eyebrow">Current research · reviewed 2026-09-24</p>
+      <h2>The current frontier is coverage, source fidelity, and unopened tests</h2>
     </div>
   </div>
   <div class="feature-grid">
     <article class="feature-card">
-      <p class="feature-meta">Source preflight · no outcome claim</p>
-      <h3>An official source can be identified before the full test is executable</h3>
-      <p>Recent fixed candidates exposed the same boundary in different forms. CFTC positioning could be identified and exported, while the paired official historical ZN price path was not fixed on the Worker surface. CME Gold CVOL and GC futures could also be identified, but authenticated machine-readable historical access required DataMine entitlement that was not available in the execution path.</p>
-      <p class="card-links">Both lines stopped before outcomes were opened. A retrieval HOLD is not evidence for or against the market hypothesis.</p>
+      <p class="feature-meta">2026H1 coverage audit · no new performance estimate</p>
+      <h3>Recorded trades reproduced, but full selection coverage did not</h3>
+      <p>The saved raw-tick archive covered 79,560 of 81,720 signal minutes (97.36%), leaving 2,160 missing minutes, or 36 hours. All 2,685 recorded trades and the headline metrics reproduced from the available ticks. The remaining gap is different: the current evidence cannot prove that the unobserved intervals contained no additional touch, setup, or entry candidates, or that entry eligibility could not have changed.</p>
+      <p class="card-links">Recorded-trade reproduction is PASS; signal-selection and entry-eligibility coverage remain HOLD. This narrows what the H1 audit can establish and does not change the untouched 2026H2 result.</p>
     </article>
     <article class="feature-card">
-      <p class="feature-meta">Independent discovery · preflight required</p>
-      <h3>New hypotheses are not allowed to skip the retrieval gate</h3>
-      <p>Outcome-blind screens have continued into distinct mechanisms such as Gold CVOL, EUR/USD CVOL, and FedWatch-derived policy expectations versus S&amp;P 500 futures. Each candidate fixes its measure, horizon, null interpretation, and economic kill condition first, then requires source-retrieval preflight before any result-bearing execution.</p>
-      <p class="card-links">These are research candidates, not evidence that the relationships exist or are tradable.</p>
+      <p class="feature-meta">Post-H2 confirmation study · outcome unopened</p>
+      <h3>A separate confirmation-selection test is still waiting behind its frozen boundary</h3>
+      <p>The next test keeps the preregistered 60-session rule and does not reopen the failed unconditional-touch claim. The sample is not yet mature, no outcome has been opened, and source preparation remains on hold until the exact first-party XAU/USD retrieval route can be reproduced without substitution.</p>
+      <p class="card-links">Waiting is part of the design: no parameter search, sample reselection, or substitute provider is being used to manufacture an executable result.</p>
     </article>
     <article class="feature-card">
-      <p class="feature-meta">Current constraint · execution fidelity</p>
-      <h3>The useful question is increasingly whether the frozen test can be run without substitution</h3>
-      <p>Source identity, contract or field identity, machine-readable representation, authentication or entitlement, and observation-time persistence now matter as separate checks. If one required leg is unresolved, the test remains on hold rather than switching to a convenient provider, instrument, field, or later-revised value.</p>
-      <p class="card-links">The latest confirmatory trading result remains the unused-data 2026H2 GOLD result above.</p>
+      <p class="feature-meta">Independent candidate · preflight required</p>
+      <h3>U.S. 10-year Treasury auction demand is the newest bounded candidate</h3>
+      <p>An outcome-blind screen selected a distinct question: whether the absolute change in 10-year Treasury auction bid-to-cover ratio is associated with realized variability in the following five trading days of the 10-year Treasury par yield. The proposed test is one pre-specified Spearman correlation using official Treasury auction and yield data.</p>
+      <p class="card-links">No current values or outcomes were used. The candidate still requires source-retrieval preflight and is not evidence that the relationship exists or is tradable.</p>
     </article>
   </div>
 </section>
