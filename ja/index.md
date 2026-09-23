@@ -96,11 +96,11 @@ description: 公共分野の業務改革ケース、研究、ツールを、判�
 </section>
 
 <section class="section">
-  <div class="section-heading"><div><p class="eyebrow">最新の研究</p><h2>最近公開した研究</h2></div><a href="{{ '/ja/research/' | relative_url }}">一覧を見る →</a></div>
+  <div class="section-heading"><div><p class="eyebrow">最新の研究</p><h2>最近更新した研究</h2></div><a href="{{ '/ja/research/' | relative_url }}">一覧を見る →</a></div>
   <div class="research-list">
+    <article class="research-item"><div><h3><a href="{{ '/ja/research/gold-horizontal-replication-execution-evidence/' | relative_url }}">GOLD水平線の再現・execution-aware研究</a></h3><p>過去4期間の方向反応差と2019年のquote-crossing検証を残しつつ、未使用2026H2のnegative resultと、2026H1のTick欠測で残る網羅性の限界まで含めて主張範囲を更新しました。</p></div><span class="status">混合した根拠</span></article>
     <article class="research-item"><div><h3><a href="{{ '/ja/research/heckerman-replicability-bounded-replication/' | relative_url }}">Heckerman et al. (2025) の限定再計算</a></h3><p>393件のempirical researchのうち5件がfully replicableという原論文の数値関係を、事前固定計算で1.27%と再確認しました。</p></div><span class="status">完了 · 限定再計算PASS</span></article>
     <article class="research-item"><div><h3><a href="{{ '/ja/research/gold-horizontal-unconditional-touch-2026h2/' | relative_url }}">GOLD水平線：未使用2026H2の無条件タッチ検証</a></h3><p>事前登録した未使用60セッションで、水平線タッチ後15分の方向調整済み平均リターンは−1.379 bps、95%区間は−1.909〜−0.862 bpsとなり、無条件タッチ仮説は支持されませんでした。</p></div><span class="status">完了 · 支持されず</span></article>
-    <article class="research-item"><div><h3><a href="{{ '/ja/research/gold-horizontal-replication-execution-evidence/' | relative_url }}">GOLD水平線の再現・execution-aware研究</a></h3><p>過去4期間の方向反応差と2019年のpositiveなquote-crossing検証を残しつつ、後続H2 negative resultにより現在の主張範囲を狭めています。</p></div><span class="status">混合した根拠</span></article>
   </div>
 </section>
 
