@@ -18,8 +18,8 @@ description: 公共分野の業務改革ケース、研究、ツールを、判�
 <section class="section" aria-labelledby="featured-finding-title-ja">
   <div class="section-heading">
     <div>
-      <p class="eyebrow">Featured finding</p>
-      <h2 id="featured-finding-title-ja">繰り返し確認できたように見えた仮説を、より厳しい未使用データで検証する</h2>
+      <p class="eyebrow">代表的な結果</p>
+      <h2 id="featured-finding-title-ja">過去に確認した反応差だけでは、未使用データの無条件タッチ効果を支えられなかった</h2>
     </div>
     <a href="{{ '/ja/research/gold-horizontal-unconditional-touch-2026h2/' | relative_url }}">研究を見る →</a>
   </div>
@@ -48,7 +48,7 @@ description: 公共分野の業務改革ケース、研究、ツールを、判�
 <section class="section compact-section evidence-lineage-section" aria-labelledby="evidence-lineage-title-ja">
   <div class="section-heading lineage-heading">
     <div>
-      <p class="eyebrow">Evidence lineage</p>
+      <p class="eyebrow">研究の経緯</p>
       <h2 id="evidence-lineage-title-ja">一つの研究線で、主張の範囲を段階的に狭める</h2>
     </div>
     <a href="{{ '/ja/research/gold-horizontal-replication-execution-evidence/' | relative_url }}">研究記録全体を見る →</a>
@@ -77,7 +77,7 @@ description: 公共分野の業務改革ケース、研究、ツールを、判�
 <section class="section compact-section" aria-labelledby="featured-case-title-ja">
   <div class="section-heading">
     <div>
-      <p class="eyebrow">Featured case</p>
+      <p class="eyebrow">代表ケース</p>
       <h2 id="featured-case-title-ja">制約の強い組織でDXを横展開する業務改革</h2>
     </div>
     <a href="{{ '/ja/portfolio/' | relative_url }}">ケース全体を見る →</a>
@@ -105,7 +105,7 @@ description: 公共分野の業務改革ケース、研究、ツールを、判�
 </section>
 
 <section class="section compact-section" aria-labelledby="explore-title-ja">
-  <div class="section-heading"><div><p class="eyebrow">Explore</p><h2 id="explore-title-ja">ほかの入口</h2></div></div>
+  <div class="section-heading"><div><p class="eyebrow">案内</p><h2 id="explore-title-ja">ほかの入口</h2></div></div>
   <div class="link-grid">
     <a class="link-panel" href="{{ '/ja/projects/' | relative_url }}"><span>プロジェクト</span><strong>実際に動くツールと学習システム</strong><small>直接試せる成果をまとめています。</small></a>
     <a class="link-panel" href="{{ '/ja/writing/' | relative_url }}"><span>記事</span><strong>研究や設計判断を読みやすく整理</strong><small>専門的な内容を、背景から追える形で説明します。</small></a>
