@@ -45,8 +45,8 @@ description: Studio Labの公開研究。方法、結果、限界、根拠を分
 </section>
 
 <section class="section compact-section">
-  <div class="section-heading"><div><p class="eyebrow">現在の方向 · 2026年9月21日確認</p><h2>結果を見る前に、実際の取得経路まで確認する</h2></div><a href="{{ '/ja/trading/' | relative_url }}">現在地の詳細</a></div>
-  <p class="lede">GOLDの未使用データ結果以降、それを置き換える新しいconfirmatoryなトレード成績はまだ出ていません。Tradingとoriginal researchでは、候補選定と取得互換性の確認を分ける運用が明確になっています。公式データの所在だけでなく、実行環境から同じ系列・項目を再現可能な形で取得し、必要なら観測時点で保存できることまで確認してから検証を開きます。</p>
+  <div class="section-heading"><div><p class="eyebrow">現在の方向 · 2026年9月24日確認</p><h2>取引の再現、候補選択のcoverage、取得経路を分けて確認する</h2></div><a href="{{ '/ja/trading/' | relative_url }}">現在地の詳細</a></div>
+  <p class="lede">GOLDの未使用データ結果を置き換える新しいconfirmatoryなトレード成績はまだ出ていません。直近では、2026H1の保存Tickから既存2,685取引と主要指標を再現できました。ただし36時間分のTick欠測があり、その区間で新しいtouch、setup、entry候補が失われていないことまでは証明できません。そのため、記録済み取引の再現と候補選択のcoverageを別の判定として扱っています。また、取得経路の事前確認そのものも未使用結果を開かない条件に従わせ、対象値に触れず安全に確認できない場合は「取得不能」と断定せずHOLDにします。</p>
 </section>
 
 <section class="section">
