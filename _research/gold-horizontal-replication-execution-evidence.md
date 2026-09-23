@@ -3,9 +3,9 @@ layout: research
 title: "GOLD horizontal levels: replicated reaction evidence, later unconditional-touch test negative"
 research_id: "PILOT-TRADING-001 / GOLD horizontal replication and execution"
 status: "Mixed evidence — replicated signal, unconditional touch not supported"
-updated: "2026-09-15"
+updated: "2026-09-24"
 topic: "Trading / GOLD horizontal levels"
-summary: "The horizontal-level reaction-rate difference was positive across four historical samples and a 2019 quote-crossing validation was positive under its specification. A later preregistered unused 2026H2 test did not support an unconditional touch effect, narrowing the claim substantially."
+summary: "The horizontal-level reaction-rate difference was positive across four historical samples and a 2019 quote-crossing validation was positive under its specification. A later preregistered unused 2026H2 test did not support an unconditional touch effect. A 2026H1 tick-coverage audit reproduced the recorded trades but could not certify complete candidate-selection coverage."
 ---
 
 ## Current conclusion
@@ -79,6 +79,8 @@ All 57 sessions contributed and the frozen support condition was met. This was s
 The research program then tested where the apparent effect was being lost.
 
 On the consumed 2026H1 strategy sample, the average path from touch to the later confirmed entry was favorable, while the average post-entry path was adverse. That diagnosis suggested that event selection around the confirmation step could matter. It was exploratory because the H1 sample had already been consumed.
+
+A later coverage audit separated **reproducibility of recorded trades** from **completeness of candidate selection**. Across the fixed 60 sessions, the raw-tick archive covered 79,560 of 81,720 signal minutes (**97.36%**), leaving 2,160 missing minutes, or **36 hours**. The available ticks reproduced all **2,685 recorded trades**, the recorded ledgers, and the headline metrics. They could not establish that the missing intervals contained no additional touch, setup, or entry candidates, or that entry eligibility could not have changed there. Recorded-trade reproduction therefore passed, while signal-selection and entry-eligibility coverage remain **HOLD**. This does not alter the unused 2026H2 result; it narrows what the H1 execution audit can establish.
 
 The decisive follow-up was therefore not another H1 parameter search. The unconditional-touch question was preregistered and moved to unused 2026H2 data. Across 60 frozen sessions, **4,786 evaluable touch events** produced a mean 15-minute direction-adjusted return of **−1.379 bps**, with the clustered interval entirely below zero. The classification was **NO_UNCONDITIONAL_TOUCH_SUPPORT**.
 
