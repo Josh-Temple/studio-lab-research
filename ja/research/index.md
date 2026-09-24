@@ -45,8 +45,8 @@ description: Studio Labの公開研究。方法、結果、限界、根拠を分
 </section>
 
 <section class="section compact-section">
-  <div class="section-heading"><div><p class="eyebrow">現在の方向 · 2026年9月24日確認</p><h2>取引の再現、候補選択の網羅性、取得経路を分けて確認する</h2></div><a href="{{ '/ja/trading/' | relative_url }}">現在地の詳細</a></div>
-  <p class="lede">GOLDの未使用データ検証以降、新しい確認検証のトレード成績はまだ出ていません。直近では、2026H1の保存Tickから既存2,685取引と主要指標を再現できました。ただし36時間分のTick欠測があり、その区間で新しいタッチ、セットアップ、エントリー候補が失われていないことまでは証明できません。そのため、記録済み取引の再現と候補選択の網羅性を別の判定として扱っています。また、取得経路の事前確認そのものも未使用結果を開かない条件に従わせ、対象値に触れず安全に確認できない場合は「取得不能」と断定せずHOLDにします。</p>
+  <div class="section-heading"><div><p class="eyebrow">現在の方向 · 2026年9月25日確認</p><h2>一つの公開データ検証は結果まで進み、他は取得条件で止める</h2></div><a href="{{ '/ja/research/noaa-mauna-loa-co2-2025-seasonal-amplitude/' | relative_url }}">新しい研究を見る</a></div>
+  <p class="lede">直近では、NOAA GMLのMauna Loa月平均CO₂について、公式テキストの取得形式と使用列を対象値を見る前に固定し、2025年12か月の最大値と最小値の差を計算しました。結果は6.14 ppmで、事前に固定した5 ppmを上回りました。一方、他の公開データ候補では、必要な機械可読形式や取得経路を同じ実行環境で確定できず、本実行へ進めずHOLDとしています。トレード研究では新しい確認検証の成績はまだ出ておらず、データの網羅性、取得元の整合、未観測条件の維持を引き続き確認しています。</p>
 </section>
 
 <section class="section">
@@ -55,6 +55,14 @@ description: Studio Labの公開研究。方法、結果、限界、根拠を分
   </div>
   <p class="registry-note">上の研究線は入口として選んだものです。以下には、支持されなかった結果や途中で停止した研究も含め、公開記録をまとめて残します。</p>
   <div class="research-list">
+    <article class="research-item">
+      <div>
+        <p class="research-entry-meta"><span>公開データ / 限定実証</span><time datetime="2026-09-25">2026-09-25</time></p>
+        <h2><a href="{{ '/ja/research/noaa-mauna-loa-co2-2025-seasonal-amplitude/' | relative_url }}">Mauna Loaの2025年CO₂：月平均の年内振幅を固定条件で検証</a></h2>
+        <p>NOAA GMLの2025年月平均12値を使い、最大値と最小値の差を事前固定条件で計算しました。結果は6.14 ppmで固定閾値5 ppmを上回りました。主張は1地点・1年の記述結果に限定します。</p>
+      </div>
+      <span class="status">完了 · 固定閾値を上回った</span>
+    </article>
     <article class="research-item">
       <div>
         <p class="research-entry-meta"><span>トレード / GOLD水平線</span><time datetime="2026-09-24">2026-09-24</time></p>
