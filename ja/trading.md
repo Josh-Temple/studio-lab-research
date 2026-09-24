@@ -2,7 +2,7 @@
 title: トレード
 lang: ja
 permalink: /ja/trading/
-updated: "2026-09-24"
+updated: "2026-09-25"
 description: Studio Labのレビュー済みトレード研究。開発テスト、ホールドアウト、未使用データ検証、execution-aware検証、prospective protocol、negative resultを含みます。
 ---
 
@@ -47,7 +47,7 @@ description: Studio Labのレビュー済みトレード研究。開発テスト
 </section>
 
 <section class="section">
-  <div class="section-heading"><div><p class="eyebrow">現在の研究 · 2026年9月24日確認</p><h2>いま確認しているのは、新しい成績よりもデータの網羅性と取得経路</h2></div></div>
+  <div class="section-heading"><div><p class="eyebrow">現在の研究 · 2026年9月25日確認</p><h2>いま確認しているのは、新しい成績よりもデータの網羅性と取得経路</h2></div></div>
   <div class="feature-grid">
     <article class="feature-card">
       <p class="feature-meta">2026H1 データ網羅性の監査 · 新しい成績ではない</p>
@@ -62,10 +62,10 @@ description: Studio Labのレビュー済みトレード研究。開発テスト
       <p class="card-links">パラメータ探索、標本の選び直し、別のデータ提供元への置換をせず、実行できる条件がそろうまで待ちます。</p>
     </article>
     <article class="feature-card">
-      <p class="feature-meta">独立候補 · 本実行前に取得経路を確認</p>
-      <h3>次の候補は、米10年国債入札の需要とその後5営業日の金利変動</h3>
-      <p>結果を見ない候補探索では、10年国債入札の応札倍率（bid-to-cover ratio）が直前の同種入札からどれだけ変化したかと、その後5営業日の米10年国債パー・イールドの日次変化のばらつきとの関係を、1回のSpearman相関で確認する案を選びました。データ源はTreasuryの公式入札結果と金利系列です。</p>
-      <p class="card-links">現在値や結果値は使っていません。取得経路の事前確認も未完了であり、関係の存在や売買上の優位性を示す結果ではありません。</p>
+      <p class="feature-meta">独立候補 · 取得経路を事前確認</p>
+      <h3>候補探索は先へ進んだが、新しいトレード結果はまだない</h3>
+      <p>米10年国債入札の案の後も、公開データを使う複数の独立候補を確認しています。ただし直近の作業は、元データと市場履歴を同じ条件で再現可能に取得できるかを確かめる段階です。必要な結果系列の取得経路を一意に固定できない場合は、都合のよい代替データへ置き換えずHOLDとしています。</p>
+      <p class="card-links">これらの候補から新しい結果値や成績はまだ公開していません。現時点では研究準備であり、関係の存在や売買上の優位性を示す根拠ではありません。</p>
     </article>
   </div>
 </section>
