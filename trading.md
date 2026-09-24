@@ -1,7 +1,7 @@
 ---
 title: Trading
 permalink: /trading/
-updated: "2026-09-24"
+updated: "2026-09-25"
 description: Reviewed Studio Lab trading research, including development tests, holdouts, unused-data replications, execution-aware checks, prospective protocols, and negative results.
 ---
 
@@ -58,7 +58,7 @@ description: Reviewed Studio Lab trading research, including development tests, 
 <section class="section">
   <div class="section-heading">
     <div>
-      <p class="eyebrow">Current research · reviewed 2026-09-24</p>
+      <p class="eyebrow">Current research · reviewed 2026-09-25</p>
       <h2>The current frontier is coverage, source fidelity, and unopened tests</h2>
     </div>
   </div>
@@ -76,10 +76,10 @@ description: Reviewed Studio Lab trading research, including development tests, 
       <p class="card-links">Waiting is part of the design: no parameter search, sample reselection, or substitute provider is being used to manufacture an executable result.</p>
     </article>
     <article class="feature-card">
-      <p class="feature-meta">Independent candidate · preflight required</p>
-      <h3>U.S. 10-year Treasury auction demand is the newest bounded candidate</h3>
-      <p>An outcome-blind screen selected a distinct question: whether the absolute change in 10-year Treasury auction bid-to-cover ratio is associated with realized variability in the following five trading days of the 10-year Treasury par yield. The proposed test is one pre-specified Spearman correlation using official Treasury auction and yield data.</p>
-      <p class="card-links">No current values or outcomes were used. The candidate still requires source-retrieval preflight and is not evidence that the relationship exists or is tradable.</p>
+      <p class="feature-meta">Independent candidates · retrieval preflight</p>
+      <h3>Candidate screening has moved on, but no newer trading result is ready</h3>
+      <p>Several newer public-data candidates have been screened since the earlier Treasury-auction idea. The latest work remains at source-compatibility and historical-market-data retrieval checks. Where an exact outcome-series path cannot be fixed reproducibly in the current execution path, the candidate stays on hold rather than switching to a convenient substitute.</p>
+      <p class="card-links">No newer outcome comparison or performance result is being published from these screens. They remain research preparation, not evidence of a relationship or tradable edge.</p>
     </article>
   </div>
 </section>
