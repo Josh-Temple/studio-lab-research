@@ -45,10 +45,10 @@ description: Public Studio Lab research, with methods, findings, limits, and evi
 
 <section class="section compact-section">
   <div class="section-heading">
-    <div><p class="eyebrow">Current direction · reviewed 2026-09-24</p><h2>Reproduction, selection coverage, and retrieval are separate claims</h2></div>
-    <a href="{{ '/trading/' | relative_url }}">Full trading status</a>
+    <div><p class="eyebrow">Current direction · reviewed 2026-09-25</p><h2>One bounded public-data test reached a result; retrieval still gates the rest</h2></div>
+    <a href="{{ '/research/noaa-mauna-loa-co2-2025-seasonal-amplitude/' | relative_url }}">Read the new study</a>
   </div>
-  <p class="lede">No newer confirmatory trading-performance result has replaced the unused-data GOLD result. The latest work sharpened the boundary around what a successful replay proves: the saved 2026H1 ticks reproduced all 2,685 recorded trades and headline metrics, but 36 hours of missing tick coverage mean the audit cannot certify that no additional candidates were lost in unobserved intervals. Retrieval preflight is also kept inside the study's information boundary; when a safe non-target probe cannot be constructed, the path remains unverified rather than being mislabeled as unavailable.</p>
+  <p class="lede">The latest completed non-trading test used NOAA GML's official Mauna Loa monthly CO₂ file. After fixing the source representation and monthly-average field before opening the 2025 values, the 12-month max-minus-min amplitude was 6.14 ppm, above the pre-specified 5 ppm threshold. Several other public-data candidates remained on hold because their exact machine-readable retrieval path or representation could not be verified without substitution. Trading research has not produced a newer confirmatory performance result; its latest work remains focused on coverage, source fidelity, and unopened tests.</p>
 </section>
 
 <section class="section">
