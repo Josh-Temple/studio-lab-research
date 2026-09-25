@@ -46,7 +46,7 @@ description: Studio Labの公開研究。方法、結果、限界、根拠を分
 
 <section class="section compact-section">
   <div class="section-heading"><div><p class="eyebrow">現在の方向 · 2026年9月25日確認</p><h2>一つの公開データ検証は結果まで進み、他は取得条件で止める</h2></div><a href="{{ '/ja/research/noaa-mauna-loa-co2-2025-seasonal-amplitude/' | relative_url }}">新しい研究を見る</a></div>
-  <p class="lede">直近では、NOAA GMLのMauna Loa月平均CO₂について、公式テキストの取得形式と使用列を対象値を見る前に固定し、2025年12か月の最大値と最小値の差を計算しました。結果は6.14 ppmで、事前に固定した5 ppmを上回りました。一方、他の公開データ候補では、必要な機械可読形式や取得経路を同じ実行環境で確定できず、本実行へ進めずHOLDとしています。トレード研究では新しい確認検証の成績はまだ出ておらず、データの網羅性、取得元の整合、未観測条件の維持を引き続き確認しています。</p>
+  <p class="lede">直近の非トレード実証結果は、NOAA GMLのMauna Loa月平均CO₂です。公式テキストの取得形式と使用列を対象値を見る前に固定し、2025年12か月の最大値と最小値の差を計算した結果、6.14 ppmとなり、事前に固定した5 ppmを上回りました。これを更新する新しい実証結果はまだありません。次の候補は、Apple Inc.のForm 8-K提出件数を2025年1月と7月で比較するSEC EDGARの限定検証です。会社、Form、対象月、数え方、仮説までは固定済みですが、件数を開く前の取得互換性確認が残っているため、まだ結果として扱いません。トレード研究にも新しい確認検証の成績はありません。</p>
 </section>
 
 <section class="section">
