@@ -78,6 +78,10 @@ The substantive calculation is simple. The more important methodological point i
 
 When an exact source path and field identity could not be verified for other candidates, those studies stayed on hold rather than switching to a convenient substitute. Here, the official text representation was reproducibly readable, so the test could proceed without changing the frozen data definition.
 
+## Decision implication
+
+This result is sufficient to close this bounded one-year threshold test: no rescue tuning or additional month selection is needed. It should not be promoted into a claim about other years, other stations, global seasonal amplitude, or causality. A broader question should be framed as a separate study with its own pre-outcome scope and data definition.
+
 ## Source
 
 Primary source: NOAA Global Monitoring Laboratory, *Trends in Atmospheric Carbon Dioxide — Mauna Loa monthly mean CO₂*.
