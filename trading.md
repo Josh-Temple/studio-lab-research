@@ -77,9 +77,9 @@ description: Reviewed Studio Lab trading research, including development tests, 
     </article>
     <article class="feature-card">
       <p class="feature-meta">Independent candidates · retrieval preflight</p>
-      <h3>Candidate screening has moved on, but no newer trading result is ready</h3>
-      <p>Several newer public-data candidates have been screened since the earlier Treasury-auction idea. The latest work remains at source-compatibility and historical-market-data retrieval checks. Where an exact outcome-series path cannot be fixed reproducibly in the current execution path, the candidate stays on hold rather than switching to a convenient substitute.</p>
-      <p class="card-links">No newer outcome comparison or performance result is being published from these screens. They remain research preparation, not evidence of a relationship or tradable edge.</p>
+      <h3>BLS PPI and FOMC candidates advanced, but both remain pre-result</h3>
+      <p>The BLS PPI × S&amp;P 500 path now has verified source identities, archived-release vintage rules, and a five-trading-day return definition. It remains on hold because the permitted inputs do not yet fix one bounded historical evaluation window. A separate FOMC target-change × USD/JPY candidate also reached source preflight, but the current Worker path did not obtain a readable USD/JPY historical-bar response without opening outcomes.</p>
+      <p class="card-links">Neither line has produced an outcome comparison. The next step is to resolve the missing pre-outcome boundary or retrieval capability without selecting a convenient window, feed, or substitute series after seeing results.</p>
     </article>
   </div>
 </section>

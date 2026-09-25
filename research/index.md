@@ -48,7 +48,7 @@ description: Public Studio Lab research, with methods, findings, limits, and evi
     <div><p class="eyebrow">Current direction · reviewed 2026-09-25</p><h2>One bounded public-data test reached a result; retrieval still gates the rest</h2></div>
     <a href="{{ '/research/noaa-mauna-loa-co2-2025-seasonal-amplitude/' | relative_url }}">Read the new study</a>
   </div>
-  <p class="lede">The latest completed non-trading test used NOAA GML's official Mauna Loa monthly CO₂ file. After fixing the source representation and monthly-average field before opening the 2025 values, the 12-month max-minus-min amplitude was 6.14 ppm, above the pre-specified 5 ppm threshold. Several other public-data candidates remained on hold because their exact machine-readable retrieval path or representation could not be verified without substitution. Trading research has not produced a newer confirmatory performance result; its latest work remains focused on coverage, source fidelity, and unopened tests.</p>
+  <p class="lede">The latest completed non-trading test used NOAA GML's official Mauna Loa monthly CO₂ file. After fixing the source representation and monthly-average field before opening the 2025 values, the 12-month max-minus-min amplitude was 6.14 ppm, above the pre-specified 5 ppm threshold. No newer non-trading empirical result has replaced it. The next screened line is a bounded SEC EDGAR count comparison for Apple Form 8-K filings in January versus July 2025; its hypothesis, months, form type, company identity, and counting rule are fixed, but the study is still waiting for source-retrieval compatibility before any counts are opened. Trading research likewise has no newer confirmatory performance result.</p>
 </section>
 
 <section class="section">
