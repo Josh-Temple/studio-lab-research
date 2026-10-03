@@ -1,5 +1,15 @@
 # Studio Lab
 
+## はじめて見る方へ
+
+[公開サイト](https://josh-temple.github.io/studio-lab-research/)と[研究・公開の方法](methods.md)から、公開成果と判断基準を確認できます。
+
+AIを活用した研究・開発のうち、公開可能な成果を整理する個人プロジェクトです。研究の問い、採否基準、未達・保留の扱い、公開と内部運用の境界を確認する入口です。
+
+**確認上の限界:** このRepositoryは公開用の提示層です。非公開の複数エージェント運用ログや生産性効果を直接証明するものではありません。研究結果は各ページの前提・限界と併せて読んでください。
+
+[全プロジェクトの案内](https://github.com/Josh-Temple)
+
 Public Studio Lab hub for selected research, projects, writing, and methods.
 
 The repository name remains `studio-lab-research`, but the GitHub Pages site serves as the outward-facing Studio Lab dashboard. Internal operational state belongs in the private dashboard; this repository contains reviewed public outputs and links.
